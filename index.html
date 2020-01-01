@@ -265,9 +265,14 @@ Remarkjs 提供不错的演示功能。编写幻灯时，可通过“???”来�
 ## 页码和窗口比例
 
 有些人可能觉得右下角的页码会干扰观众注意力，或者需要使用 16:9 窗口比例，这些都可以在 index.html 最后面的 remarkjs 初始化参数里设置：  
+.sm-font[
 ```js
 var slideshow = remark.create({
   ratio: "4:3", // 窗口比例
+  // 可选：arta, ascetic, dark, default, far, github, googlecode, idea,
+  // ir-black, magula, monokai, rainbow, solarized-dark, solarized-light,
+  // sunburst, tomorrow, tomorrow-night-blue, tomorrow-night-bright,
+  // tomorrow-night, tomorrow-night-eighties, vs, zenburn.
   highlightStyle: "github",
   highlightLines: true,
   countIncrementalSlides: false, // 增量内容是否算一页
@@ -279,6 +284,26 @@ var slideshow = remark.create({
   }
 });
 ```
+]
+
+---
+
+## 导出 PDF
+
+1. 安装 [decktape](https://github.com/astefanutti/decktape)
+```cmd
+npm install -g decktape
+```
+1. 使用 decktape 命令行导出 PDF
+```cmd
+C:\> decktape remark https://1-2-3.github.io/remark-it remark-it.pdf 
+```
+<mark>如果幻灯尚未发布到互联网上，URL为 file: 开头的本地传输协议，需要添加 --chrome-arg=--disable-web-security 参数，否则会报 DOMException 错误，例:</mark>
+```
+Z:\temp\deck>decktape remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/index.html#12 remark-it3.pdf --chrome-arg=--disable-web-security
+```
+
+
 
 ---
 
@@ -292,6 +317,7 @@ var slideshow = remark.create({
 [Nord](https://github.com/arcticicestudio/nord)  
 [Open color](https://github.com/yeun/open-color)  
 [Fork me on GitHub CSS ribbon](https://github.com/simonwhitaker/github-fork-ribbon-css)   
+[Decktape](https://github.com/astefanutti/decktape)
 
 <a class="github-fork-ribbon right-top" href="https://github.com/1-2-3/remark-it" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 
@@ -300,6 +326,10 @@ var slideshow = remark.create({
     <script>
       var slideshow = remark.create({
         ratio: "4:3", // 窗口比例
+        // 可选：arta, ascetic, dark, default, far, github, googlecode, idea,
+        // ir-black, magula, monokai, rainbow, solarized-dark, solarized-light,
+        // sunburst, tomorrow, tomorrow-night-blue, tomorrow-night-bright,
+        // tomorrow-night, tomorrow-night-eighties, vs, zenburn.
         highlightStyle: "github",
         highlightLines: true,
         countIncrementalSlides: false, // 增量内容是否算一页

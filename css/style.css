@@ -32,6 +32,7 @@
   font-family: "Cascadia Code", Consolas, "Courier New", monospace;
 }
 
+/* 针对 typo.css 做一些修正 */
 a.github-fork-ribbon {
   border-bottom-color: transparent;
 }
@@ -40,17 +41,26 @@ a.github-fork-ribbon:hover {
   border-bottom-color: transparent;
 }
 
+pre {
+  padding: 0px;
+}
+
 /* 超小号字体 */
 .xs-font {
   font-size: 12px;
 }
 
-.xs-font pre {
-  padding: 0.2em 0.2em;
-}
-
 .xs-font .remark-code {
   font-size: 12px;
+}
+
+/* 小号字体 */
+.sm-font {
+  font-size: 14px;
+}
+
+.sm-font .remark-code {
+  font-size: 14px;
 }
 
 /* 由于 pure.css 提供的网格布局没有 gutter 功能，这里补充 8px 和 16px gutter 的样式 */
