@@ -1,0 +1,424 @@
+@import "./open-color.css";
+
+.oc-bg-white {
+  background-color: var(--oc-white);
+}
+
+.oc-bg-black {
+  background-color: var(--oc-black);
+}
+
+.oc-bg-gray-0 {
+  background-color: var(--oc-gray-0);
+}
+.oc-bg-gray-1 {
+  background-color: var(--oc-gray-1);
+}
+.oc-bg-gray-2 {
+  background-color: var(--oc-gray-2);
+}
+.oc-bg-gray-3 {
+  background-color: var(--oc-gray-3);
+}
+.oc-bg-gray-4 {
+  background-color: var(--oc-gray-4);
+}
+.oc-bg-gray-5 {
+  background-color: var(--oc-gray-5);
+}
+.oc-bg-gray-6 {
+  background-color: var(--oc-gray-6);
+}
+.oc-bg-gray-7 {
+  background-color: var(--oc-gray-7);
+}
+.oc-bg-gray-8 {
+  background-color: var(--oc-gray-8);
+}
+.oc-bg-gray-9 {
+  background-color: var(--oc-gray-9);
+}
+/*  Red
+*  ─────────────────────────────────── */
+.oc-bg-red-0 {
+  background-color: var(--oc-red-0);
+}
+.oc-bg-red-1 {
+  background-color: var(--oc-red-1);
+}
+.oc-bg-red-2 {
+  background-color: var(--oc-red-2);
+}
+.oc-bg-red-3 {
+  background-color: var(--oc-red-3);
+}
+.oc-bg-red-4 {
+  background-color: var(--oc-red-4);
+}
+.oc-bg-red-5 {
+  background-color: var(--oc-red-5);
+}
+.oc-bg-red-6 {
+  background-color: var(--oc-red-6);
+}
+.oc-bg-red-7 {
+  background-color: var(--oc-red-7);
+}
+.oc-bg-red-8 {
+  background-color: var(--oc-red-8);
+}
+.oc-bg-red-9 {
+  background-color: var(--oc-red-9);
+}
+/*  Pink
+*  ─────────────────────────────────── */
+.oc-bg-pink-0 {
+  background-color: var(--oc-pink-0);
+}
+.oc-bg-pink-1 {
+  background-color: var(--oc-pink-1);
+}
+.oc-bg-pink-2 {
+  background-color: var(--oc-pink-2);
+}
+.oc-bg-pink-3 {
+  background-color: var(--oc-pink-3);
+}
+.oc-bg-pink-4 {
+  background-color: var(--oc-pink-4);
+}
+.oc-bg-pink-5 {
+  background-color: var(--oc-pink-5);
+}
+.oc-bg-pink-6 {
+  background-color: var(--oc-pink-6);
+}
+.oc-bg-pink-7 {
+  background-color: var(--oc-pink-7);
+}
+.oc-bg-pink-8 {
+  background-color: var(--oc-pink-8);
+}
+.oc-bg-pink-9 {
+  background-color: var(--oc-pink-9);
+}
+/*  Grape
+*  ─────────────────────────────────── */
+.oc-bg-grape-0 {
+  background-color: var(--oc-grape-0);
+}
+.oc-bg-grape-1 {
+  background-color: var(--oc-grape-1);
+}
+.oc-bg-grape-2 {
+  background-color: var(--oc-grape-2);
+}
+.oc-bg-grape-3 {
+  background-color: var(--oc-grape-3);
+}
+.oc-bg-grape-4 {
+  background-color: var(--oc-grape-4);
+}
+.oc-bg-grape-5 {
+  background-color: var(--oc-grape-5);
+}
+.oc-bg-grape-6 {
+  background-color: var(--oc-grape-6);
+}
+.oc-bg-grape-7 {
+  background-color: var(--oc-grape-7);
+}
+.oc-bg-grape-8 {
+  background-color: var(--oc-grape-8);
+}
+.oc-bg-grape-9 {
+  background-color: var(--oc-grape-9);
+}
+/*  Violet
+*  ─────────────────────────────────── */
+.oc-bg-violet-0 {
+  background-color: var(--oc-violet-0);
+}
+.oc-bg-violet-1 {
+  background-color: var(--oc-violet-1);
+}
+.oc-bg-violet-2 {
+  background-color: var(--oc-violet-2);
+}
+.oc-bg-violet-3 {
+  background-color: var(--oc-violet-3);
+}
+.oc-bg-violet-4 {
+  background-color: var(--oc-violet-4);
+}
+.oc-bg-violet-5 {
+  background-color: var(--oc-violet-5);
+}
+.oc-bg-violet-6 {
+  background-color: var(--oc-violet-6);
+}
+.oc-bg-violet-7 {
+  background-color: var(--oc-violet-7);
+}
+.oc-bg-violet-8 {
+  background-color: var(--oc-violet-8);
+}
+.oc-bg-violet-9 {
+  background-color: var(--oc-violet-9);
+}
+/*  Indigo
+*  ─────────────────────────────────── */
+.oc-bg-indigo-0 {
+  background-color: var(--oc-indigo-0);
+}
+.oc-bg-indigo-1 {
+  background-color: var(--oc-indigo-1);
+}
+.oc-bg-indigo-2 {
+  background-color: var(--oc-indigo-2);
+}
+.oc-bg-indigo-3 {
+  background-color: var(--oc-indigo-3);
+}
+.oc-bg-indigo-4 {
+  background-color: var(--oc-indigo-4);
+}
+.oc-bg-indigo-5 {
+  background-color: var(--oc-indigo-5);
+}
+.oc-bg-indigo-6 {
+  background-color: var(--oc-indigo-6);
+}
+.oc-bg-indigo-7 {
+  background-color: var(--oc-indigo-7);
+}
+.oc-bg-indigo-8 {
+  background-color: var(--oc-indigo-8);
+}
+.oc-bg-indigo-9 {
+  background-color: var(--oc-indigo-9);
+}
+/*  Blue
+*  ─────────────────────────────────── */
+.oc-bg-blue-0 {
+  background-color: var(--oc-blue-0);
+}
+.oc-bg-blue-1 {
+  background-color: var(--oc-blue-1);
+}
+.oc-bg-blue-2 {
+  background-color: var(--oc-blue-2);
+}
+.oc-bg-blue-3 {
+  background-color: var(--oc-blue-3);
+}
+.oc-bg-blue-4 {
+  background-color: var(--oc-blue-4);
+}
+.oc-bg-blue-5 {
+  background-color: var(--oc-blue-5);
+}
+.oc-bg-blue-6 {
+  background-color: var(--oc-blue-6);
+}
+.oc-bg-blue-7 {
+  background-color: var(--oc-blue-7);
+}
+.oc-bg-blue-8 {
+  background-color: var(--oc-blue-8);
+}
+.oc-bg-blue-9 {
+  background-color: var(--oc-blue-9);
+}
+/*  Cyan
+*  ─────────────────────────────────── */
+.oc-bg-cyan-0 {
+  background-color: var(--oc-cyan-0);
+}
+.oc-bg-cyan-1 {
+  background-color: var(--oc-cyan-1);
+}
+.oc-bg-cyan-2 {
+  background-color: var(--oc-cyan-2);
+}
+.oc-bg-cyan-3 {
+  background-color: var(--oc-cyan-3);
+}
+.oc-bg-cyan-4 {
+  background-color: var(--oc-cyan-4);
+}
+.oc-bg-cyan-5 {
+  background-color: var(--oc-cyan-5);
+}
+.oc-bg-cyan-6 {
+  background-color: var(--oc-cyan-6);
+}
+.oc-bg-cyan-7 {
+  background-color: var(--oc-cyan-7);
+}
+.oc-bg-cyan-8 {
+  background-color: var(--oc-cyan-8);
+}
+.oc-bg-cyan-9 {
+  background-color: var(--oc-cyan-9);
+}
+/*  Teal
+*  ─────────────────────────────────── */
+.oc-bg-teal-0 {
+  background-color: var(--oc-teal-0);
+}
+.oc-bg-teal-1 {
+  background-color: var(--oc-teal-1);
+}
+.oc-bg-teal-2 {
+  background-color: var(--oc-teal-2);
+}
+.oc-bg-teal-3 {
+  background-color: var(--oc-teal-3);
+}
+.oc-bg-teal-4 {
+  background-color: var(--oc-teal-4);
+}
+.oc-bg-teal-5 {
+  background-color: var(--oc-teal-5);
+}
+.oc-bg-teal-6 {
+  background-color: var(--oc-teal-6);
+}
+.oc-bg-teal-7 {
+  background-color: var(--oc-teal-7);
+}
+.oc-bg-teal-8 {
+  background-color: var(--oc-teal-8);
+}
+.oc-bg-teal-9 {
+  background-color: var(--oc-teal-9);
+}
+/*  Green
+*  ─────────────────────────────────── */
+.oc-bg-green-0 {
+  background-color: var(--oc-green-0);
+}
+.oc-bg-green-1 {
+  background-color: var(--oc-green-1);
+}
+.oc-bg-green-2 {
+  background-color: var(--oc-green-2);
+}
+.oc-bg-green-3 {
+  background-color: var(--oc-green-3);
+}
+.oc-bg-green-4 {
+  background-color: var(--oc-green-4);
+}
+.oc-bg-green-5 {
+  background-color: var(--oc-green-5);
+}
+.oc-bg-green-6 {
+  background-color: var(--oc-green-6);
+}
+.oc-bg-green-7 {
+  background-color: var(--oc-green-7);
+}
+.oc-bg-green-8 {
+  background-color: var(--oc-green-8);
+}
+.oc-bg-green-9 {
+  background-color: var(--oc-green-9);
+}
+/*  Lime
+*  ─────────────────────────────────── */
+.oc-bg-lime-0 {
+  background-color: var(--oc-lime-0);
+}
+.oc-bg-lime-1 {
+  background-color: var(--oc-lime-1);
+}
+.oc-bg-lime-2 {
+  background-color: var(--oc-lime-2);
+}
+.oc-bg-lime-3 {
+  background-color: var(--oc-lime-3);
+}
+.oc-bg-lime-4 {
+  background-color: var(--oc-lime-4);
+}
+.oc-bg-lime-5 {
+  background-color: var(--oc-lime-5);
+}
+.oc-bg-lime-6 {
+  background-color: var(--oc-lime-6);
+}
+.oc-bg-lime-7 {
+  background-color: var(--oc-lime-7);
+}
+.oc-bg-lime-8 {
+  background-color: var(--oc-lime-8);
+}
+.oc-bg-lime-9 {
+  background-color: var(--oc-lime-9);
+}
+/*  Yellow
+*  ─────────────────────────────────── */
+.oc-bg-yellow-0 {
+  background-color: var(--oc-yellow-0);
+}
+.oc-bg-yellow-1 {
+  background-color: var(--oc-yellow-1);
+}
+.oc-bg-yellow-2 {
+  background-color: var(--oc-yellow-2);
+}
+.oc-bg-yellow-3 {
+  background-color: var(--oc-yellow-3);
+}
+.oc-bg-yellow-4 {
+  background-color: var(--oc-yellow-4);
+}
+.oc-bg-yellow-5 {
+  background-color: var(--oc-yellow-5);
+}
+.oc-bg-yellow-6 {
+  background-color: var(--oc-yellow-6);
+}
+.oc-bg-yellow-7 {
+  background-color: var(--oc-yellow-7);
+}
+.oc-bg-yellow-8 {
+  background-color: var(--oc-yellow-8);
+}
+.oc-bg-yellow-9 {
+  background-color: var(--oc-yellow-9);
+}
+/*  Orange
+*  ─────────────────────────────────── */
+.oc-bg-orange-0 {
+  background-color: var(--oc-orange-0);
+}
+.oc-bg-orange-1 {
+  background-color: var(--oc-orange-1);
+}
+.oc-bg-orange-2 {
+  background-color: var(--oc-orange-2);
+}
+.oc-bg-orange-3 {
+  background-color: var(--oc-orange-3);
+}
+.oc-bg-orange-4 {
+  background-color: var(--oc-orange-4);
+}
+.oc-bg-orange-5 {
+  background-color: var(--oc-orange-5);
+}
+.oc-bg-orange-6 {
+  background-color: var(--oc-orange-6);
+}
+.oc-bg-orange-7 {
+  background-color: var(--oc-orange-7);
+}
+.oc-bg-orange-8 {
+  background-color: var(--oc-orange-8);
+}
+.oc-bg-orange-9 {
+  background-color: var(--oc-orange-9);
+}

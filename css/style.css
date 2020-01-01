@@ -1,0 +1,67 @@
+/* remarkjs 官网示例幻灯里面使用的暗色主题 */
+.inverse {
+  background: #272822;
+  color: #777872;
+  text-shadow: 0 0 20px #333;
+}
+.inverse h1,
+.inverse h2 {
+  color: #f3f3f3;
+  line-height: 0.8em;
+}
+
+/* Slide-specific styling */
+#slide-inverse .footnote {
+  bottom: 12px;
+  left: 20px;
+}
+
+/* 隐藏注释 */
+.invisible-ink {
+  display: none;
+}
+
+.remark-container.remark-presenter-mode .invisible-ink {
+  display: inline;
+  color: red;
+}
+
+/* 代码字体 */
+.remark-code,
+.remark-inline-code {
+  font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+}
+
+a.github-fork-ribbon {
+  border-bottom-color: transparent;
+}
+
+a.github-fork-ribbon:hover {
+  border-bottom-color: transparent;
+}
+
+/* 超小号字体 */
+.xs-font {
+  font-size: 12px;
+}
+
+.xs-font pre {
+  padding: 0.2em 0.2em;
+}
+
+.xs-font .remark-code {
+  font-size: 12px;
+}
+
+/* 由于 pure.css 提供的网格布局没有 gutter 功能，这里补充 8px 和 16px gutter 的样式 */
+.gutter-8 {
+  padding-left: 4px;
+  padding-right: 4px;
+  box-sizing: border-box;
+}
+
+.gutter-16 {
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+}

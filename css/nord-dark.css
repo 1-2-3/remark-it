@@ -1,0 +1,104 @@
+/*
+* Nord 暗色主题样式
+*/
+@import "./nord.css";
+
+.nord-dark {
+  background-color: var(--nord0);
+}
+
+.nord-dark h1,
+.nord-dark h2,
+.nord-dark h3,
+.nord-dark h4,
+.nord-dark h5,
+.nord-dark h6,
+.nord-dark p,
+.nord-dark span,
+.nord-dark li {
+  color: var(--nord6);
+}
+
+.nord-dark small {
+  color: var(--nord3);
+}
+
+.nord-dark a {
+  color: var(--nord8);
+  border-radius: 0.25em;
+  transition: color 200ms ease-in-out 0s, background-color 200ms ease-in-out 0s;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  border-bottom-color: transparent;
+}
+
+.nord-dark a:hover {
+  color: var(--nord8);
+  background-color: var(--nord3);
+  opacity: 0.8;
+  border-bottom-color: transparent;
+}
+
+.nord-dark pre {
+  background-color: var(--nord1);
+  border: 0px;
+}
+
+.nord-dark .remark-code,
+.nord-dark .hljs-keyword {
+  background-color: var(--nord1);
+  color: var(--nord4);
+}
+
+.nord-dark blockquote {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  padding-left: 1.5em;
+  color: var(--nord9);
+  border-left: 0.2em solid rgba(136, 192, 208, 0.6);
+  margin: 1em 0px;
+  transition: border-left 400ms ease-in-out 0s, color 400ms ease-in-out 0s;
+}
+
+.nord-dark blockquote > p {
+  color: var(--nord4);
+  opacity: 0.65;
+}
+
+.nord-dark ul {
+  list-style-type: none;
+  margin: 0px 0px 1em;
+  padding: 0px 0px 0px 1em;
+}
+
+.nord-dark ul > li {
+  position: relative;
+  margin-left: 0.7em;
+  margin-bottom: 0.7em;
+  margin-top: 0.7em;
+}
+
+.nord-dark ul > li::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 15px;
+  left: -33px;
+  background-color: rgb(76, 86, 106);
+  border-radius: 50%;
+  transition: background-color 400ms ease-in-out 0s;
+}
+
+.nord-dark ol {
+  margin: 0px 0px 1em;
+  padding: 0px 0px 0px 1em;
+}
+
+.nord-dark ol > li {
+  padding-left: 0.7em;
+}
