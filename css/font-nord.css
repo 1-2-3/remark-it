@@ -1,0 +1,50 @@
+/*
+ * 可独立使用的 Nord 字体颜色
+*/
+@import "./nord.css";
+
+.nord1 {
+  color: var(--nord1) !important;
+}
+.nord2 {
+  color: var(--nord2) !important;
+}
+.nord3 {
+  color: var(--nord3) !important;
+}
+.nord4 {
+  color: var(--nord4) !important;
+}
+.nord5 {
+  color: var(--nord5) !important;
+}
+.nord6 {
+  color: var(--nord6) !important;
+}
+.nord7 {
+  color: var(--nord7) !important;
+}
+.nord8 {
+  color: var(--nord8) !important;
+}
+.nord9 {
+  color: var(--nord9) !important;
+}
+.nord10 {
+  color: var(--nord10) !important;
+}
+.nord11 {
+  color: var(--nord11) !important;
+}
+.nord12 {
+  color: var(--nord12) !important;
+}
+.nord13 {
+  color: var(--nord13) !important;
+}
+.nord14 {
+  color: var(--nord14) !important;
+}
+.nord15 {
+  color: var(--nord15) !important;
+}

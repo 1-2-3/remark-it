@@ -1,0 +1,50 @@
+/*
+ * Nord 作为背景色
+*/
+@import "./nord.css";
+
+.bg-nord1 {
+  background-color: var(--nord1) !important;
+}
+.bg-nord2 {
+  background-color: var(--nord2) !important;
+}
+.bg-nord3 {
+  background-color: var(--nord3) !important;
+}
+.bg-nord4 {
+  background-color: var(--nord4) !important;
+}
+.bg-nord5 {
+  background-color: var(--nord5) !important;
+}
+.bg-nord6 {
+  background-color: var(--nord6) !important;
+}
+.bg-nord7 {
+  background-color: var(--nord7) !important;
+}
+.bg-nord8 {
+  background-color: var(--nord8) !important;
+}
+.bg-nord9 {
+  background-color: var(--nord9) !important;
+}
+.bg-nord10 {
+  background-color: var(--nord10) !important;
+}
+.bg-nord11 {
+  background-color: var(--nord11) !important;
+}
+.bg-nord12 {
+  background-color: var(--nord12) !important;
+}
+.bg-nord13 {
+  background-color: var(--nord13) !important;
+}
+.bg-nord14 {
+  background-color: var(--nord14) !important;
+}
+.bg-nord15 {
+  background-color: var(--nord15) !important;
+}

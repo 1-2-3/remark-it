@@ -1,31 +1,31 @@
 /*
-* Nord 暗色主题样式
+* Nord 亮色主题样式
 */
 @import "./nord.css";
 
-.nord-dark {
-  background-color: var(--nord0);
+.nord-light {
+  background-color: white;
 }
 
-.nord-dark h1,
-.nord-dark h2,
-.nord-dark h3,
-.nord-dark h4,
-.nord-dark h5,
-.nord-dark h6,
-.nord-dark p,
-.nord-dark span,
-.nord-dark li {
-  color: var(--nord6);
+.nord-light h1,
+.nord-light h2,
+.nord-light h3,
+.nord-light h4,
+.nord-light h5,
+.nord-light h6,
+.nord-light p,
+.nord-light span,
+.nord-light li {
+  color: var(--nord3);
 }
 
-.nord-dark small {
-  color: var(--nord4);
+.nord-light small {
+  color: var(--nord3);
   opacity: 0.6;
 }
 
-.nord-dark a {
-  color: var(--nord8);
+.nord-light a {
+  color: var(--nord10);
   border-radius: 0.25em;
   transition: color 200ms ease-in-out 0s, background-color 200ms ease-in-out 0s;
   cursor: pointer;
@@ -34,85 +34,83 @@
   border-bottom-color: transparent;
 }
 
-.nord-dark a:hover {
-  color: var(--nord8);
-  background-color: var(--nord3);
-  opacity: 0.8;
+.nord-light a:hover {
+  color: var(--nord10);
+  /* background-color: var(--nord3); */
+  background-color: rgba(236, 239, 244, 0.45);
   border-bottom-color: transparent;
 }
 
-.nord-dark pre {
+.nord-light pre {
+  background: transparent;
   padding: 0px;
   border: 0px;
-  background: transparent;
 }
 
-.nord-dark code {
+.nord-light code {
   font-size: 0.85em;
-  color: var(--nord6);
-  background-color: var(--nord1);
+  color: var(--nord3);
+  background-color: var(--nord6);
   padding: 0.2em 0.4em;
   padding: 0.2em 0.4em;
   border-radius: 4px;
   transition: background-color 400ms ease-in-out 0s;
 }
 
-.nord-dark .remark-code,
-.nord-dark .hljs-keyword {
-  color: var(--nord6);
-  background-color: var(--nord1);
-  border-radius: 4px;
-  transition: background-color 400ms ease-in-out 0s;
+.nord-light .remark-code,
+.nord-light .hljs-keyword {
+  background-color: var(--nord6);
+  color: var(--nord3);
 }
 
-.nord-dark blockquote {
+.nord-light blockquote {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 40px;
   margin-inline-end: 40px;
   padding-left: 1.5em;
-  color: var(--nord9);
-  border-left: 0.2em solid rgba(136, 192, 208, 0.6);
+  color: rgb(123, 136, 161);
+  border-left: 0.2em solid rgba(94, 129, 172, 0.6);
   margin: 1em 0px;
   transition: border-left 400ms ease-in-out 0s, color 400ms ease-in-out 0s;
 }
 
-.nord-dark blockquote > p {
-  color: var(--nord4);
+.nord-light blockquote > p {
+  color: rgb(123, 136, 161);
   opacity: 0.65;
 }
 
-.nord-dark ul {
+.nord-light ul {
   list-style-type: none;
   margin: 0px 0px 1em;
   padding: 0px 0px 0px 1em;
 }
 
-.nord-dark ul > li {
+.nord-light ul > li {
   position: relative;
   margin-left: 0.7em;
   margin-bottom: 0.7em;
   margin-top: 0.7em;
 }
 
-.nord-dark ul > li::before {
+.nord-light ul > li::before {
   content: "";
   position: absolute;
   width: 6px;
   height: 6px;
   top: 15px;
   left: -33px;
-  background-color: rgb(76, 86, 106);
+  background-color: var(--nord3);
   border-radius: 50%;
   transition: background-color 400ms ease-in-out 0s;
 }
 
-.nord-dark ol {
+.nord-light ol {
   margin: 0px 0px 1em;
   padding: 0px 0px 0px 1em;
 }
 
-.nord-dark ol > li {
+.nord-light ol > li {
   padding-left: 0.7em;
 }

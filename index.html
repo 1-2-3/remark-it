@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="./css/typo.css" />
     <link rel="stylesheet" type="text/css" href="./css/gh-fork-ribbon.css" />
     <link rel="stylesheet" type="text/css" href="./css/nord-dark.css" />
+    <link rel="stylesheet" type="text/css" href="./css/nord-light.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-nord.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bg-nord.css" />
     <link rel="stylesheet" type="text/css" href="./css/font-open-color.css" />
     <link rel="stylesheet" type="text/css" href="./css/bg-open-color.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
@@ -185,9 +188,9 @@ Content appended to other-slide's content.
 ---
 
 class: nord-dark
-## 色彩 · Nord
+## 色彩 · Nord dark
 
-暗色系主题比较难把握，容易让观众感觉压抑，色彩搭配稍有不慎就会显得突兀或者杂乱。这里选用 [Nord](https://github.com/arcticicestudio/nord) 提供的配色方案，看上去还挺舒服。
+暗色系主题比较难把握，容易让观众感觉压抑，色彩搭配稍有不慎就会显得突兀或者杂乱。这里选用 [Nord](https://github.com/arcticicestudio/nord) 提供的 <code>配色方案</code>，看上去还挺舒服。
 
 ```ts
 export class AppComponent {
@@ -199,9 +202,53 @@ export class AppComponent {
 
 - 项目符号  
 第一条换行的效果
-- 项目符号
+- 项目符号 <small>small 文字</small>
 
 1. 序号
+
+---
+
+class: nord-light
+## 色彩 · Nord light
+
+[Nord](https://github.com/arcticicestudio/nord) 亮色主题字体颜色选用 <code>nord3</code>，比纯黑色柔和一些。
+
+```ts
+export class AppComponent {
+  isCollapsed = false;
+}
+```
+
+> Nord 也提供了包括 VS Code 在内的众多编辑器的主题插件，有兴趣可以一试
+
+- 项目符号  
+第一条换行的效果
+- 项目符号 <small>small 文字</small>
+
+1. 序号
+
+---
+
+## 色彩 · Nord Aurora
+
+Nord Aurora 提供极光的五种颜色，具有适中的明度和饱和度，对应 <code>nord11</code> 至  <code>nord15</code>，即可用于暗色主题也可用于亮色主题。
+
+.nord-light[
+文字颜色示例：.nord11[.nord11] | .nord12[.nord12] | .nord13[.nord13] | .nord14[.nord14] | .nord15[.nord15]
+
+背景色示例：.bg-nord11[.bg-nord11] | .bg-nord12[.bg-nord12] | .bg-nord13[.bg-nord13] | .bg-nord14[.bg-nord14] | .bg-nord15[.bg-nord15]
+&nbsp;  
+&nbsp;
+]
+
+.nord-dark[
+&nbsp;  
+文字颜色示例：.nord11[.nord11] | .nord12[.nord12] | .nord13[.nord13] | .nord14[.nord14] | .nord15[.nord15]
+
+背景色示例：.bg-nord11[.bg-nord11] | .bg-nord12[.bg-nord12] | .bg-nord13[.bg-nord13] | .bg-nord14[.bg-nord14] | .bg-nord15[.bg-nord15]
+&nbsp;  
+&nbsp;
+]
 
 ---
 
@@ -254,7 +301,7 @@ Remarkjs 提供不错的演示功能。编写幻灯时，可通过“???”来�
 要想想是否还是没有把精髓提炼出来，毕竟演讲不是给学生上课，细节过多往往会变成讲给自己听。
 ```
 
-在实际演讲的时候，按 P 键切换到演示模式就可以看到备注。当然演示模式是留给自己看的，所以你要先按 C 键打开一个新浏览器窗口，将其放置到投影所在的副屏上并按 F 键最大化。想要了解全部快捷键，按 H 键即可。
+在实际演讲的时候，按 .code[P] 键切换到演示模式就可以看到备注。当然演示模式是留给自己看的，所以你要先按 .code[C] 键打开一个新浏览器窗口，将其放置到投影所在的副屏上并按 .code[F] 键最大化。想要了解全部快捷键，按 .code[H] 键即可。
 
 ???
 虽然可以添加备注，但最好不要添加大段文字照着念，那样很容易像念课文似的，观众马上就会昏昏欲睡。如果你发现自己写了大段内容，
