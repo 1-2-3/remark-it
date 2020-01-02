@@ -10,7 +10,7 @@
 - [Remarkjs](https://github.com/gnab/remark) 功能示例
 - 基于 [Typo.css](https://github.com/sofish/typo.css) 的中英文排版
 - 基于 [Pure.css](https://github.com/pure-css/pure) 的多列布局
-- 基于 [Nord](https://github.com/arcticicestudio/nord) 的暗色主题
+- 基于 [Nord](https://github.com/arcticicestudio/nord) 的暗色、亮色主题
 - 基于 [Open color](https://github.com/yeun/open-color) 的 150 个文字和背景颜色
 
 ## 安装
