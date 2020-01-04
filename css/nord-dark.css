@@ -48,13 +48,23 @@
 }
 
 .nord-dark code {
-  font-size: 0.85em;
   color: var(--nord6);
   background-color: var(--nord1);
   padding: 0.2em 0.4em;
   padding: 0.2em 0.4em;
   border-radius: 4px;
   transition: background-color 400ms ease-in-out 0s;
+}
+
+.nord-dark .remark-inline-code {
+  color: var(--nord6);
+  background-color: var(--nord1);
+  padding: 0.2em 0.4em;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  transition: background-color 400ms ease-in-out 0s;
+  font: 300 0.92em/1.8 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif,
+    WenQuanYi Micro Hei, sans;
 }
 
 .nord-dark .remark-code,

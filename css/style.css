@@ -35,12 +35,13 @@
 
 /* 行内 <code> 底色等样式 */
 .remark-inline-code {
-  font-size: 0.85em;
   background-color: var(--nord6);
   padding: 0.2em 0.4em;
   padding: 0.2em 0.4em;
   border-radius: 4px;
   transition: background-color 400ms ease-in-out 0s;
+  font: 300 0.92em/1.8 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif,
+    WenQuanYi Micro Hei, sans;
 }
 
 /* 针对 typo.css 做一些修正 */
