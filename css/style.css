@@ -63,6 +63,15 @@ pre {
   font-size: 14px;
 }
 
+/* 中号字体 */
+.md-font {
+  font-size: 18px;
+}
+
+.md-font .remark-code {
+  font-size: 18px;
+}
+
 /* 由于 pure.css 提供的网格布局没有 gutter 功能，这里补充 8px 和 16px gutter 的样式 */
 .gutter-8 {
   padding-left: 4px;
@@ -83,4 +92,83 @@ pre {
   padding: 0.2em 0.4em;
   border-radius: 4px;
   transition: background-color 400ms ease-in-out 0s;
+}
+
+/*
+ * 100% 宽度，无背景色的 Table
+ * 可选样式：
+ *   st-hline 只显示横线
+ *   st-vline 只显示竖线
+ *   st-allline 横线和竖线都显示
+*/
+.st {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.st table {
+  margin-bottom: 0px;
+  width: 100%;
+  max-width: 100%;
+  border-spacing: 0;
+}
+
+.st table thead th {
+  color: #000;
+}
+
+.st table td,
+.st table th,
+.st table thead,
+.st table thead th,
+.st table tr {
+  border-width: 0px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
+  background-color: transparent;
+}
+
+.st-allline table td:first-child,
+.st-allline table th:first-child,
+.st-vline table td:first-child,
+.st-vline table th:first-child {
+  border-left: 0;
+}
+
+.st-hline table tbody tr:not(:last-child) td,
+.st-hline table thead th,
+.st-hline table tbody tr:not(:last-child) td,
+.st-hline table thead th,
+.st-vline table tr:nth-last-child(2) th,
+.st-vline table thead tr:last-child th,
+.st-allline table tbody tr:not(:last-child) td,
+.st-allline table thead th {
+  border-bottom-width: 1px;
+}
+
+.st-allline table td,
+.st-allline table thead th,
+.st-allline table th,
+.st-vline table td,
+.st-vline table thead th,
+.st-vline table th {
+  border-left-width: 1px;
+}
+
+/*
+ * quasar 样式修正
+*/
+.q-timeline {
+  list-style: none !important;
+}
+
+.q-scrollarea__bar,
+.q-scrollarea__thumb {
+  /*
+   * 由于 remarkjs 会自动使用 transform:scale() 来适应屏幕大小，而 Quasar 的 scroll area 组件会使用如下样式类
+   * 设置滚动条的 will-change: opacity; 它们两个加起来竟然会让整个幻灯内容页字体变虚(chrome 79.0.3945.88)！非常诡异的BUG.
+   * 即使使用下面的样式修正了，在鼠标移入移出 scroll area 组件导致滚动条显示/隐藏时还是会有短暂的虚的情况，所以最好
+   * 设置 scroll area 组件的 visible 属性为 true
+  */
+  will-change: auto;
 }

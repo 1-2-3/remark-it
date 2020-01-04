@@ -3,7 +3,13 @@
   <head>
     <title>幻灯模板</title>
     <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/quasar.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/pure-min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/spaces.css" />
     <link rel="stylesheet" type="text/css" href="./css/typo.css" />
     <link rel="stylesheet" type="text/css" href="./css/gh-fork-ribbon.css" />
     <link rel="stylesheet" type="text/css" href="./css/nord-dark.css" />
@@ -12,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="./css/bg-nord.css" />
     <link rel="stylesheet" type="text/css" href="./css/font-open-color.css" />
     <link rel="stylesheet" type="text/css" href="./css/bg-open-color.css" />
+    <link rel="stylesheet" type="text/css" href="./css/material-icons.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
   <body>
@@ -105,11 +112,29 @@ export class AppComponent {
 
 ## 表格
 
-| name | 价格 | 数量 |
+.st.st-hline.sm-font.mb-xs[
+| 名称 | 价格 | 数量 |
 | ---- | ---- | ----: |
-| 香蕉 | \$1  | 5    |
-| 苹果 | \$1  | 6    |
-| 草莓 | \$1  | 7    |
+| 香蕉 | $1  | 5    |
+| 苹果 | $1  | 6    |
+| 草莓 | $1  | 7    |
+]
+
+.st.st-allline.sm-font.mb-xs[
+| 名称 | 价格 | 数量 |
+| ---- | ---- | ----: |
+| 香蕉 | $1  | 5    |
+| 苹果 | $1  | 6    |
+| .nord11[草莓] | .nord11[$1]  | .nord11[7]    |
+]
+
+.st.st-vline.sm-font.mb-xs[
+| 名称 | 价格 | 数量 |
+| ---- | ---- | ----: |
+| 香蕉 | $1  | 5    |
+| 苹果 | $1  | 6    |
+| 草莓 | $1  | 7    |
+]
 
 ---
 
@@ -190,7 +215,7 @@ Content appended to other-slide's content.
 class: nord-dark
 ## 色彩 · Nord dark
 
-暗色系主题比较难把握，容易让观众感觉压抑，色彩搭配稍有不慎就会显得突兀或者杂乱。这里选用 [Nord](https://github.com/arcticicestudio/nord) 提供的 <code>配色方案</code>，看上去还挺舒服。
+暗色系主题比较难把握，容易让观众感觉压抑，色彩搭配稍有不慎就会显得突兀或者杂乱。这里选用 [Nord](https://github.com/arcticicestudio/nord) 提供的 `配色方案`，看上去还挺舒服。
 
 ```ts
 export class AppComponent {
@@ -211,7 +236,7 @@ export class AppComponent {
 class: nord-light
 ## 色彩 · Nord light
 
-[Nord](https://github.com/arcticicestudio/nord) 亮色主题字体颜色选用 <code>nord3</code>，比纯黑色柔和一些。
+[Nord](https://github.com/arcticicestudio/nord) 亮色主题字体颜色选用 `nord3`，比纯黑色柔和一些。
 
 ```ts
 export class AppComponent {
@@ -292,7 +317,7 @@ Instead:
 
 Remarkjs 提供不错的演示功能。编写幻灯时，可通过“???”来添加备注，像这样：
 
-```md
+```markdown
 ## 幻灯备注
 
 Remarkjs 提供不错的演示功能。编写幻灯时，可通过“???”来添加备注，像这样：
@@ -335,6 +360,182 @@ var slideshow = remark.create({
 
 ---
 
+## 组件 · 卡片
+
+由于静态 HTML 页面也可以使用 [Vue.js](https://cn.vuejs.org/index.html)，所以所有 [Vue.js组件库](https://awesomejs.dev/for/vue/) 都是可用的！
+
+<div class="vue">
+  <div class="row q-gutter-md" style="font-size:14px;">
+    <q-card flat bordered style="max-width: 220px;">
+      <q-card-section>
+        《论语》中各篇一般都是以第一章的前二三个字作为该篇的篇名。
+      </q-card-section>
+    </q-card>
+  
+    <q-card flat bordered
+      class="text-white"
+      style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%);max-width: 220px;"
+    >
+      <q-card-section>
+        <div class="text-h6">Our Changing Planet</div>
+        <div class="text-subtitle2">by John Doe</div>
+      </q-card-section>
+  
+      <q-card-section>
+        《论语》中各篇一般都是以第一章的前二三个字。
+      </q-card-section>
+    </q-card>
+  
+    <q-card flat dark bordered class="bg-grey-9" style="max-width: 220px;">
+      <q-card-section>
+        <div class="text-h6">Our Changing Planet</div>
+        <div class="text-subtitle2">by John Doe</div>
+      </q-card-section>
+  
+      <q-card-section>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </q-card-section>
+    </q-card>
+  
+    <q-card flat bordered style="max-width: 220px;font-size: 13px;">
+      <q-card-section>
+        <div class="text-h6">Our Changing Planet</div>
+      </q-card-section>
+  
+      <q-card-section>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </q-card-section>
+  
+      <q-separator inset ></q-separator>
+  
+      <q-card-section>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </q-card-section>
+    </q-card>
+
+    <q-card flat bordered style="max-width: 220px;">
+      <img src="static/mountains.jpg">
+
+      <q-card-section>
+        <div class="text-h6">Our Changing Planet</div>
+        <div class="text-subtitle2">by John Doe</div>
+      </q-card-section>
+    </q-card>
+
+    <q-card flat bordered style="max-width: 220px;">
+      <q-item>
+        <q-item-section avatar>
+          <q-avatar>
+            <img src="static/avatar2.jpg">
+          </q-avatar>
+        </q-item-section>
+
+        <q-item-section>
+          <q-item-label>Title</q-item-label>
+          <q-item-label caption>Subhead</q-item-label>
+        </q-item-section>
+      </q-item>
+
+      <img src="static/parallax2.jpg">
+
+      <q-card-section>
+        Lorem ipsum dolor sit amet.
+      </q-card-section>
+    </q-card>
+  </div>
+</div>
+
+---
+
+## 组件 · Timeline
+
+<div class="vue">
+  <q-scroll-area :visible="true" :thumb-style="{right: '2px',
+  borderRadius: '4px',
+  backgroundColor: '#4C566A',
+  width: '4px',
+  opacity: 0.1}" style="height: 470px; font-size: 14px;">
+    <template>
+      <div class="q-px-lg q-pb-md">
+        <q-timeline color="secondary">
+          <q-timeline-entry
+            title="Event Title"
+            subtitle="February 22, 1986"
+          >
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </q-timeline-entry>
+    
+          <q-timeline-entry
+            title="Event Title"
+            subtitle="February 21, 1986"
+            icon="delete"
+          >
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </q-timeline-entry>
+
+          <q-timeline-entry
+            title="Event Title"
+            subtitle="February 22, 1986"
+            avatar="static/avatar2.jpg"
+          >
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </q-timeline-entry>
+    
+          <q-timeline-entry heading>
+            November, 2017
+          </q-timeline-entry>
+    
+          <q-timeline-entry
+            title="Event Title"
+            subtitle="February 22, 1986"
+          >
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </q-timeline-entry>
+    
+          <q-timeline-entry
+            title="Event Title"
+            subtitle="February 22, 1986"
+            color="orange"
+            icon="done_all"
+          >
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </q-timeline-entry>
+    
+          <q-timeline-entry
+            title="Event Title"
+            subtitle="February 22, 1986"
+          >
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </q-timeline-entry>
+    
+          <q-timeline-entry
+            title="Event Title"
+            subtitle="February 22, 1986"
+          >
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </q-timeline-entry>
+        </q-timeline>
+      </div>
+    </template>
+  </q-scroll-area>
+</div>
+
+---
+
 ## 导出 PDF
 
 1. 安装 [decktape](https://github.com/astefanutti/decktape)
@@ -347,7 +548,7 @@ C:\> decktape remark https://1-2-3.github.io/remark-it remark-it.pdf
 ```
 <mark>如果幻灯尚未发布到互联网上，URL为 file: 开头的本地传输协议，需要添加 --chrome-arg=--disable-web-security 参数，否则会报 DOMException 错误，例:</mark>
 ```
-Z:\temp\deck>decktape remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/index.html#12 remark-it3.pdf --chrome-arg=--disable-web-security
+C:\> decktape remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/index.html remark-it.pdf --chrome-arg=--disable-web-security
 ```
 
 
@@ -363,13 +564,19 @@ Z:\temp\deck>decktape remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/in
 [Pure.css](https://github.com/pure-css/pure)   
 [Nord](https://github.com/arcticicestudio/nord)  
 [Open color](https://github.com/yeun/open-color)  
+[CSS spaces](https://github.com/badabam/css-spaces)  
 [Fork me on GitHub CSS ribbon](https://github.com/simonwhitaker/github-fork-ribbon-css)   
-[Decktape](https://github.com/astefanutti/decktape)
+[Decktape](https://github.com/astefanutti/decktape)  
+[Vue.js](https://cn.vuejs.org/index.html)  
+[Quasar](https://quasar.dev/)
 
 <a class="github-fork-ribbon right-top" href="https://github.com/1-2-3/remark-it" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 
     </textarea>
+
     <script src="js/remark.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/quasar.umd.min.js"></script>
     <script>
       var slideshow = remark.create({
         ratio: "4:3", // 窗口比例
@@ -387,6 +594,14 @@ Z:\temp\deck>decktape remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/in
           click: false // 是否允许鼠标点击屏幕左边或右边前后翻页
         }
       });
+
+      // debugger;
+
+      for (var el of document.querySelectorAll(".vue")) {
+        new Vue({
+          el: el
+        });
+      }
     </script>
   </body>
 </html>

@@ -12,6 +12,7 @@
 - 基于 [Pure.css](https://github.com/pure-css/pure) 的多列布局
 - 基于 [Nord](https://github.com/arcticicestudio/nord) 的暗色、亮色主题
 - 基于 [Open color](https://github.com/yeun/open-color) 的 150 个文字和背景颜色
+- 基于 [Vue.js](https://cn.vuejs.org/index.html) 的组件库
 
 ## 安装
 

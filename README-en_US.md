@@ -12,6 +12,7 @@ English | [简体中文](README.md)
 - Multi-column layouts, powered by [Pure.css](https://github.com/pure-css/pure)
 - Dark ann light theme, powered by [Nord](https://github.com/arcticicestudio/nord)
 - 150 text and background colors, powered by [Open color](https://github.com/yeun/open-color)
+- Components powered by [Vue.js](https://cn.vuejs.org/index.html)
 
 ## Installation
 
