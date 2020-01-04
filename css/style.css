@@ -29,7 +29,18 @@
 /* 代码字体 */
 .remark-code,
 .remark-inline-code {
+  font-weight: normal;
   font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+}
+
+/* 行内 <code> 底色等样式 */
+.remark-inline-code {
+  font-size: 0.85em;
+  background-color: var(--nord6);
+  padding: 0.2em 0.4em;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  transition: background-color 400ms ease-in-out 0s;
 }
 
 /* 针对 typo.css 做一些修正 */
@@ -83,15 +94,6 @@ pre {
   padding-left: 8px;
   padding-right: 8px;
   box-sizing: border-box;
-}
-
-.code {
-  font-size: 0.85em;
-  background-color: var(--nord6);
-  padding: 0.2em 0.4em;
-  padding: 0.2em 0.4em;
-  border-radius: 4px;
-  transition: background-color 400ms ease-in-out 0s;
 }
 
 /*
