@@ -175,3 +175,23 @@ pre {
   */
   will-change: auto;
 }
+
+/* 
+ * 分栏样式
+*/
+.column-2 {
+  column-count: 2;
+  column-gap: 3em;
+  column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
+}
+
+.column-3 {
+  column-count: 3;
+  column-gap: 3em;
+  column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
+}
+
+.column-norule {
+  column-gap: 2em;
+  column-rule: 0px;
+}
