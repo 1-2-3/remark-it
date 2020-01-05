@@ -22,6 +22,9 @@ Clone the whole project and edit index.html.
 
 Double-click on index.html for a slide presentation.
 
+![](/screenshots/11.png)
+![](/screenshots/22.png)
+
 ## License
 
 MIT

@@ -22,6 +22,9 @@
 
 双击 index.html 即可进行幻灯片演示。
 
+![](/screenshots/11.png)
+![](/screenshots/22.png)
+
 ## License
 
 MIT
