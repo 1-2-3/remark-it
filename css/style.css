@@ -58,29 +58,29 @@ pre {
 }
 
 /* 超小号字体 */
-.xs-font {
+.font-xs {
   font-size: 12px;
 }
 
-.xs-font .remark-code {
+.font-xs .remark-code {
   font-size: 12px;
 }
 
 /* 小号字体 */
-.sm-font {
+.font-sm {
   font-size: 14px;
 }
 
-.sm-font .remark-code {
+.font-sm .remark-code {
   font-size: 14px;
 }
 
 /* 中号字体 */
-.md-font {
+.font-md {
   font-size: 18px;
 }
 
-.md-font .remark-code {
+.font-md .remark-code {
   font-size: 18px;
 }
 
