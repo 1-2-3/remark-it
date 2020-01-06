@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>幻灯模板</title>
+    <title>Template</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -34,24 +34,27 @@ class: center, middle
 
 # remark it
 
-基于 remarkjs 的幻灯模板
+A slideshow template powered by remarkjs
 
 ---
 
-## 如何使用
+## Usage
 
-1. 编辑 index.html，使用 markdown 书写幻灯内容。
-![](static/1.png)
-1. 双击 index.html，预览幻灯效果。  
-<small>演示模式、计时器、快捷键等请参考 [remarkjs官方文档](https://github.com/gnab/remark/wiki)。</small>
+1. Edit index.html and use markdown to write the slideshow.
+.width-80[
+  ![](static/1.png)
+]
+
+1. Double-click index.html to preview the slide effect.  
+<small>Please refer to the [official documentation](https://github.com/gnab/remark/wiki) for presentation mode, timer, shortcut keys, etc</small>
 
 ---
 
-## 排版
+## Typography
 
-技术演示内容主要由文字、代码和少量图片组成。文字排版的字体、字号、颜色、间距是否舒服，是否有很好的一致性对演示文稿的整体观感和专业性起到至关重要的作用。使用 HTML 来制作演示文稿在这方面有天然的优势，因为所有样式都是由 CSS 控制的，很容易保证一致性。
+Technical presentation content mainly consists of text, code and a few pictures. Whether the font, size, color and spacing of text are comfortable or not, and whether there is good consistency plays a crucial role in the overall appearance and professionalism of the presentation. Using HTML to make presentations has a natural advantage in this area because all styles are controlled by CSS, making it easy to ensure consistency.
 
-[typo.css](https://github.com/sofish/typo.css) 提供了非常专业、细致的中英文排版样式，我们可以在全局模板中应用它。
+[typo.css](https://github.com/sofish/typo.css) provides a very professional and detailed typography style in both Chinese and English, which we can apply to global layout templates.
 
 ```markdown
 layout: true
@@ -59,22 +62,10 @@ class: typo, typo-selection
 ```
 
 ---
-
-## 中文排版示例
-
-### 论语学而篇第一
-
-<small>作者：<abbr title="名丘，字仲尼">孔子</abbr>（前551年9月28日－前479年4月11日）</small>
-
-#### 本篇引语
-
-《学而》是《论语》第一篇的篇名。《论语》中各篇一般都是以 `第一章` 的前二三个字作为该篇的篇名。《学而》一篇包括16章，内容涉及诸多方面。其中**重点**是<mark>「吾日三省吾身」；「节用而爱人，使民以时」；「礼之用，和为贵」</mark>以及仁、孝、信等道德范畴。
-
-> 此外，在对「人不知，而不愠」一句的解释中，也有人认为，「人不知」的后面没有宾语，人家不知道什么呢？
-
+中文
 ---
 
-## 英文排版示例
+## Typography sample
 
 > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 > aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -88,13 +79,13 @@ class: typo, typo-selection
 
 class: nord-dark, center, middle
 
-## 暗黑主题
+## Dark theme
 
-<small>比较适合做章节页</small>
+<small>Suitable for chapter pages</small>
 
 ---
 
-## 代码
+## Code sample
 
 ```ts
 import { Component } from '@angular/core';
@@ -105,41 +96,41 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-*  isCollapsed = false; // 行首加 * 号显亮
+*  isCollapsed = false; // highlighted by an asterisk at the beginning of line
 }
 ```
 
 ---
 
-## 表格
+## Table sample
 
 .st.st-hline.font-sm.mb-xs[
-| 名称 | 价格 | 数量 |
+| Name | Price | Number |
 | ---- | ---- | ----: |
-| 香蕉 | $1  | 5    |
-| 苹果 | $1  | 6    |
-| 草莓 | $1  | 7    |
+| Banana | $1  | 5    |
+| Apple | $1  | 6    |
+| Strawberry | $1  | 7    |
 ]
 
 .st.st-allline.font-sm.mb-xs[
-| 名称 | 价格 | 数量 |
+| Name | Price | Number |
 | ---- | ---- | ----: |
-| 香蕉 | $1  | 5    |
-| 苹果 | $1  | 6    |
-| .nord11[草莓] | .nord11[$1]  | .nord11[7]    |
+| Banana | $1  | 5    |
+| Apple | $1  | 6    |
+| .nord11[Strawberry] | .nord11[$1]  | .nord11[7]    |
 ]
 
 .st.st-vline.font-sm.mb-xs[
-| 名称 | 价格 | 数量 |
+| Name | Price | Number |
 | ---- | ---- | ----: |
-| 香蕉 | $1  | 5    |
-| 苹果 | $1  | 6    |
-| 草莓 | $1  | 7    |
+| Banana | $1  | 5    |
+| Apple | $1  | 6    |
+| Strawberry | $1  | 7    |
 ]
 
 ---
 
-## 文本对齐
+## Text alignment
 
 .left[Left-aligned text]
 
@@ -151,11 +142,10 @@ export class AppComponent {
 
 background-image: url(static/bg.png)
 
-## 图片
+## Image
 
 <img align="left" src="static/2.webp" style="margin: 10px;" width = '230px'/>
-图片的布局和样式较难控制。复杂的图片建议用其他画图软件绘制，直接插入就好。图片的布局和样式较难控制。复杂的图片建议用其他画图软件绘制，直接插入就好。图片的布局和样式较难控制。复杂的图片建议用其他画图软件绘制，直接插入就好。图片的布局和样式较难控制。复杂的图片建议用其他画图软件绘制，直接插入就好。图片的布局和样式较难控制。复杂的图片建议用其他画图软件绘制，直接插入就好。图片的布局和样式较难控制。复杂的图片建议用其他画图软件绘制，直接插入就好。图片的布局和样式较难控制。复杂的图片建议用其他画图软件绘制，直接插入就好。
-
+The layout and style of the pictures are difficult to control. For complicated pictures layout, it is recommended to use other drawing software to draw them and just insert them directly.The layout and style of the pictures are difficult to control. For complicated pictures layout, it is recommended to use other drawing software to draw them and just insert them directly.The layout and style of the pictures are difficult to control. For complicated pictures layout, it is recommended to use other drawing software to draw them and just insert them directly.
 ---
 
 ## iframe
@@ -165,41 +155,41 @@ background-image: url(static/bg.png)
 
 class: center, middle
 
-## 视频播放
+## Video
 
 <video width="100%" height="420" controls>
     <source src="static/3.mp4" type="video/mp4">
 </video>
 
-<small>一图胜千言；一个视频能代替你演讲。</small>
+<small>A picture is worth a thousand words; A video can take your place.</small>
 
 ---
 
-## 增量内容
+## Incremental content
 
-- 虽然实现增量内容很容易
-- 好像还挺有动感
-
---
-- 但还是要慎用
+- although it's easy to implement incremental content
+- it seems to be dynamic
 
 --
-- 总用会让人感觉很烦
+- but be careful
 
 --
-- 是不是很烦？
+- it's annoying to use it all the time
 
 --
-- 还没完
+- isn't it annoying?
 
 --
-- 啰里啰嗦的感觉
+- yet
+
+--
+- the feeling of being verbose
 
 ---
 
 name: other-slide
 
-# 使用 name 命名此幻灯片
+# Name the slide with `name`
 
 Some content.
 
@@ -207,16 +197,16 @@ Some content.
 
 template: other-slide
 
-### 通过 template 可引用之前的幻灯片
+### The previous slide can be referenced through the `template`
 
 Content appended to other-slide's content.
 
 ---
 
 class: nord-dark
-## 色彩 · Nord dark
+## Color · Nord dark
 
-暗色系主题比较难把握，容易让观众感觉压抑，色彩搭配稍有不慎就会显得突兀或者杂乱。这里选用 [Nord](https://github.com/arcticicestudio/nord) 提供的 `配色方案`，看上去还挺舒服。
+Dark theme is more difficult to grasp, easy to let the audience feel depressed, color collocation is a little careless will appear abrupt or messy. We chose the color scheme provided by [Nord](https://github.com/arcticicestudio/nord), which looks quite comfortable.
 
 ```ts
 export class AppComponent {
@@ -224,20 +214,21 @@ export class AppComponent {
 }
 ```
 
-> Nord 也提供了包括 VS Code 在内的众多编辑器的主题插件，有兴趣可以一试
+> Nord also offers theme plugins for many editors, including VS Code.
 
-- 项目符号  
-第一条换行的效果
-- 项目符号 <small>small 文字</small>
+- Bulleted  
+The effect of line breaks
+- Bulleted <small>small style</small>
 
-1. 序号
+1. The serial number
 
 ---
 
 class: nord-light
-## 色彩 · Nord light
 
-[Nord](https://github.com/arcticicestudio/nord) 亮色主题字体颜色选用 `nord3`，比纯黑色柔和一些。
+## Color · Nord light
+
+[Nord](https://github.com/arcticicestudio/nord) bright theme font color is `nord3`, which is softer than black.
 
 ```ts
 export class AppComponent {
@@ -245,56 +236,54 @@ export class AppComponent {
 }
 ```
 
-> Nord 也提供了包括 VS Code 在内的众多编辑器的主题插件，有兴趣可以一试
+> Nord also offers theme plugins for many editors, including VS Code.
 
-- 项目符号  
-第一条换行的效果
-- 项目符号 <small>small 文字</small>
+- Bulleted  
+The effect of line breaks
+- Bulleted <small>small style</small>
 
-1. 序号
+1. The serial number
 
 ---
 
-## 色彩 · Nord Aurora
+## Color · Nord Aurora
 
-Nord Aurora 提供极光的五种颜色，具有适中的明度和饱和度，对应 `nord11` 至  `nord15`，即可用于暗色主题也可用于亮色主题。
+Nord Aurora provides five colors of aurora, with moderate lightness and saturation, corresponding to `nord11` to `nord15`, which can be used for dark or light themes.
 
 .nord-light[
-文字颜色示例：.nord11[.nord11] | .nord12[.nord12] | .nord13[.nord13] | .nord14[.nord14] | .nord15[.nord15]
+Font color: .nord11[.nord11] | .nord12[.nord12] | .nord13[.nord13] | .nord14[.nord14] | .nord15[.nord15]
 
-背景色示例：.bg-nord11[.bg-nord11] | .bg-nord12[.bg-nord12] | .bg-nord13[.bg-nord13] | .bg-nord14[.bg-nord14] | .bg-nord15[.bg-nord15]
+Background color: .bg-nord11[.bg-nord11] | .bg-nord12[.bg-nord12] | .bg-nord13[.bg-nord13] | .bg-nord14[.bg-nord14] | .bg-nord15[.bg-nord15]
 &nbsp;  
 &nbsp;
 ]
-
 .nord-dark[
 &nbsp;  
-文字颜色示例：.nord11[.nord11] | .nord12[.nord12] | .nord13[.nord13] | .nord14[.nord14] | .nord15[.nord15]
+Font color: .nord11[.nord11] | .nord12[.nord12] | .nord13[.nord13] | .nord14[.nord14] | .nord15[.nord15]
 
-背景色示例：.bg-nord11[.bg-nord11] | .bg-nord12[.bg-nord12] | .bg-nord13[.bg-nord13] | .bg-nord14[.bg-nord14] | .bg-nord15[.bg-nord15]
+Background color: .bg-nord11[.bg-nord11] | .bg-nord12[.bg-nord12] | .bg-nord13[.bg-nord13] | .bg-nord14[.bg-nord14] | .bg-nord15[.bg-nord15]
 &nbsp;  
 &nbsp;
 ]
 
 ---
 
-## 色彩 · Open color
+## Color · Open color
 
-[Open color](https://yeun.github.io/open-color/) 提供了一整套按序号命名的颜色，我把它们封装成按字体颜色和背景颜色两组，以红色和灰色为例：
+[Open color](https://yeun.github.io/open-color/) comes with a whole set of colors named by serial number, which I've encapsulated into two sets of font colors and background colors, for example, red and gray: 
 
-红色前景色：.oc-red-0[.oc-red-0] | .oc-red-1[.oc-red-1] | .oc-red-2[.oc-red-2] | .oc-red-3[.oc-red-3] | .oc-red-4[.oc-red-4] | .oc-red-5[.oc-red-5] | .oc-red-6[.oc-red-6] | .oc-red-7[.oc-red-7] | .oc-red-8[.oc-red-8] | .oc-red-9[.oc-red-9]
+red font: .oc-red-0[.oc-red-0] | .oc-red-1[.oc-red-1] | .oc-red-2[.oc-red-2] | .oc-red-3[.oc-red-3] | .oc-red-4[.oc-red-4] | .oc-red-5[.oc-red-5] | .oc-red-6[.oc-red-6] | .oc-red-7[.oc-red-7] | .oc-red-8[.oc-red-8] | .oc-red-9[.oc-red-9]
 
-灰色背景色：.oc-bg-gray-0[.oc-bg-gray-0] | .oc-bg-gray-1[.oc-bg-gray-1] | .oc-bg-gray-2[.oc-bg-gray-2] | .oc-bg-gray-3[.oc-bg-gray-3] | .oc-bg-gray-4[.oc-bg-gray-4] | .oc-bg-gray-5[.oc-bg-gray-5] | .oc-bg-gray-6[.oc-bg-gray-6] | .oc-bg-gray-7.oc-white[.oc-bg-gray-7] | .oc-bg-gray-8.oc-white[.oc-bg-gray-8] | .oc-bg-gray-9.oc-white[.oc-bg-gray-9]
+gray background: .oc-bg-gray-0[.oc-bg-gray-0] | .oc-bg-gray-1[.oc-bg-gray-1] | .oc-bg-gray-2[.oc-bg-gray-2] | .oc-bg-gray-3[.oc-bg-gray-3] | .oc-bg-gray-4[.oc-bg-gray-4] | .oc-bg-gray-5[.oc-bg-gray-5] | .oc-bg-gray-6[.oc-bg-gray-6] | .oc-bg-gray-7.oc-white[.oc-bg-gray-7] | .oc-bg-gray-8.oc-white[.oc-bg-gray-8] | .oc-bg-gray-9.oc-white[.oc-bg-gray-9]
 
-Open Color 将颜色分为 15 组，每组由浅到深共 10 个颜色。这 15 种颜色为：
-
+Open Color divides colors into 15 groups of 10 colors. These 15 colors are: 
 ![](static/open-color.png)
 
 ---
 
-## 布局 · 网格
+## Layout · grid
 
-Markdown 无法像 PPT 那样灵活随意地放置元素位置，一般都是从上到下罗列内容的 readme 风。但有时候还是需要稍微复杂一点的布局，例如最常见的左右分两栏对比。我们可以使用 [pure.css](https://purecss.io/grids/) 提供的网格布局来实现。
+Markdown doesn't have the flexibility like a powerpoint presentation to place elements anywhere. It's usually a readme style for listing content from top to bottom. Sometimes, however, a slightly more complex layout is required, such as the most common left-right two-column comparison. We can do this using the grid layout provided by [pure.css](https://purecss.io/grids/).
 
 .pure-g[
   .pure-u-12-24.font-xs.gutter-8[
@@ -314,20 +303,20 @@ Instead:
 
 ---
 
-## 布局 · 分栏
+## Layout · columns
 
-有时候需要展示大段的文字，分成 2 栏或 3 栏会更易读，空间利用率也更高。
+Sometimes large blocks of text need to be displayed, which can be divided into two or three columns to make it easier to read and more space-efficient.
 
 .column-2.font-sm.mb-xs[
-《学而》是《论语》第一篇的篇名。《论语》中各篇一般都是以 第一章 的前二三个字作为该篇的篇名。《学而》一篇包括16章，内容涉及诸多方面。其中重点是「吾日三省吾身」；「节用而爱人，使民以时」；「礼之用，和为贵」以及仁、孝、信等道德范畴。《学而》是《论语》第一篇的篇名。《论语》中各篇一般都是以 第一章 的前二三个字作为该篇的篇名。
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 ]
 
 .column-3.font-sm.mb-xs[
-《学而》是《论语》第一篇的篇名。《论语》中各篇一般都是以 第一章 的前二三个字作为该篇的篇名。《学而》一篇包括16章，内容涉及诸多方面。其中重点是「吾日三省吾身」；「节用而爱人，使民以时」；「礼之用，和为贵」以及仁、孝、信等道德范畴。《学而》是《论语》第一篇的篇名。《论语》中各篇一般都是以 第一章 的前二三个字作为该篇的篇名。《学而》一篇包括16章，内容涉及诸多方面。
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 ]
 
 
-`上一张幻灯片里面的左右两栏对比效果也可以用分栏来实现：`
+`The comparison effect of the left and right columns in the previous slide can also be achieved by using columns:`
 
 .column-2.column-norule.font-xs[
 Example of what's not supported:
@@ -344,7 +333,7 @@ Instead:
 
 ---
 
-## 布局 · 绝对定位
+## Layout · absolute positioning
 
 .abs-layout.width-20.center[
   ![](static/11.png)
@@ -373,59 +362,59 @@ Instead:
 ]
 
 .abs-layout.top-93.left-3[
-  .oc-gray-6.font-xs[高分少女制作委员会]
+  .oc-gray-6.font-xs[High score girls production committee]
 ]
 
 .abs-layout.bottom-7.width-51.font-xs[
-使用绝对定位实现 header 和 footer 也非常简单。如果想让 header 和 footer 在每一页上重复，把他们放到 `layout: true` 类型的模板页里就行。注意模板页可以有多个，每个都是只影响其后的幻灯片。
+Implementing headers and footers using absolute positioning is also very simple. If you want the header and footer to repeat on each page, just put them in a template page of type `layout: true`. Note that template pages can be multiple, each affecting only the slides that follow.
 ]
 
-.abs-layout.top-61.left-39.width-20.font-xs[
-有时候想要错落有致、轻松随意的布局，用网格布局就太死板了。只要指定 `.abs-layout` 样式，再配合预设的 `.top-0 至 .top-100` `.left-0 至 .left-100` 等，就可按百分比设定元素的位置。
+.abs-layout.top-58.left-39.width-20.font-xs[
+Sometimes grid layout is too rigid for a well-laid, casual layout. As long as you specify `.abs-layout` style, and then match the preset `.top-0 to .top-100`. `.left-0 to.left-100`.
 ]
 
 ---
 
-## 幻灯备注
+## Slide note
 
-Remarkjs 提供不错的演示功能。编写幻灯时，可通过“???”来添加备注，像这样：
+Remarkjs provides nice presentation functionality. When preparing the slides, you can use the `???` to add a comment, like this:
 
 ```markdown
-## 幻灯备注
+## Slide note
 
-Remarkjs 提供不错的演示功能。编写幻灯时，可通过“???”来添加备注，像这样：
+Remarkjs provides nice presentation functionality. When preparing the slides, you can use the `???` to add a comment, like this:
 ???
-虽然可以添加备注，但最好不要添加大段文字照着念，那样很容易像念课文似的，观众马上就会昏昏欲睡。如果你发现自己写了大段内容，
-要想想是否还是没有把精髓提炼出来，毕竟演讲不是给学生上课，细节过多往往会变成讲给自己听。
+Although you can add notes, it is best not to add large paragraphs of text to read, which is easy to read like a text, the audience will immediately fall asleep. If you find yourself writing long paragraphs,
+Think about whether or not you haven't distilled the essence. After all, speaking is not for students.
 ```
 
-在实际演讲的时候，按 `P` 键切换到演示模式就可以看到备注。当然演示模式是留给自己看的，所以你要先按 `C` 键打开一个新浏览器窗口，将其放置到投影所在的副屏上并按 `F` 键最大化。想要了解全部快捷键，按 `H` 键即可。
+During the actual presentation, press `P` to switch to demo mode to see the notes. Of course, the demo mode is for you to see, so you press `C` to open a new browser window, place it on the side screen where the projection is, and press `F` to maximize it. To see all the shortcuts, press the `H` key.
 
 ???
-虽然可以添加备注，但最好不要添加大段文字照着念，那样很容易像念课文似的，观众马上就会昏昏欲睡。如果你发现自己写了大段内容，
-要想想是否还是没有把精髓提炼出来，毕竟演讲不是给学生上课，细节过多往往会变成讲给自己听。
+Although you can add notes, it is best not to add large paragraphs of text to read, which is easy to read like a text, the audience will immediately fall asleep. If you find yourself writing long paragraphs,
+Think about whether or not you haven't distilled the essence. After all, speaking is not for students.
 
 ---
 
-## 页码和窗口比例
+## Page number and window ratio
 
-有些人可能觉得右下角的页码会干扰观众注意力，或者需要使用 16:9 窗口比例，这些都可以在 index.html 最后面的 remarkjs 初始化参数里设置：  
-.font-sm[
+Some people may feel that the page number in the bottom right corner will disturb the audience's attention, or they may need to use the 16:9 window ratio. These can be set in the remarkjs initialization parameter at the end of index.html:  
+.font-xs[
 ```js
 var slideshow = remark.create({
-  ratio: "4:3", // 窗口比例
-  // 可选：arta, ascetic, dark, default, far, github, googlecode, idea,
+  ratio: "4:3", // window ratio
+  // arta, ascetic, dark, default, far, github, googlecode, idea,
   // ir-black, magula, monokai, rainbow, solarized-dark, solarized-light,
   // sunburst, tomorrow, tomorrow-night-blue, tomorrow-night-bright,
   // tomorrow-night, tomorrow-night-eighties, vs, zenburn.
   highlightStyle: "github",
   highlightLines: true,
-  countIncrementalSlides: false, // 增量内容是否算一页
-  //slideNumberFormat: "", // 若将此参数设置为 ""，将不显示页码
+  countIncrementalSlides: false, // whether the incremental content count as one page
+  //slideNumberFormat: "", // If this parameter is set to "", the page number is not displayed
   navigation: {
-    scroll: false, // 是否允许使用鼠标滚轮翻页
-    touch: true, // （如果是触摸屏）是否允许点击屏幕左边或右边前后翻页
-    click: false // 是否允许鼠标点击屏幕左边或右边前后翻页
+    scroll: false, // Page turning with mouse wheel is allowed
+    touch: true, // Is it allowed to scroll back and forth by clicking on the left or right side of the screen
+    click: false // Allow the mouse to click on the left or right side of the screen to turn back and forth
   }
 });
 ```
@@ -433,15 +422,14 @@ var slideshow = remark.create({
 
 ---
 
-## 组件 · 卡片
+## Components · Card
 
-由于静态 HTML 页面也可以使用 [Vue.js](https://cn.vuejs.org/index.html)，所以所有 [Vue.js组件库](https://awesomejs.dev/for/vue/) 都是可用的！
-
+.font-sm[Because static HTML pages can also use [Vue.js](https://cn.vuejs.org/index.html), all [vue.js component libraries](https://awesomejs.dev/for/vue/) are available.]
 <div class="vue">
   <div class="row q-gutter-md" style="font-size:14px;">
     <q-card flat bordered style="max-width: 220px;">
       <q-card-section>
-        《论语》中各篇一般都是以第一章的前二三个字作为该篇的篇名。
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </q-card-section>
     </q-card>
   
@@ -455,7 +443,7 @@ var slideshow = remark.create({
       </q-card-section>
   
       <q-card-section>
-        《论语》中各篇一般都是以第一章的前二三个字。
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </q-card-section>
     </q-card>
   
@@ -520,7 +508,7 @@ var slideshow = remark.create({
 
 ---
 
-## 组件 · Timeline
+## Components · Timeline
 
 <div class="vue">
   <q-scroll-area :visible="true" :thumb-style="{right: '2px',
@@ -609,26 +597,26 @@ var slideshow = remark.create({
 
 ---
 
-## 导出 PDF
+## Export PDF
 
-1. 安装 [decktape](https://github.com/astefanutti/decktape)
+1. Install [decktape](https://github.com/astefanutti/decktape)
 ```cmd
 npm install -g decktape
 ```
-1. 使用 decktape 命令行导出 PDF
+1. Export the PDF using the decktape command line
 ```cmd
 C:\> decktape remark https://1-2-3.github.io/remark-it remark-it.pdf 
 ```
-<mark>如果幻灯尚未发布到互联网上，URL为 file: 开头的本地传输协议，需要添加 --chrome-arg=--disable-web-security 参数，否则会报 DOMException 错误，例:</mark>
+If the slide has not yet been published to the Internet, the URL is the local transport protocol beginning with `file:`. You need to add --chrome -- arg=--disable-web-security parameter, otherwise DOMException error will be reported. For example:
 ```
 C:\> decktape remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/index.html remark-it.pdf --chrome-arg=--disable-web-security
 ```
 
 ---
 
-## 致谢
+## Thanks
 
-模板基于如下开源项目：
+The template is based on the following open source project：
 
 [Remarkjs](https://github.com/gnab/remark)  
 [Typo.css](https://github.com/sofish/typo.css)   
@@ -650,19 +638,19 @@ C:\> decktape remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/index.html
     <script src="js/quasar.umd.min.js"></script>
     <script>
       var slideshow = remark.create({
-        ratio: "4:3", // 窗口比例
-        // 可选：arta, ascetic, dark, default, far, github, googlecode, idea,
+        ratio: "4:3", // window ratio
+        // arta, ascetic, dark, default, far, github, googlecode, idea,
         // ir-black, magula, monokai, rainbow, solarized-dark, solarized-light,
         // sunburst, tomorrow, tomorrow-night-blue, tomorrow-night-bright,
         // tomorrow-night, tomorrow-night-eighties, vs, zenburn.
         highlightStyle: "github",
         highlightLines: true,
-        countIncrementalSlides: false, // 增量内容是否算一页
-        //slideNumberFormat: "", // 若将此参数设置为 ""，将不显示页码
+        countIncrementalSlides: false, // whether the incremental content count as one page
+        //slideNumberFormat: "", // If this parameter is set to "", the page number is not displayed
         navigation: {
-          scroll: false, // 是否允许使用鼠标滚轮翻页
-          touch: true, // （如果是触摸屏）是否允许点击屏幕左边或右边前后翻页
-          click: false // 是否允许鼠标点击屏幕左边或右边前后翻页
+          scroll: false, // Page turning with mouse wheel is allowed
+          touch: true, // Is it allowed to scroll back and forth by clicking on the left or right side of the screen
+          click: false // Allow the mouse to click on the left or right side of the screen to turn back and forth
         }
       });
 
