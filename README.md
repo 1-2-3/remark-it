@@ -4,6 +4,8 @@
 
 简体中文 | [English](README-en_US.md)
 
+[English Demo](index-en_US.html)
+
 ## 特性
 
 - 全部资源支持离线访问

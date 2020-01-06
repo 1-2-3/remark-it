@@ -4,6 +4,8 @@ Use markdown to write the HTML slide template, powered by remarkjs
 
 English | [简体中文](README.md)
 
+[English Demo](index-en_US.html)
+
 ## Features
 
 - All resources support offline access
