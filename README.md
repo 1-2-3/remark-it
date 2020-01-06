@@ -1,6 +1,7 @@
 # remark-it
 
-使用 markdown 编写 html 幻灯片的模板，基于 remarkjs / Use markdown to write the HTML slide template, powered by remarkjs
+markdown / html 幻灯片模板，基于 remarkjs.  
+markdown / html slideshow template, powered by remarkjs.
 
 简体中文 | [English](README-en_US.md)
 

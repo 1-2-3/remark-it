@@ -1,6 +1,6 @@
 # remark-it
 
-Use markdown to write the HTML slide template, powered by remarkjs
+markdown / html slideshow template, powered by remarkjs.
 
 English | [简体中文](README.md)
 
