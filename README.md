@@ -4,7 +4,7 @@
 
 简体中文 | [English](README-en_US.md)
 
-[English Demo](index-en_US.html)
+[English Demo](https://1-2-3.github.io/remark-it/index-en_US.html)
 
 ## 特性
 
