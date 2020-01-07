@@ -195,3 +195,20 @@ pre {
   column-gap: 2em;
   column-rule: 0px;
 }
+
+/*
+ * 浮动布局
+*/
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.block-middle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
