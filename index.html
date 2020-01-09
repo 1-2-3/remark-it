@@ -389,49 +389,73 @@ Instead:
 
 ---
 
-## 幻灯备注
+class: vcenter, nord-dark, pt-0, pb-0, pl-xs, pr-xs
 
-Remarkjs 提供不错的演示功能。编写幻灯时，可通过“???”来添加备注，像这样：
-
-```markdown
-## 幻灯备注
-
-Remarkjs 提供不错的演示功能。编写幻灯时，可通过“???”来添加备注，像这样：
-???
-虽然可以添加备注，但最好不要添加大段文字照着念，那样很容易像念课文似的，观众马上就会昏昏欲睡。如果你发现自己写了大段内容，
-要想想是否还是没有把精髓提炼出来，毕竟演讲不是给学生上课，细节过多往往会变成讲给自己听。
-```
-
-在实际演讲的时候，按 `P` 键切换到演示模式就可以看到备注。当然演示模式是留给自己看的，所以你要先按 `C` 键打开一个新浏览器窗口，将其放置到投影所在的副屏上并按 `F` 键最大化。想要了解全部快捷键，按 `H` 键即可。
-
-???
-虽然可以添加备注，但最好不要添加大段文字照着念，那样很容易像念课文似的，观众马上就会昏昏欲睡。如果你发现自己写了大段内容，
-要想想是否还是没有把精髓提炼出来，毕竟演讲不是给学生上课，细节过多往往会变成讲给自己听。
+.pure-g[
+  .pure-u-12-24.pl-xl.pr-xl[
+.mt-xl.font-xxxl.right.nord4.line-height-1[布局<br />经典布局<br/>(一)]
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+.right.line-height-1-2[<small>通过网格布局可以</small><br/><small>精细控制元素位置</small><br/><small>但细节调整很费时间</small><br/><small>经典布局实现一次就可复用</small><br/><small>还是值得的</small>]
+  ]
+  .pure-u-12-24[
+.float-right.width-104[![](static/vimg11.jpg)]
+  ]
+]
 
 ---
 
-## 页码和窗口比例
+class: vcenter, nord-light
 
-有些人可能觉得右下角的页码会干扰观众注意力，或者需要使用 16:9 窗口比例，这些都可以在 index.html 最后面的 remarkjs 初始化参数里设置：  
-.font-sm[
-```js
-var slideshow = remark.create({
-  ratio: "4:3", // 窗口比例
-  // 可选：arta, ascetic, dark, default, far, github, googlecode, idea,
-  // ir-black, magula, monokai, rainbow, solarized-dark, solarized-light,
-  // sunburst, tomorrow, tomorrow-night-blue, tomorrow-night-bright,
-  // tomorrow-night, tomorrow-night-eighties, vs, zenburn.
-  highlightStyle: "github",
-  highlightLines: true,
-  countIncrementalSlides: false, // 增量内容是否算一页
-  //slideNumberFormat: "", // 若将此参数设置为 ""，将不显示页码
-  navigation: {
-    scroll: false, // 是否允许使用鼠标滚轮翻页
-    touch: true, // （如果是触摸屏）是否允许点击屏幕左边或右边前后翻页
-    click: false // 是否允许鼠标点击屏幕左边或右边前后翻页
-  }
-});
-```
+.pure-g[
+  .pure-u-12-24[
+.float-left.width-96[![](static/joker.jpg)]
+  ]
+  .pure-u-12-24.pl-m[
+# 布局 · 经典布局(二)
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+图片在左侧的布局更容易实现  
+图片在左侧的布局更容易实现  
+图片在左侧的布局更容易实现
+  ]
+]
+
+---
+
+class: nord-dark
+
+## 布局 · 经典布局(三)
+
+.column-2.font-sm[
+
+## Nord dark 沉浸式图片效果
+
+为图片设置 `.nord-dark-steep-img` 样式，可实现图片边缘渐隐效果。
+.block-middle.width-88.nord-dark-steep-img[
+![](static/himg333.jpg)
+]
+
+这种图片与背景色融合的效果很适合图文混排的情况。图片不会显得那么显眼，整体感更强。
+.block-middle.width-88.nord-dark-steep-img[
+![](static/himg55.jpg)
+]
+
+预先使用 `PS` 设置背景颜色效果更好。
+.block-middle.width-88.nord-dark-steep-img[
+![](static/himg222.jpg)
+]
+
+
 ]
 
 ---
@@ -609,6 +633,53 @@ var slideshow = remark.create({
     </template>
   </q-scroll-area>
 </div>
+
+---
+
+## 幻灯备注
+
+Remarkjs 提供不错的演示功能。编写幻灯时，可通过“???”来添加备注，像这样：
+
+```markdown
+## 幻灯备注
+
+Remarkjs 提供不错的演示功能。编写幻灯时，可通过“???”来添加备注，像这样：
+???
+虽然可以添加备注，但最好不要添加大段文字照着念，那样很容易像念课文似的，观众马上就会昏昏欲睡。如果你发现自己写了大段内容，
+要想想是否还是没有把精髓提炼出来，毕竟演讲不是给学生上课，细节过多往往会变成讲给自己听。
+```
+
+在实际演讲的时候，按 `P` 键切换到演示模式就可以看到备注。当然演示模式是留给自己看的，所以你要先按 `C` 键打开一个新浏览器窗口，将其放置到投影所在的副屏上并按 `F` 键最大化。想要了解全部快捷键，按 `H` 键即可。
+
+???
+虽然可以添加备注，但最好不要添加大段文字照着念，那样很容易像念课文似的，观众马上就会昏昏欲睡。如果你发现自己写了大段内容，
+要想想是否还是没有把精髓提炼出来，毕竟演讲不是给学生上课，细节过多往往会变成讲给自己听。
+
+---
+
+## 页码和窗口比例
+
+有些人可能觉得右下角的页码会干扰观众注意力，或者需要使用 16:9 窗口比例，这些都可以在 index.html 最后面的 remarkjs 初始化参数里设置：  
+.font-sm[
+```js
+var slideshow = remark.create({
+  ratio: "4:3", // 窗口比例
+  // 可选：arta, ascetic, dark, default, far, github, googlecode, idea,
+  // ir-black, magula, monokai, rainbow, solarized-dark, solarized-light,
+  // sunburst, tomorrow, tomorrow-night-blue, tomorrow-night-bright,
+  // tomorrow-night, tomorrow-night-eighties, vs, zenburn.
+  highlightStyle: "github",
+  highlightLines: true,
+  countIncrementalSlides: false, // 增量内容是否算一页
+  //slideNumberFormat: "", // 若将此参数设置为 ""，将不显示页码
+  navigation: {
+    scroll: false, // 是否允许使用鼠标滚轮翻页
+    touch: true, // （如果是触摸屏）是否允许点击屏幕左边或右边前后翻页
+    click: false // 是否允许鼠标点击屏幕左边或右边前后翻页
+  }
+});
+```
+]
 
 ---
 

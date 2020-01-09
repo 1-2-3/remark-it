@@ -126,3 +126,51 @@
 .nord-dark ol > li {
   padding-left: 0.7em;
 }
+
+.nord-dark .column-2 {
+  column-rule: 0.2px solid rgba(216, 222, 233, 0.5);
+}
+
+/* 
+ *适用于 nord dark 主题的沉浸式图片效果 
+ */
+.nord-dark-steep-img {
+  position: relative;
+  padding: 2px;
+}
+
+.nord-dark-steep-img::after {
+  background: linear-gradient(rgba(46, 52, 64, 1) 1%, rgba(46, 52, 64, 0), rgba(46, 52, 64, 0), rgba(46, 52, 64, 1) 85%),
+    linear-gradient(
+      to right,
+      rgba(46, 52, 64, 1) 0%,
+      rgba(46, 52, 64, 0),
+      rgba(46, 52, 64, 0),
+      rgba(46, 52, 64, 1) 100%
+    );
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* .nord-dark-steep-img2 {
+  position: relative;
+  padding: 2px;
+}
+
+.nord-dark-steep-img2::after {
+  background: radial-gradient(48% 48% at center, rgba(46, 52, 64, 0), rgba(46, 52, 64, 1) 125%);
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+} */

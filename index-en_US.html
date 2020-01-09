@@ -63,6 +63,15 @@ class: typo, typo-selection
 
 ---
 
+exclude: true
+
+## Typography Chinese sample
+
+???
+Use exclude: true to hide slides
+
+---
+
 ## Typography sample
 
 > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -377,49 +386,71 @@ Sometimes grid layout is too rigid for a well-laid, casual layout. As long as yo
 
 ---
 
-## Slide note
+class: vcenter, nord-dark, pt-0, pb-0, pl-xs, pr-xs
 
-Remarkjs provides nice presentation functionality. When preparing the slides, you can use the `???` to add a comment, like this:
-
-```markdown
-## Slide note
-
-Remarkjs provides nice presentation functionality. When preparing the slides, you can use the `???` to add a comment, like this:
-???
-Although you can add notes, it is best not to add large paragraphs of text to read, which is easy to read like a text, the audience will immediately fall asleep. If you find yourself writing long paragraphs,
-Think about whether or not you haven't distilled the essence. After all, speaking is not for students.
-```
-
-During the actual presentation, press `P` to switch to demo mode to see the notes. Of course, the demo mode is for you to see, so you press `C` to open a new browser window, place it on the side screen where the projection is, and press `F` to maximize it. To see all the shortcuts, press the `H` key.
-
-???
-Although you can add notes, it is best not to add large paragraphs of text to read, which is easy to read like a text, the audience will immediately fall asleep. If you find yourself writing long paragraphs,
-Think about whether or not you haven't distilled the essence. After all, speaking is not for students.
+.pure-g[
+  .pure-u-12-24.pl-xl.pr-xl[
+.mt-xl.font-xxxl.right.nord4.line-height-1[CLASSIC LAYOUT<br/>ONE]
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+.right.line-height-1-2[<small>The grid layout allows for fine control over the location of elements</small><br/><small>But tweaking the details takes time</small><br/><small>Classic layout implementations are reusable once</small><br/><small>It's worth it</small>]
+  ]
+  .pure-u-12-24[
+.float-right.width-104[![](static/vimg11.jpg)]
+  ]
+]
 
 ---
 
-## Page number and window ratio
+class: vcenter, nord-light
 
-Some people may feel that the page number in the bottom right corner will disturb the audience's attention, or they may need to use the 16:9 window ratio. These can be set in the remarkjs initialization parameter at the end of index.html:  
-.font-xs[
-```js
-var slideshow = remark.create({
-  ratio: "4:3", // window ratio
-  // arta, ascetic, dark, default, far, github, googlecode, idea,
-  // ir-black, magula, monokai, rainbow, solarized-dark, solarized-light,
-  // sunburst, tomorrow, tomorrow-night-blue, tomorrow-night-bright,
-  // tomorrow-night, tomorrow-night-eighties, vs, zenburn.
-  highlightStyle: "github",
-  highlightLines: true,
-  countIncrementalSlides: false, // whether the incremental content count as one page
-  //slideNumberFormat: "", // If this parameter is set to "", the page number is not displayed
-  navigation: {
-    scroll: false, // Page turning with mouse wheel is allowed
-    touch: true, // Is it allowed to scroll back and forth by clicking on the left or right side of the screen
-    click: false // Allow the mouse to click on the left or right side of the screen to turn back and forth
-  }
-});
-```
+.pure-g[
+  .pure-u-12-24[
+.float-left.width-96[![](static/joker.jpg)]
+  ]
+  .pure-u-12-24.pl-m[
+# CLASSIC LAYOUT TWO
+
+<br />
+<br />
+<br />
+<br />
+
+The layout of the image on the left is easier to implement  
+The layout of the image on the left is easier to implement  
+  ]
+]
+
+---
+
+class: nord-dark
+
+## CLASSIC LAYOUT THREE
+
+.column-2.font-sm[
+
+## Nord dark steep image effects
+
+Set `. Nord-dark-damp-img` style for the picture to achieve the effect of image edge fading.
+.block-middle.width-88.nord-dark-steep-img[
+![](static/himg333.jpg)
+]
+
+This kind of picture and background color fusion effect is very suitable for the picture and text mixed. The picture is less obvious and more holistic.
+.block-middle.width-88.nord-dark-steep-img[
+![](static/himg55.jpg)
+]
+
+Setting the background color in advance with `PS` works better.
+.block-middle.width-88.nord-dark-steep-img[
+![](static/himg222.jpg)
+]
+
+
 ]
 
 ---
@@ -596,6 +627,53 @@ var slideshow = remark.create({
     </template>
   </q-scroll-area>
 </div>
+
+---
+
+## Slide note
+
+Remarkjs provides nice presentation functionality. When preparing the slides, you can use the `???` to add a comment, like this:
+
+```markdown
+## Slide note
+
+Remarkjs provides nice presentation functionality. When preparing the slides, you can use the `???` to add a comment, like this:
+???
+Although you can add notes, it is best not to add large paragraphs of text to read, which is easy to read like a text, the audience will immediately fall asleep. If you find yourself writing long paragraphs,
+Think about whether or not you haven't distilled the essence. After all, speaking is not for students.
+```
+
+During the actual presentation, press `P` to switch to demo mode to see the notes. Of course, the demo mode is for you to see, so you press `C` to open a new browser window, place it on the side screen where the projection is, and press `F` to maximize it. To see all the shortcuts, press the `H` key.
+
+???
+Although you can add notes, it is best not to add large paragraphs of text to read, which is easy to read like a text, the audience will immediately fall asleep. If you find yourself writing long paragraphs,
+Think about whether or not you haven't distilled the essence. After all, speaking is not for students.
+
+---
+
+## Page number and window ratio
+
+Some people may feel that the page number in the bottom right corner will disturb the audience's attention, or they may need to use the 16:9 window ratio. These can be set in the remarkjs initialization parameter at the end of index.html:  
+.font-xs[
+```js
+var slideshow = remark.create({
+  ratio: "4:3", // window ratio
+  // arta, ascetic, dark, default, far, github, googlecode, idea,
+  // ir-black, magula, monokai, rainbow, solarized-dark, solarized-light,
+  // sunburst, tomorrow, tomorrow-night-blue, tomorrow-night-bright,
+  // tomorrow-night, tomorrow-night-eighties, vs, zenburn.
+  highlightStyle: "github",
+  highlightLines: true,
+  countIncrementalSlides: false, // whether the incremental content count as one page
+  //slideNumberFormat: "", // If this parameter is set to "", the page number is not displayed
+  navigation: {
+    scroll: false, // Page turning with mouse wheel is allowed
+    touch: true, // Is it allowed to scroll back and forth by clicking on the left or right side of the screen
+    click: false // Allow the mouse to click on the left or right side of the screen to turn back and forth
+  }
+});
+```
+]
 
 ---
 

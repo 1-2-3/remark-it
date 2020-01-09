@@ -84,6 +84,35 @@ pre {
   font-size: 18px;
 }
 
+/* 大号字体 */
+.font-lg {
+  font-size: 22px;
+}
+
+.font-lg .remark-code {
+  font-size: 22px;
+}
+
+.font-xl {
+  font-size: 28px;
+}
+
+.font-xxl {
+  font-size: 36px;
+}
+
+.font-xxxl {
+  font-size: 49px;
+}
+
+.line-height-1 {
+  line-height: 1em;
+}
+
+.line-height-1-2 {
+  line-height: 1.2em;
+}
+
 /* 由于 pure.css 提供的网格布局没有 gutter 功能，这里补充 8px 和 16px gutter 的样式 */
 .gutter-8 {
   padding-left: 4px;
@@ -203,7 +232,15 @@ pre {
   float: left;
 }
 
+.float-left > img {
+  float: left;
+}
+
 .float-right {
+  float: right;
+}
+
+.float-right > img {
   float: right;
 }
 
@@ -211,4 +248,23 @@ pre {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*
+ * 布局
+*/
+.vcenter {
+  vertical-align: middle;
+}
+
+/* 纵向排列内容，纵向居中，横向居右 */
+.box-content-center-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.box-right {
+  justify-content: flex-end;
 }
