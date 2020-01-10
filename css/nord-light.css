@@ -19,6 +19,26 @@
   color: var(--nord3);
 }
 
+/* 文字下方显示横线 */
+.nord-light .under-line {
+  position: relative;
+}
+
+.nord-light .under-line::after {
+  position: absolute;
+  top: 1.65em;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  content: " ";
+  border-top: 1px solid var(--nord3);
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+
 .nord-light small {
   color: var(--nord3);
   opacity: 0.6;
