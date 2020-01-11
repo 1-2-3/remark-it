@@ -283,14 +283,37 @@ pre {
   vertical-align: middle;
 }
 
-/* 纵向排列内容，纵向居中，横向居右 */
-.box-content-center-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
+/* 字体间距 */
+.letter-spacing-0 {
+  letter-spacing: 0em;
 }
-
-.box-right {
-  justify-content: flex-end;
+.letter-spacing-10 {
+  letter-spacing: 0.1em;
+}
+.letter-spacing-20 {
+  letter-spacing: 0.2em;
+}
+.letter-spacing-30 {
+  letter-spacing: 0.3em;
+}
+.letter-spacing-40 {
+  letter-spacing: 0.4em;
+}
+.letter-spacing-50 {
+  letter-spacing: 0.5em;
+}
+.letter-spacing-60 {
+  letter-spacing: 0.6em;
+}
+.letter-spacing-70 {
+  letter-spacing: 0.7em;
+}
+.letter-spacing-80 {
+  letter-spacing: 0.8em;
+}
+.letter-spacing-90 {
+  letter-spacing: 0.9em;
+}
+.letter-spacing-100 {
+  letter-spacing: 1em;
 }
