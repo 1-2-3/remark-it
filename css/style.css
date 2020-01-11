@@ -57,6 +57,14 @@ pre {
   padding: 0px;
 }
 
+.font-xxs {
+  font-size: 10px;
+}
+
+.font-xxs .remark-code {
+  font-size: 10px;
+}
+
 /* 超小号字体 */
 .font-xs {
   font-size: 12px;
@@ -216,6 +224,24 @@ pre {
 
 .column-3 {
   column-count: 3;
+  column-gap: 3em;
+  column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
+}
+
+.column-4 {
+  column-count: 4;
+  column-gap: 3em;
+  column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
+}
+
+.column-5 {
+  column-count: 5;
+  column-gap: 3em;
+  column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
+}
+
+.column-6 {
+  column-count: 6;
   column-gap: 3em;
   column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
 }
