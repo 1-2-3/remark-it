@@ -112,7 +112,14 @@
   opacity: 0.65;
 }
 
-.nord-light ul {
+.nord-light ol,
+.nord-light li ol {
+  margin-left: 0em;
+}
+
+.nord-light ul,
+.nord-light ol ul,
+.nord-light ul li ul {
   list-style-type: none;
   margin: 0px 0px 1em;
   padding: 0px 0px 0px 1em;
@@ -120,7 +127,7 @@
 
 .nord-light ul > li {
   position: relative;
-  margin-left: 0.7em;
+  margin-left: 0.3em;
   margin-bottom: 0.7em;
   margin-top: 0.7em;
 }
@@ -131,7 +138,7 @@
   width: 6px;
   height: 6px;
   top: 15px;
-  left: -33px;
+  left: -20px;
   background-color: var(--nord3);
   border-radius: 50%;
   transition: background-color 400ms ease-in-out 0s;
@@ -143,5 +150,5 @@
 }
 
 .nord-light ol > li {
-  padding-left: 0.7em;
+  padding-left: 0.3em;
 }
