@@ -53,6 +53,10 @@ a.github-fork-ribbon:hover {
   border-bottom-color: transparent;
 }
 
+.center > h1 {
+  margin-top: 24px;
+}
+
 pre {
   padding: 0px;
 }
