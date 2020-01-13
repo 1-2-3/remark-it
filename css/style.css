@@ -321,3 +321,28 @@ pre {
 .letter-spacing-100 {
   letter-spacing: 1em;
 }
+
+/*
+ * 图标
+*/
+.icon-inline:before {
+  vertical-align: -0.2em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.icon-top {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 2.5em;
+  font-size: 0.8em;
+  padding: 0em 0.5em;
+}
+
+.icon-top:before {
+  font-size: 4em;
+  vertical-align: 0em;
+  width: 100%;
+  display: inline-block;
+}
