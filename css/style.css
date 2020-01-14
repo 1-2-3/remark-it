@@ -204,6 +204,19 @@ pre {
   border-left-width: 1px;
 }
 
+.st.noborder {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 0px;
+}
+
+.st.noborder table thead th {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.6);
+}
+
 /*
  * quasar 样式修正
 */
