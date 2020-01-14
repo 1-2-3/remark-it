@@ -177,6 +177,34 @@
   border-color: var(--oc-orange-9);
 }
 
+.rect.black,
+.rect.black h1,
+.rect.black h2,
+.rect.black h3,
+.rect.black h4,
+.rect.black h5,
+.rect.black h6,
+.rect.black p,
+.rect.black span {
+  color: var(--oc-gray-1);
+  background-color: #000;
+  border-color: #000;
+}
+
+.rect.white,
+.rect.white h1,
+.rect.white h2,
+.rect.white h3,
+.rect.white h4,
+.rect.white h5,
+.rect.white h6,
+.rect.white p,
+.rect.white span {
+  color: var(--oc-gray-9) !important;
+  background-color: #fff;
+  border-color: #fff;
+}
+
 .rect.dark {
   color: var(--oc-gray-1);
 }

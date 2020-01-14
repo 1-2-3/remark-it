@@ -26,6 +26,11 @@
   color: red;
 }
 
+/* 背景图片平铺 */
+.remark-slide-content {
+  background-size: cover;
+}
+
 /* 代码字体 */
 .remark-code,
 .remark-inline-code {
@@ -345,4 +350,35 @@ pre {
   vertical-align: 0em;
   width: 100%;
   display: inline-block;
+}
+
+/*
+ * 透明度
+ */
+.opacity-10 {
+  opacity: 0.1;
+}
+.opacity-20 {
+  opacity: 0.2;
+}
+.opacity-30 {
+  opacity: 0.3;
+}
+.opacity-40 {
+  opacity: 0.4;
+}
+.opacity-50 {
+  opacity: 0.5;
+}
+.opacity-60 {
+  opacity: 0.6;
+}
+.opacity-70 {
+  opacity: 0.7;
+}
+.opacity-80 {
+  opacity: 0.8;
+}
+.opacity-90 {
+  opacity: 0.9;
 }

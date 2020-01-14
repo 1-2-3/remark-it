@@ -1,555 +1,1612 @@
 @import "./open-color.css";
+
 .oc-white,
-.oc-white > strong {
+.oc-white h1,
+.oc-white h2,
+.oc-white h3,
+.oc-white h4,
+.oc-white h5,
+.oc-white h6,
+.oc-white p,
+.oc-white span,
+.oc-white strong {
   color: var(--oc-white) !important;
 }
 
 .oc-black,
-.oc-black > strong {
+.oc-black h1,
+.oc-black h2,
+.oc-black h3,
+.oc-black h4,
+.oc-black h5,
+.oc-black h6,
+.oc-black p,
+.oc-black span,
+.oc-black strong {
   color: var(--oc-black) !important;
 }
 
 .oc-gray-0,
-.oc-gray-0 > strong {
+.oc-gray-0 h1,
+.oc-gray-0 h2,
+.oc-gray-0 h3,
+.oc-gray-0 h4,
+.oc-gray-0 h5,
+.oc-gray-0 h6,
+.oc-gray-0 p,
+.oc-gray-0 span,
+.oc-gray-0 strong {
   color: var(--oc-gray-0) !important;
 }
 .oc-gray-1,
-.oc-gray-1 > strong {
+.oc-gray-1 h1,
+.oc-gray-1 h2,
+.oc-gray-1 h3,
+.oc-gray-1 h4,
+.oc-gray-1 h5,
+.oc-gray-1 h6,
+.oc-gray-1 p,
+.oc-gray-1 span,
+.oc-gray-1 strong {
   color: var(--oc-gray-1) !important;
 }
 .oc-gray-2,
-.oc-gray-2 > strong {
+.oc-gray-2 h1,
+.oc-gray-2 h2,
+.oc-gray-2 h3,
+.oc-gray-2 h4,
+.oc-gray-2 h5,
+.oc-gray-2 h6,
+.oc-gray-2 p,
+.oc-gray-2 span,
+.oc-gray-2 strong {
   color: var(--oc-gray-2) !important;
 }
 .oc-gray-3,
-.oc-gray-3 > strong {
+.oc-gray-3 h1,
+.oc-gray-3 h2,
+.oc-gray-3 h3,
+.oc-gray-3 h4,
+.oc-gray-3 h5,
+.oc-gray-3 h6,
+.oc-gray-3 p,
+.oc-gray-3 span,
+.oc-gray-3 strong {
   color: var(--oc-gray-3) !important;
 }
 .oc-gray-4,
-.oc-gray-4 > strong {
+.oc-gray-4 h1,
+.oc-gray-4 h2,
+.oc-gray-4 h3,
+.oc-gray-4 h4,
+.oc-gray-4 h5,
+.oc-gray-4 h6,
+.oc-gray-4 p,
+.oc-gray-4 span,
+.oc-gray-4 strong {
   color: var(--oc-gray-4) !important;
 }
 .oc-gray-5,
-.oc-gray-5 > strong {
+.oc-gray-5 h1,
+.oc-gray-5 h2,
+.oc-gray-5 h3,
+.oc-gray-5 h4,
+.oc-gray-5 h5,
+.oc-gray-5 h6,
+.oc-gray-5 p,
+.oc-gray-5 span,
+.oc-gray-5 strong {
   color: var(--oc-gray-5) !important;
 }
 .oc-gray-6,
-.oc-gray-6 > strong {
+.oc-gray-6 h1,
+.oc-gray-6 h2,
+.oc-gray-6 h3,
+.oc-gray-6 h4,
+.oc-gray-6 h5,
+.oc-gray-6 h6,
+.oc-gray-6 p,
+.oc-gray-6 span,
+.oc-gray-6 strong {
   color: var(--oc-gray-6) !important;
 }
 .oc-gray-7,
-.oc-gray-7 > strong {
+.oc-gray-7 h1,
+.oc-gray-7 h2,
+.oc-gray-7 h3,
+.oc-gray-7 h4,
+.oc-gray-7 h5,
+.oc-gray-7 h6,
+.oc-gray-7 p,
+.oc-gray-7 span,
+.oc-gray-7 strong {
   color: var(--oc-gray-7) !important;
 }
 .oc-gray-8,
-.oc-gray-8 > strong {
+.oc-gray-8 h1,
+.oc-gray-8 h2,
+.oc-gray-8 h3,
+.oc-gray-8 h4,
+.oc-gray-8 h5,
+.oc-gray-8 h6,
+.oc-gray-8 p,
+.oc-gray-8 span,
+.oc-gray-8 strong {
   color: var(--oc-gray-8) !important;
 }
 .oc-gray-9,
-.oc-gray-9 > strong {
+.oc-gray-9 h1,
+.oc-gray-9 h2,
+.oc-gray-9 h3,
+.oc-gray-9 h4,
+.oc-gray-9 h5,
+.oc-gray-9 h6,
+.oc-gray-9 p,
+.oc-gray-9 span,
+.oc-gray-9 strong {
   color: var(--oc-gray-9) !important;
 }
 /*  Red
 *  ─────────────────────────────────── */
 .oc-red-0,
-.oc-red-0 > strong {
+.oc-red-0 h1,
+.oc-red-0 h2,
+.oc-red-0 h3,
+.oc-red-0 h4,
+.oc-red-0 h5,
+.oc-red-0 h6,
+.oc-red-0 p,
+.oc-red-0 span,
+.oc-red-0 strong {
   color: var(--oc-red-0) !important;
 }
 .oc-red-1,
-.oc-red-1 > strong {
+.oc-red-1 h1,
+.oc-red-1 h2,
+.oc-red-1 h3,
+.oc-red-1 h4,
+.oc-red-1 h5,
+.oc-red-1 h6,
+.oc-red-1 p,
+.oc-red-1 span,
+.oc-red-1 strong {
   color: var(--oc-red-1) !important;
 }
 .oc-red-2,
-.oc-red-2 > strong {
+.oc-red-2 h1,
+.oc-red-2 h2,
+.oc-red-2 h3,
+.oc-red-2 h4,
+.oc-red-2 h5,
+.oc-red-2 h6,
+.oc-red-2 p,
+.oc-red-2 span,
+.oc-red-2 strong {
   color: var(--oc-red-2) !important;
 }
 .oc-red-3,
-.oc-red-3 > strong {
+.oc-red-3 h1,
+.oc-red-3 h2,
+.oc-red-3 h3,
+.oc-red-3 h4,
+.oc-red-3 h5,
+.oc-red-3 h6,
+.oc-red-3 p,
+.oc-red-3 span,
+.oc-red-3 strong {
   color: var(--oc-red-3) !important;
 }
 .oc-red-4,
-.oc-red-4 > strong {
+.oc-red-4 h1,
+.oc-red-4 h2,
+.oc-red-4 h3,
+.oc-red-4 h4,
+.oc-red-4 h5,
+.oc-red-4 h6,
+.oc-red-4 p,
+.oc-red-4 span,
+.oc-red-4 strong {
   color: var(--oc-red-4) !important;
 }
 .oc-red-5,
-.oc-red-5 > strong {
+.oc-red-5 h1,
+.oc-red-5 h2,
+.oc-red-5 h3,
+.oc-red-5 h4,
+.oc-red-5 h5,
+.oc-red-5 h6,
+.oc-red-5 p,
+.oc-red-5 span,
+.oc-red-5 strong {
   color: var(--oc-red-5) !important;
 }
 .oc-red-6,
-.oc-red-6 > strong {
+.oc-red-6 h1,
+.oc-red-6 h2,
+.oc-red-6 h3,
+.oc-red-6 h4,
+.oc-red-6 h5,
+.oc-red-6 h6,
+.oc-red-6 p,
+.oc-red-6 span,
+.oc-red-6 strong {
   color: var(--oc-red-6) !important;
 }
 .oc-red-7,
-.oc-red-7 > strong {
+.oc-red-7 h1,
+.oc-red-7 h2,
+.oc-red-7 h3,
+.oc-red-7 h4,
+.oc-red-7 h5,
+.oc-red-7 h6,
+.oc-red-7 p,
+.oc-red-7 span,
+.oc-red-7 strong {
   color: var(--oc-red-7) !important;
 }
 .oc-red-8,
-.oc-red-8 > strong {
+.oc-red-8 h1,
+.oc-red-8 h2,
+.oc-red-8 h3,
+.oc-red-8 h4,
+.oc-red-8 h5,
+.oc-red-8 h6,
+.oc-red-8 p,
+.oc-red-8 span,
+.oc-red-8 strong {
   color: var(--oc-red-8) !important;
 }
 .oc-red-9,
-.oc-red-9 > strong {
+.oc-red-9 h1,
+.oc-red-9 h2,
+.oc-red-9 h3,
+.oc-red-9 h4,
+.oc-red-9 h5,
+.oc-red-9 h6,
+.oc-red-9 p,
+.oc-red-9 span,
+.oc-red-9 strong {
   color: var(--oc-red-9) !important;
 }
 /*  Pink
 *  ─────────────────────────────────── */
 .oc-pink-0,
-.oc-pink-0 > strong {
+.oc-pink-0 h1,
+.oc-pink-0 h2,
+.oc-pink-0 h3,
+.oc-pink-0 h4,
+.oc-pink-0 h5,
+.oc-pink-0 h6,
+.oc-pink-0 p,
+.oc-pink-0 span,
+.oc-pink-0 strong {
   color: var(--oc-pink-0) !important;
 }
 .oc-pink-1,
-.oc-pink-1 > strong {
+.oc-pink-1 h1,
+.oc-pink-1 h2,
+.oc-pink-1 h3,
+.oc-pink-1 h4,
+.oc-pink-1 h5,
+.oc-pink-1 h6,
+.oc-pink-1 p,
+.oc-pink-1 span,
+.oc-pink-1 strong {
   color: var(--oc-pink-1) !important;
 }
 .oc-pink-2,
-.oc-pink-2 > strong {
+.oc-pink-2 h1,
+.oc-pink-2 h2,
+.oc-pink-2 h3,
+.oc-pink-2 h4,
+.oc-pink-2 h5,
+.oc-pink-2 h6,
+.oc-pink-2 p,
+.oc-pink-2 span,
+.oc-pink-2 strong {
   color: var(--oc-pink-2) !important;
 }
 .oc-pink-3,
-.oc-pink-3 > strong {
+.oc-pink-3 h1,
+.oc-pink-3 h2,
+.oc-pink-3 h3,
+.oc-pink-3 h4,
+.oc-pink-3 h5,
+.oc-pink-3 h6,
+.oc-pink-3 p,
+.oc-pink-3 span,
+.oc-pink-3 strong {
   color: var(--oc-pink-3) !important;
 }
 .oc-pink-4,
-.oc-pink-4 > strong {
+.oc-pink-4 h1,
+.oc-pink-4 h2,
+.oc-pink-4 h3,
+.oc-pink-4 h4,
+.oc-pink-4 h5,
+.oc-pink-4 h6,
+.oc-pink-4 p,
+.oc-pink-4 span,
+.oc-pink-4 strong {
   color: var(--oc-pink-4) !important;
 }
 .oc-pink-5,
-.oc-pink-5 > strong {
+.oc-pink-5 h1,
+.oc-pink-5 h2,
+.oc-pink-5 h3,
+.oc-pink-5 h4,
+.oc-pink-5 h5,
+.oc-pink-5 h6,
+.oc-pink-5 p,
+.oc-pink-5 span,
+.oc-pink-5 strong {
   color: var(--oc-pink-5) !important;
 }
 .oc-pink-6,
-.oc-pink-6 > strong {
+.oc-pink-6 h1,
+.oc-pink-6 h2,
+.oc-pink-6 h3,
+.oc-pink-6 h4,
+.oc-pink-6 h5,
+.oc-pink-6 h6,
+.oc-pink-6 p,
+.oc-pink-6 span,
+.oc-pink-6 strong {
   color: var(--oc-pink-6) !important;
 }
 .oc-pink-7,
-.oc-pink-7 > strong {
+.oc-pink-7 h1,
+.oc-pink-7 h2,
+.oc-pink-7 h3,
+.oc-pink-7 h4,
+.oc-pink-7 h5,
+.oc-pink-7 h6,
+.oc-pink-7 p,
+.oc-pink-7 span,
+.oc-pink-7 strong {
   color: var(--oc-pink-7) !important;
 }
 .oc-pink-8,
-.oc-pink-8 > strong {
+.oc-pink-8 h1,
+.oc-pink-8 h2,
+.oc-pink-8 h3,
+.oc-pink-8 h4,
+.oc-pink-8 h5,
+.oc-pink-8 h6,
+.oc-pink-8 p,
+.oc-pink-8 span,
+.oc-pink-8 strong {
   color: var(--oc-pink-8) !important;
 }
 .oc-pink-9,
-.oc-pink-9 > strong {
+.oc-pink-9 h1,
+.oc-pink-9 h2,
+.oc-pink-9 h3,
+.oc-pink-9 h4,
+.oc-pink-9 h5,
+.oc-pink-9 h6,
+.oc-pink-9 p,
+.oc-pink-9 span,
+.oc-pink-9 strong {
   color: var(--oc-pink-9) !important;
 }
 /*  Grape
 *  ─────────────────────────────────── */
 .oc-grape-0,
-.oc-grape-0 > strong {
+.oc-grape-0 h1,
+.oc-grape-0 h2,
+.oc-grape-0 h3,
+.oc-grape-0 h4,
+.oc-grape-0 h5,
+.oc-grape-0 h6,
+.oc-grape-0 p,
+.oc-grape-0 span,
+.oc-grape-0 strong {
   color: var(--oc-grape-0) !important;
 }
 .oc-grape-1,
-.oc-grape-1 > strong {
+.oc-grape-1 h1,
+.oc-grape-1 h2,
+.oc-grape-1 h3,
+.oc-grape-1 h4,
+.oc-grape-1 h5,
+.oc-grape-1 h6,
+.oc-grape-1 p,
+.oc-grape-1 span,
+.oc-grape-1 strong {
   color: var(--oc-grape-1) !important;
 }
 .oc-grape-2,
-.oc-grape-2 > strong {
+.oc-grape-2 h1,
+.oc-grape-2 h2,
+.oc-grape-2 h3,
+.oc-grape-2 h4,
+.oc-grape-2 h5,
+.oc-grape-2 h6,
+.oc-grape-2 p,
+.oc-grape-2 span,
+.oc-grape-2 strong {
   color: var(--oc-grape-2) !important;
 }
 .oc-grape-3,
-.oc-grape-3 > strong {
+.oc-grape-3 h1,
+.oc-grape-3 h2,
+.oc-grape-3 h3,
+.oc-grape-3 h4,
+.oc-grape-3 h5,
+.oc-grape-3 h6,
+.oc-grape-3 p,
+.oc-grape-3 span,
+.oc-grape-3 strong {
   color: var(--oc-grape-3) !important;
 }
 .oc-grape-4,
-.oc-grape-4 > strong {
+.oc-grape-4 h1,
+.oc-grape-4 h2,
+.oc-grape-4 h3,
+.oc-grape-4 h4,
+.oc-grape-4 h5,
+.oc-grape-4 h6,
+.oc-grape-4 p,
+.oc-grape-4 span,
+.oc-grape-4 strong {
   color: var(--oc-grape-4) !important;
 }
 .oc-grape-5,
-.oc-grape-5 > strong {
+.oc-grape-5 h1,
+.oc-grape-5 h2,
+.oc-grape-5 h3,
+.oc-grape-5 h4,
+.oc-grape-5 h5,
+.oc-grape-5 h6,
+.oc-grape-5 p,
+.oc-grape-5 span,
+.oc-grape-5 strong {
   color: var(--oc-grape-5) !important;
 }
 .oc-grape-6,
-.oc-grape-6 > strong {
+.oc-grape-6 h1,
+.oc-grape-6 h2,
+.oc-grape-6 h3,
+.oc-grape-6 h4,
+.oc-grape-6 h5,
+.oc-grape-6 h6,
+.oc-grape-6 p,
+.oc-grape-6 span,
+.oc-grape-6 strong {
   color: var(--oc-grape-6) !important;
 }
 .oc-grape-7,
-.oc-grape-7 > strong {
+.oc-grape-7 h1,
+.oc-grape-7 h2,
+.oc-grape-7 h3,
+.oc-grape-7 h4,
+.oc-grape-7 h5,
+.oc-grape-7 h6,
+.oc-grape-7 p,
+.oc-grape-7 span,
+.oc-grape-7 strong {
   color: var(--oc-grape-7) !important;
 }
 .oc-grape-8,
-.oc-grape-8 > strong {
+.oc-grape-8 h1,
+.oc-grape-8 h2,
+.oc-grape-8 h3,
+.oc-grape-8 h4,
+.oc-grape-8 h5,
+.oc-grape-8 h6,
+.oc-grape-8 p,
+.oc-grape-8 span,
+.oc-grape-8 strong {
   color: var(--oc-grape-8) !important;
 }
 .oc-grape-9,
-.oc-grape-9 > strong {
+.oc-grape-9 h1,
+.oc-grape-9 h2,
+.oc-grape-9 h3,
+.oc-grape-9 h4,
+.oc-grape-9 h5,
+.oc-grape-9 h6,
+.oc-grape-9 p,
+.oc-grape-9 span,
+.oc-grape-9 strong {
   color: var(--oc-grape-9) !important;
 }
 /*  Violet
 *  ─────────────────────────────────── */
 .oc-violet-0,
-.oc-violet-0 > strong {
+.oc-violet-0 h1,
+.oc-violet-0 h2,
+.oc-violet-0 h3,
+.oc-violet-0 h4,
+.oc-violet-0 h5,
+.oc-violet-0 h6,
+.oc-violet-0 p,
+.oc-violet-0 span,
+.oc-violet-0 strong {
   color: var(--oc-violet-0) !important;
 }
 .oc-violet-1,
-.oc-violet-1 > strong {
+.oc-violet-1 h1,
+.oc-violet-1 h2,
+.oc-violet-1 h3,
+.oc-violet-1 h4,
+.oc-violet-1 h5,
+.oc-violet-1 h6,
+.oc-violet-1 p,
+.oc-violet-1 span,
+.oc-violet-1 strong {
   color: var(--oc-violet-1) !important;
 }
 .oc-violet-2,
-.oc-violet-2 > strong {
+.oc-violet-2 h1,
+.oc-violet-2 h2,
+.oc-violet-2 h3,
+.oc-violet-2 h4,
+.oc-violet-2 h5,
+.oc-violet-2 h6,
+.oc-violet-2 p,
+.oc-violet-2 span,
+.oc-violet-2 strong {
   color: var(--oc-violet-2) !important;
 }
 .oc-violet-3,
-.oc-violet-3 > strong {
+.oc-violet-3 h1,
+.oc-violet-3 h2,
+.oc-violet-3 h3,
+.oc-violet-3 h4,
+.oc-violet-3 h5,
+.oc-violet-3 h6,
+.oc-violet-3 p,
+.oc-violet-3 span,
+.oc-violet-3 strong {
   color: var(--oc-violet-3) !important;
 }
 .oc-violet-4,
-.oc-violet-4 > strong {
+.oc-violet-4 h1,
+.oc-violet-4 h2,
+.oc-violet-4 h3,
+.oc-violet-4 h4,
+.oc-violet-4 h5,
+.oc-violet-4 h6,
+.oc-violet-4 p,
+.oc-violet-4 span,
+.oc-violet-4 strong {
   color: var(--oc-violet-4) !important;
 }
 .oc-violet-5,
-.oc-violet-5 > strong {
+.oc-violet-5 h1,
+.oc-violet-5 h2,
+.oc-violet-5 h3,
+.oc-violet-5 h4,
+.oc-violet-5 h5,
+.oc-violet-5 h6,
+.oc-violet-5 p,
+.oc-violet-5 span,
+.oc-violet-5 strong {
   color: var(--oc-violet-5) !important;
 }
 .oc-violet-6,
-.oc-violet-6 > strong {
+.oc-violet-6 h1,
+.oc-violet-6 h2,
+.oc-violet-6 h3,
+.oc-violet-6 h4,
+.oc-violet-6 h5,
+.oc-violet-6 h6,
+.oc-violet-6 p,
+.oc-violet-6 span,
+.oc-violet-6 strong {
   color: var(--oc-violet-6) !important;
 }
 .oc-violet-7,
-.oc-violet-7 > strong {
+.oc-violet-7 h1,
+.oc-violet-7 h2,
+.oc-violet-7 h3,
+.oc-violet-7 h4,
+.oc-violet-7 h5,
+.oc-violet-7 h6,
+.oc-violet-7 p,
+.oc-violet-7 span,
+.oc-violet-7 strong {
   color: var(--oc-violet-7) !important;
 }
 .oc-violet-8,
-.oc-violet-8 > strong {
+.oc-violet-8 h1,
+.oc-violet-8 h2,
+.oc-violet-8 h3,
+.oc-violet-8 h4,
+.oc-violet-8 h5,
+.oc-violet-8 h6,
+.oc-violet-8 p,
+.oc-violet-8 span,
+.oc-violet-8 strong {
   color: var(--oc-violet-8) !important;
 }
 .oc-violet-9,
-.oc-violet-9 > strong {
+.oc-violet-9 h1,
+.oc-violet-9 h2,
+.oc-violet-9 h3,
+.oc-violet-9 h4,
+.oc-violet-9 h5,
+.oc-violet-9 h6,
+.oc-violet-9 p,
+.oc-violet-9 span,
+.oc-violet-9 strong {
   color: var(--oc-violet-9) !important;
 }
 /*  Indigo
 *  ─────────────────────────────────── */
 .oc-indigo-0,
-.oc-indigo-0 > strong {
+.oc-indigo-0 h1,
+.oc-indigo-0 h2,
+.oc-indigo-0 h3,
+.oc-indigo-0 h4,
+.oc-indigo-0 h5,
+.oc-indigo-0 h6,
+.oc-indigo-0 p,
+.oc-indigo-0 span,
+.oc-indigo-0 strong {
   color: var(--oc-indigo-0) !important;
 }
 .oc-indigo-1,
-.oc-indigo-1 > strong {
+.oc-indigo-1 h1,
+.oc-indigo-1 h2,
+.oc-indigo-1 h3,
+.oc-indigo-1 h4,
+.oc-indigo-1 h5,
+.oc-indigo-1 h6,
+.oc-indigo-1 p,
+.oc-indigo-1 span,
+.oc-indigo-1 strong {
   color: var(--oc-indigo-1) !important;
 }
 .oc-indigo-2,
-.oc-indigo-2 > strong {
+.oc-indigo-2 h1,
+.oc-indigo-2 h2,
+.oc-indigo-2 h3,
+.oc-indigo-2 h4,
+.oc-indigo-2 h5,
+.oc-indigo-2 h6,
+.oc-indigo-2 p,
+.oc-indigo-2 span,
+.oc-indigo-2 strong {
   color: var(--oc-indigo-2) !important;
 }
 .oc-indigo-3,
-.oc-indigo-3 > strong {
+.oc-indigo-3 h1,
+.oc-indigo-3 h2,
+.oc-indigo-3 h3,
+.oc-indigo-3 h4,
+.oc-indigo-3 h5,
+.oc-indigo-3 h6,
+.oc-indigo-3 p,
+.oc-indigo-3 span,
+.oc-indigo-3 strong {
   color: var(--oc-indigo-3) !important;
 }
 .oc-indigo-4,
-.oc-indigo-4 > strong {
+.oc-indigo-4 h1,
+.oc-indigo-4 h2,
+.oc-indigo-4 h3,
+.oc-indigo-4 h4,
+.oc-indigo-4 h5,
+.oc-indigo-4 h6,
+.oc-indigo-4 p,
+.oc-indigo-4 span,
+.oc-indigo-4 strong {
   color: var(--oc-indigo-4) !important;
 }
 .oc-indigo-5,
-.oc-indigo-5 > strong {
+.oc-indigo-5 h1,
+.oc-indigo-5 h2,
+.oc-indigo-5 h3,
+.oc-indigo-5 h4,
+.oc-indigo-5 h5,
+.oc-indigo-5 h6,
+.oc-indigo-5 p,
+.oc-indigo-5 span,
+.oc-indigo-5 strong {
   color: var(--oc-indigo-5) !important;
 }
 .oc-indigo-6,
-.oc-indigo-6 > strong {
+.oc-indigo-6 h1,
+.oc-indigo-6 h2,
+.oc-indigo-6 h3,
+.oc-indigo-6 h4,
+.oc-indigo-6 h5,
+.oc-indigo-6 h6,
+.oc-indigo-6 p,
+.oc-indigo-6 span,
+.oc-indigo-6 strong {
   color: var(--oc-indigo-6) !important;
 }
 .oc-indigo-7,
-.oc-indigo-7 > strong {
+.oc-indigo-7 h1,
+.oc-indigo-7 h2,
+.oc-indigo-7 h3,
+.oc-indigo-7 h4,
+.oc-indigo-7 h5,
+.oc-indigo-7 h6,
+.oc-indigo-7 p,
+.oc-indigo-7 span,
+.oc-indigo-7 strong {
   color: var(--oc-indigo-7) !important;
 }
 .oc-indigo-8,
-.oc-indigo-8 > strong {
+.oc-indigo-8 h1,
+.oc-indigo-8 h2,
+.oc-indigo-8 h3,
+.oc-indigo-8 h4,
+.oc-indigo-8 h5,
+.oc-indigo-8 h6,
+.oc-indigo-8 p,
+.oc-indigo-8 span,
+.oc-indigo-8 strong {
   color: var(--oc-indigo-8) !important;
 }
 .oc-indigo-9,
-.oc-indigo-9 > strong {
+.oc-indigo-9 h1,
+.oc-indigo-9 h2,
+.oc-indigo-9 h3,
+.oc-indigo-9 h4,
+.oc-indigo-9 h5,
+.oc-indigo-9 h6,
+.oc-indigo-9 p,
+.oc-indigo-9 span,
+.oc-indigo-9 strong {
   color: var(--oc-indigo-9) !important;
 }
 /*  Blue
 *  ─────────────────────────────────── */
 .oc-blue-0,
-.oc-blue-0 > strong {
+.oc-blue-0 h1,
+.oc-blue-0 h2,
+.oc-blue-0 h3,
+.oc-blue-0 h4,
+.oc-blue-0 h5,
+.oc-blue-0 h6,
+.oc-blue-0 p,
+.oc-blue-0 span,
+.oc-blue-0 strong {
   color: var(--oc-blue-0) !important;
 }
 .oc-blue-1,
-.oc-blue-1 > strong {
+.oc-blue-1 h1,
+.oc-blue-1 h2,
+.oc-blue-1 h3,
+.oc-blue-1 h4,
+.oc-blue-1 h5,
+.oc-blue-1 h6,
+.oc-blue-1 p,
+.oc-blue-1 span,
+.oc-blue-1 strong {
   color: var(--oc-blue-1) !important;
 }
 .oc-blue-2,
-.oc-blue-2 > strong {
+.oc-blue-2 h1,
+.oc-blue-2 h2,
+.oc-blue-2 h3,
+.oc-blue-2 h4,
+.oc-blue-2 h5,
+.oc-blue-2 h6,
+.oc-blue-2 p,
+.oc-blue-2 span,
+.oc-blue-2 strong {
   color: var(--oc-blue-2) !important;
 }
 .oc-blue-3,
-.oc-blue-3 > strong {
+.oc-blue-3 h1,
+.oc-blue-3 h2,
+.oc-blue-3 h3,
+.oc-blue-3 h4,
+.oc-blue-3 h5,
+.oc-blue-3 h6,
+.oc-blue-3 p,
+.oc-blue-3 span,
+.oc-blue-3 strong {
   color: var(--oc-blue-3) !important;
 }
 .oc-blue-4,
-.oc-blue-4 > strong {
+.oc-blue-4 h1,
+.oc-blue-4 h2,
+.oc-blue-4 h3,
+.oc-blue-4 h4,
+.oc-blue-4 h5,
+.oc-blue-4 h6,
+.oc-blue-4 p,
+.oc-blue-4 span,
+.oc-blue-4 strong {
   color: var(--oc-blue-4) !important;
 }
 .oc-blue-5,
-.oc-blue-5 > strong {
+.oc-blue-5 h1,
+.oc-blue-5 h2,
+.oc-blue-5 h3,
+.oc-blue-5 h4,
+.oc-blue-5 h5,
+.oc-blue-5 h6,
+.oc-blue-5 p,
+.oc-blue-5 span,
+.oc-blue-5 strong {
   color: var(--oc-blue-5) !important;
 }
 .oc-blue-6,
-.oc-blue-6 > strong {
+.oc-blue-6 h1,
+.oc-blue-6 h2,
+.oc-blue-6 h3,
+.oc-blue-6 h4,
+.oc-blue-6 h5,
+.oc-blue-6 h6,
+.oc-blue-6 p,
+.oc-blue-6 span,
+.oc-blue-6 strong {
   color: var(--oc-blue-6) !important;
 }
 .oc-blue-7,
-.oc-blue-7 > strong {
+.oc-blue-7 h1,
+.oc-blue-7 h2,
+.oc-blue-7 h3,
+.oc-blue-7 h4,
+.oc-blue-7 h5,
+.oc-blue-7 h6,
+.oc-blue-7 p,
+.oc-blue-7 span,
+.oc-blue-7 strong {
   color: var(--oc-blue-7) !important;
 }
 .oc-blue-8,
-.oc-blue-8 > strong {
+.oc-blue-8 h1,
+.oc-blue-8 h2,
+.oc-blue-8 h3,
+.oc-blue-8 h4,
+.oc-blue-8 h5,
+.oc-blue-8 h6,
+.oc-blue-8 p,
+.oc-blue-8 span,
+.oc-blue-8 strong {
   color: var(--oc-blue-8) !important;
 }
 .oc-blue-9,
-.oc-blue-9 > strong {
+.oc-blue-9 h1,
+.oc-blue-9 h2,
+.oc-blue-9 h3,
+.oc-blue-9 h4,
+.oc-blue-9 h5,
+.oc-blue-9 h6,
+.oc-blue-9 p,
+.oc-blue-9 span,
+.oc-blue-9 strong {
   color: var(--oc-blue-9) !important;
 }
 /*  Cyan
 *  ─────────────────────────────────── */
 .oc-cyan-0,
-.oc-cyan-0 > strong {
+.oc-cyan-0 h1,
+.oc-cyan-0 h2,
+.oc-cyan-0 h3,
+.oc-cyan-0 h4,
+.oc-cyan-0 h5,
+.oc-cyan-0 h6,
+.oc-cyan-0 p,
+.oc-cyan-0 span,
+.oc-cyan-0 strong {
   color: var(--oc-cyan-0) !important;
 }
 .oc-cyan-1,
-.oc-cyan-1 > strong {
+.oc-cyan-1 h1,
+.oc-cyan-1 h2,
+.oc-cyan-1 h3,
+.oc-cyan-1 h4,
+.oc-cyan-1 h5,
+.oc-cyan-1 h6,
+.oc-cyan-1 p,
+.oc-cyan-1 span,
+.oc-cyan-1 strong {
   color: var(--oc-cyan-1) !important;
 }
 .oc-cyan-2,
-.oc-cyan-2 > strong {
+.oc-cyan-2 h1,
+.oc-cyan-2 h2,
+.oc-cyan-2 h3,
+.oc-cyan-2 h4,
+.oc-cyan-2 h5,
+.oc-cyan-2 h6,
+.oc-cyan-2 p,
+.oc-cyan-2 span,
+.oc-cyan-2 strong {
   color: var(--oc-cyan-2) !important;
 }
 .oc-cyan-3,
-.oc-cyan-3 > strong {
+.oc-cyan-3 h1,
+.oc-cyan-3 h2,
+.oc-cyan-3 h3,
+.oc-cyan-3 h4,
+.oc-cyan-3 h5,
+.oc-cyan-3 h6,
+.oc-cyan-3 p,
+.oc-cyan-3 span,
+.oc-cyan-3 strong {
   color: var(--oc-cyan-3) !important;
 }
 .oc-cyan-4,
-.oc-cyan-4 > strong {
+.oc-cyan-4 h1,
+.oc-cyan-4 h2,
+.oc-cyan-4 h3,
+.oc-cyan-4 h4,
+.oc-cyan-4 h5,
+.oc-cyan-4 h6,
+.oc-cyan-4 p,
+.oc-cyan-4 span,
+.oc-cyan-4 strong {
   color: var(--oc-cyan-4) !important;
 }
 .oc-cyan-5,
-.oc-cyan-5 > strong {
+.oc-cyan-5 h1,
+.oc-cyan-5 h2,
+.oc-cyan-5 h3,
+.oc-cyan-5 h4,
+.oc-cyan-5 h5,
+.oc-cyan-5 h6,
+.oc-cyan-5 p,
+.oc-cyan-5 span,
+.oc-cyan-5 strong {
   color: var(--oc-cyan-5) !important;
 }
 .oc-cyan-6,
-.oc-cyan-6 > strong {
+.oc-cyan-6 h1,
+.oc-cyan-6 h2,
+.oc-cyan-6 h3,
+.oc-cyan-6 h4,
+.oc-cyan-6 h5,
+.oc-cyan-6 h6,
+.oc-cyan-6 p,
+.oc-cyan-6 span,
+.oc-cyan-6 strong {
   color: var(--oc-cyan-6) !important;
 }
 .oc-cyan-7,
-.oc-cyan-7 > strong {
+.oc-cyan-7 h1,
+.oc-cyan-7 h2,
+.oc-cyan-7 h3,
+.oc-cyan-7 h4,
+.oc-cyan-7 h5,
+.oc-cyan-7 h6,
+.oc-cyan-7 p,
+.oc-cyan-7 span,
+.oc-cyan-7 strong {
   color: var(--oc-cyan-7) !important;
 }
 .oc-cyan-8,
-.oc-cyan-8 > strong {
+.oc-cyan-8 h1,
+.oc-cyan-8 h2,
+.oc-cyan-8 h3,
+.oc-cyan-8 h4,
+.oc-cyan-8 h5,
+.oc-cyan-8 h6,
+.oc-cyan-8 p,
+.oc-cyan-8 span,
+.oc-cyan-8 strong {
   color: var(--oc-cyan-8) !important;
 }
 .oc-cyan-9,
-.oc-cyan-9 > strong {
+.oc-cyan-9 h1,
+.oc-cyan-9 h2,
+.oc-cyan-9 h3,
+.oc-cyan-9 h4,
+.oc-cyan-9 h5,
+.oc-cyan-9 h6,
+.oc-cyan-9 p,
+.oc-cyan-9 span,
+.oc-cyan-9 strong {
   color: var(--oc-cyan-9) !important;
 }
 /*  Teal
 *  ─────────────────────────────────── */
 .oc-teal-0,
-.oc-teal-0 > strong {
+.oc-teal-0 h1,
+.oc-teal-0 h2,
+.oc-teal-0 h3,
+.oc-teal-0 h4,
+.oc-teal-0 h5,
+.oc-teal-0 h6,
+.oc-teal-0 p,
+.oc-teal-0 span,
+.oc-teal-0 strong {
   color: var(--oc-teal-0) !important;
 }
 .oc-teal-1,
-.oc-teal-1 > strong {
+.oc-teal-1 h1,
+.oc-teal-1 h2,
+.oc-teal-1 h3,
+.oc-teal-1 h4,
+.oc-teal-1 h5,
+.oc-teal-1 h6,
+.oc-teal-1 p,
+.oc-teal-1 span,
+.oc-teal-1 strong {
   color: var(--oc-teal-1) !important;
 }
 .oc-teal-2,
-.oc-teal-2 > strong {
+.oc-teal-2 h1,
+.oc-teal-2 h2,
+.oc-teal-2 h3,
+.oc-teal-2 h4,
+.oc-teal-2 h5,
+.oc-teal-2 h6,
+.oc-teal-2 p,
+.oc-teal-2 span,
+.oc-teal-2 strong {
   color: var(--oc-teal-2) !important;
 }
 .oc-teal-3,
-.oc-teal-3 > strong {
+.oc-teal-3 h1,
+.oc-teal-3 h2,
+.oc-teal-3 h3,
+.oc-teal-3 h4,
+.oc-teal-3 h5,
+.oc-teal-3 h6,
+.oc-teal-3 p,
+.oc-teal-3 span,
+.oc-teal-3 strong {
   color: var(--oc-teal-3) !important;
 }
 .oc-teal-4,
-.oc-teal-4 > strong {
+.oc-teal-4 h1,
+.oc-teal-4 h2,
+.oc-teal-4 h3,
+.oc-teal-4 h4,
+.oc-teal-4 h5,
+.oc-teal-4 h6,
+.oc-teal-4 p,
+.oc-teal-4 span,
+.oc-teal-4 strong {
   color: var(--oc-teal-4) !important;
 }
 .oc-teal-5,
-.oc-teal-5 > strong {
+.oc-teal-5 h1,
+.oc-teal-5 h2,
+.oc-teal-5 h3,
+.oc-teal-5 h4,
+.oc-teal-5 h5,
+.oc-teal-5 h6,
+.oc-teal-5 p,
+.oc-teal-5 span,
+.oc-teal-5 strong {
   color: var(--oc-teal-5) !important;
 }
 .oc-teal-6,
-.oc-teal-6 > strong {
+.oc-teal-6 h1,
+.oc-teal-6 h2,
+.oc-teal-6 h3,
+.oc-teal-6 h4,
+.oc-teal-6 h5,
+.oc-teal-6 h6,
+.oc-teal-6 p,
+.oc-teal-6 span,
+.oc-teal-6 strong {
   color: var(--oc-teal-6) !important;
 }
 .oc-teal-7,
-.oc-teal-7 > strong {
+.oc-teal-7 h1,
+.oc-teal-7 h2,
+.oc-teal-7 h3,
+.oc-teal-7 h4,
+.oc-teal-7 h5,
+.oc-teal-7 h6,
+.oc-teal-7 p,
+.oc-teal-7 span,
+.oc-teal-7 strong {
   color: var(--oc-teal-7) !important;
 }
 .oc-teal-8,
-.oc-teal-8 > strong {
+.oc-teal-8 h1,
+.oc-teal-8 h2,
+.oc-teal-8 h3,
+.oc-teal-8 h4,
+.oc-teal-8 h5,
+.oc-teal-8 h6,
+.oc-teal-8 p,
+.oc-teal-8 span,
+.oc-teal-8 strong {
   color: var(--oc-teal-8) !important;
 }
 .oc-teal-9,
-.oc-teal-9 > strong {
+.oc-teal-9 h1,
+.oc-teal-9 h2,
+.oc-teal-9 h3,
+.oc-teal-9 h4,
+.oc-teal-9 h5,
+.oc-teal-9 h6,
+.oc-teal-9 p,
+.oc-teal-9 span,
+.oc-teal-9 strong {
   color: var(--oc-teal-9) !important;
 }
 /*  Green
 *  ─────────────────────────────────── */
 .oc-green-0,
-.oc-green-0 > strong {
+.oc-green-0 h1,
+.oc-green-0 h2,
+.oc-green-0 h3,
+.oc-green-0 h4,
+.oc-green-0 h5,
+.oc-green-0 h6,
+.oc-green-0 p,
+.oc-green-0 span,
+.oc-green-0 strong {
   color: var(--oc-green-0) !important;
 }
 .oc-green-1,
-.oc-green-1 > strong {
+.oc-green-1 h1,
+.oc-green-1 h2,
+.oc-green-1 h3,
+.oc-green-1 h4,
+.oc-green-1 h5,
+.oc-green-1 h6,
+.oc-green-1 p,
+.oc-green-1 span,
+.oc-green-1 strong {
   color: var(--oc-green-1) !important;
 }
 .oc-green-2,
-.oc-green-2 > strong {
+.oc-green-2 h1,
+.oc-green-2 h2,
+.oc-green-2 h3,
+.oc-green-2 h4,
+.oc-green-2 h5,
+.oc-green-2 h6,
+.oc-green-2 p,
+.oc-green-2 span,
+.oc-green-2 strong {
   color: var(--oc-green-2) !important;
 }
 .oc-green-3,
-.oc-green-3 > strong {
+.oc-green-3 h1,
+.oc-green-3 h2,
+.oc-green-3 h3,
+.oc-green-3 h4,
+.oc-green-3 h5,
+.oc-green-3 h6,
+.oc-green-3 p,
+.oc-green-3 span,
+.oc-green-3 strong {
   color: var(--oc-green-3) !important;
 }
 .oc-green-4,
-.oc-green-4 > strong {
+.oc-green-4 h1,
+.oc-green-4 h2,
+.oc-green-4 h3,
+.oc-green-4 h4,
+.oc-green-4 h5,
+.oc-green-4 h6,
+.oc-green-4 p,
+.oc-green-4 span,
+.oc-green-4 strong {
   color: var(--oc-green-4) !important;
 }
 .oc-green-5,
-.oc-green-5 > strong {
+.oc-green-5 h1,
+.oc-green-5 h2,
+.oc-green-5 h3,
+.oc-green-5 h4,
+.oc-green-5 h5,
+.oc-green-5 h6,
+.oc-green-5 p,
+.oc-green-5 span,
+.oc-green-5 strong {
   color: var(--oc-green-5) !important;
 }
 .oc-green-6,
-.oc-green-6 > strong {
+.oc-green-6 h1,
+.oc-green-6 h2,
+.oc-green-6 h3,
+.oc-green-6 h4,
+.oc-green-6 h5,
+.oc-green-6 h6,
+.oc-green-6 p,
+.oc-green-6 span,
+.oc-green-6 strong {
   color: var(--oc-green-6) !important;
 }
 .oc-green-7,
-.oc-green-7 > strong {
+.oc-green-7 h1,
+.oc-green-7 h2,
+.oc-green-7 h3,
+.oc-green-7 h4,
+.oc-green-7 h5,
+.oc-green-7 h6,
+.oc-green-7 p,
+.oc-green-7 span,
+.oc-green-7 strong {
   color: var(--oc-green-7) !important;
 }
 .oc-green-8,
-.oc-green-8 > strong {
+.oc-green-8 h1,
+.oc-green-8 h2,
+.oc-green-8 h3,
+.oc-green-8 h4,
+.oc-green-8 h5,
+.oc-green-8 h6,
+.oc-green-8 p,
+.oc-green-8 span,
+.oc-green-8 strong {
   color: var(--oc-green-8) !important;
 }
 .oc-green-9,
-.oc-green-9 > strong {
+.oc-green-9 h1,
+.oc-green-9 h2,
+.oc-green-9 h3,
+.oc-green-9 h4,
+.oc-green-9 h5,
+.oc-green-9 h6,
+.oc-green-9 p,
+.oc-green-9 span,
+.oc-green-9 strong {
   color: var(--oc-green-9) !important;
 }
 /*  Lime
 *  ─────────────────────────────────── */
 .oc-lime-0,
-.oc-lime-0 > strong {
+.oc-lime-0 h1,
+.oc-lime-0 h2,
+.oc-lime-0 h3,
+.oc-lime-0 h4,
+.oc-lime-0 h5,
+.oc-lime-0 h6,
+.oc-lime-0 p,
+.oc-lime-0 span,
+.oc-lime-0 strong {
   color: var(--oc-lime-0) !important;
 }
 .oc-lime-1,
-.oc-lime-1 > strong {
+.oc-lime-1 h1,
+.oc-lime-1 h2,
+.oc-lime-1 h3,
+.oc-lime-1 h4,
+.oc-lime-1 h5,
+.oc-lime-1 h6,
+.oc-lime-1 p,
+.oc-lime-1 span,
+.oc-lime-1 strong {
   color: var(--oc-lime-1) !important;
 }
 .oc-lime-2,
-.oc-lime-2 > strong {
+.oc-lime-2 h1,
+.oc-lime-2 h2,
+.oc-lime-2 h3,
+.oc-lime-2 h4,
+.oc-lime-2 h5,
+.oc-lime-2 h6,
+.oc-lime-2 p,
+.oc-lime-2 span,
+.oc-lime-2 strong {
   color: var(--oc-lime-2) !important;
 }
 .oc-lime-3,
-.oc-lime-3 > strong {
+.oc-lime-3 h1,
+.oc-lime-3 h2,
+.oc-lime-3 h3,
+.oc-lime-3 h4,
+.oc-lime-3 h5,
+.oc-lime-3 h6,
+.oc-lime-3 p,
+.oc-lime-3 span,
+.oc-lime-3 strong {
   color: var(--oc-lime-3) !important;
 }
 .oc-lime-4,
-.oc-lime-4 > strong {
+.oc-lime-4 h1,
+.oc-lime-4 h2,
+.oc-lime-4 h3,
+.oc-lime-4 h4,
+.oc-lime-4 h5,
+.oc-lime-4 h6,
+.oc-lime-4 p,
+.oc-lime-4 span,
+.oc-lime-4 strong {
   color: var(--oc-lime-4) !important;
 }
 .oc-lime-5,
-.oc-lime-5 > strong {
+.oc-lime-5 h1,
+.oc-lime-5 h2,
+.oc-lime-5 h3,
+.oc-lime-5 h4,
+.oc-lime-5 h5,
+.oc-lime-5 h6,
+.oc-lime-5 p,
+.oc-lime-5 span,
+.oc-lime-5 strong {
   color: var(--oc-lime-5) !important;
 }
 .oc-lime-6,
-.oc-lime-6 > strong {
+.oc-lime-6 h1,
+.oc-lime-6 h2,
+.oc-lime-6 h3,
+.oc-lime-6 h4,
+.oc-lime-6 h5,
+.oc-lime-6 h6,
+.oc-lime-6 p,
+.oc-lime-6 span,
+.oc-lime-6 strong {
   color: var(--oc-lime-6) !important;
 }
 .oc-lime-7,
-.oc-lime-7 > strong {
+.oc-lime-7 h1,
+.oc-lime-7 h2,
+.oc-lime-7 h3,
+.oc-lime-7 h4,
+.oc-lime-7 h5,
+.oc-lime-7 h6,
+.oc-lime-7 p,
+.oc-lime-7 span,
+.oc-lime-7 strong {
   color: var(--oc-lime-7) !important;
 }
 .oc-lime-8,
-.oc-lime-8 > strong {
+.oc-lime-8 h1,
+.oc-lime-8 h2,
+.oc-lime-8 h3,
+.oc-lime-8 h4,
+.oc-lime-8 h5,
+.oc-lime-8 h6,
+.oc-lime-8 p,
+.oc-lime-8 span,
+.oc-lime-8 strong {
   color: var(--oc-lime-8) !important;
 }
 .oc-lime-9,
-.oc-lime-9 > strong {
+.oc-lime-9 h1,
+.oc-lime-9 h2,
+.oc-lime-9 h3,
+.oc-lime-9 h4,
+.oc-lime-9 h5,
+.oc-lime-9 h6,
+.oc-lime-9 p,
+.oc-lime-9 span,
+.oc-lime-9 strong {
   color: var(--oc-lime-9) !important;
 }
 /*  Yellow
 *  ─────────────────────────────────── */
 .oc-yellow-0,
-.oc-yellow-0 > strong {
+.oc-yellow-0 h1,
+.oc-yellow-0 h2,
+.oc-yellow-0 h3,
+.oc-yellow-0 h4,
+.oc-yellow-0 h5,
+.oc-yellow-0 h6,
+.oc-yellow-0 p,
+.oc-yellow-0 span,
+.oc-yellow-0 strong {
   color: var(--oc-yellow-0) !important;
 }
 .oc-yellow-1,
-.oc-yellow-1 > strong {
+.oc-yellow-1 h1,
+.oc-yellow-1 h2,
+.oc-yellow-1 h3,
+.oc-yellow-1 h4,
+.oc-yellow-1 h5,
+.oc-yellow-1 h6,
+.oc-yellow-1 p,
+.oc-yellow-1 span,
+.oc-yellow-1 strong {
   color: var(--oc-yellow-1) !important;
 }
 .oc-yellow-2,
-.oc-yellow-2 > strong {
+.oc-yellow-2 h1,
+.oc-yellow-2 h2,
+.oc-yellow-2 h3,
+.oc-yellow-2 h4,
+.oc-yellow-2 h5,
+.oc-yellow-2 h6,
+.oc-yellow-2 p,
+.oc-yellow-2 span,
+.oc-yellow-2 strong {
   color: var(--oc-yellow-2) !important;
 }
 .oc-yellow-3,
-.oc-yellow-3 > strong {
+.oc-yellow-3 h1,
+.oc-yellow-3 h2,
+.oc-yellow-3 h3,
+.oc-yellow-3 h4,
+.oc-yellow-3 h5,
+.oc-yellow-3 h6,
+.oc-yellow-3 p,
+.oc-yellow-3 span,
+.oc-yellow-3 strong {
   color: var(--oc-yellow-3) !important;
 }
 .oc-yellow-4,
-.oc-yellow-4 > strong {
+.oc-yellow-4 h1,
+.oc-yellow-4 h2,
+.oc-yellow-4 h3,
+.oc-yellow-4 h4,
+.oc-yellow-4 h5,
+.oc-yellow-4 h6,
+.oc-yellow-4 p,
+.oc-yellow-4 span,
+.oc-yellow-4 strong {
   color: var(--oc-yellow-4) !important;
 }
 .oc-yellow-5,
-.oc-yellow-5 > strong {
+.oc-yellow-5 h1,
+.oc-yellow-5 h2,
+.oc-yellow-5 h3,
+.oc-yellow-5 h4,
+.oc-yellow-5 h5,
+.oc-yellow-5 h6,
+.oc-yellow-5 p,
+.oc-yellow-5 span,
+.oc-yellow-5 strong {
   color: var(--oc-yellow-5) !important;
 }
 .oc-yellow-6,
-.oc-yellow-6 > strong {
+.oc-yellow-6 h1,
+.oc-yellow-6 h2,
+.oc-yellow-6 h3,
+.oc-yellow-6 h4,
+.oc-yellow-6 h5,
+.oc-yellow-6 h6,
+.oc-yellow-6 p,
+.oc-yellow-6 span,
+.oc-yellow-6 strong {
   color: var(--oc-yellow-6) !important;
 }
 .oc-yellow-7,
-.oc-yellow-7 > strong {
+.oc-yellow-7 h1,
+.oc-yellow-7 h2,
+.oc-yellow-7 h3,
+.oc-yellow-7 h4,
+.oc-yellow-7 h5,
+.oc-yellow-7 h6,
+.oc-yellow-7 p,
+.oc-yellow-7 span,
+.oc-yellow-7 strong {
   color: var(--oc-yellow-7) !important;
 }
 .oc-yellow-8,
-.oc-yellow-8 > strong {
+.oc-yellow-8 h1,
+.oc-yellow-8 h2,
+.oc-yellow-8 h3,
+.oc-yellow-8 h4,
+.oc-yellow-8 h5,
+.oc-yellow-8 h6,
+.oc-yellow-8 p,
+.oc-yellow-8 span,
+.oc-yellow-8 strong {
   color: var(--oc-yellow-8) !important;
 }
 .oc-yellow-9,
-.oc-yellow-9 > strong {
+.oc-yellow-9 h1,
+.oc-yellow-9 h2,
+.oc-yellow-9 h3,
+.oc-yellow-9 h4,
+.oc-yellow-9 h5,
+.oc-yellow-9 h6,
+.oc-yellow-9 p,
+.oc-yellow-9 span,
+.oc-yellow-9 strong {
   color: var(--oc-yellow-9) !important;
 }
 /*  Orange
 *  ─────────────────────────────────── */
 .oc-orange-0,
-.oc-orange-0 > strong {
+.oc-orange-0 h1,
+.oc-orange-0 h2,
+.oc-orange-0 h3,
+.oc-orange-0 h4,
+.oc-orange-0 h5,
+.oc-orange-0 h6,
+.oc-orange-0 p,
+.oc-orange-0 span,
+.oc-orange-0 strong {
   color: var(--oc-orange-0) !important;
 }
 .oc-orange-1,
-.oc-orange-1 > strong {
+.oc-orange-1 h1,
+.oc-orange-1 h2,
+.oc-orange-1 h3,
+.oc-orange-1 h4,
+.oc-orange-1 h5,
+.oc-orange-1 h6,
+.oc-orange-1 p,
+.oc-orange-1 span,
+.oc-orange-1 strong {
   color: var(--oc-orange-1) !important;
 }
 .oc-orange-2,
-.oc-orange-2 > strong {
+.oc-orange-2 h1,
+.oc-orange-2 h2,
+.oc-orange-2 h3,
+.oc-orange-2 h4,
+.oc-orange-2 h5,
+.oc-orange-2 h6,
+.oc-orange-2 p,
+.oc-orange-2 span,
+.oc-orange-2 strong {
   color: var(--oc-orange-2) !important;
 }
 .oc-orange-3,
-.oc-orange-3 > strong {
+.oc-orange-3 h1,
+.oc-orange-3 h2,
+.oc-orange-3 h3,
+.oc-orange-3 h4,
+.oc-orange-3 h5,
+.oc-orange-3 h6,
+.oc-orange-3 p,
+.oc-orange-3 span,
+.oc-orange-3 strong {
   color: var(--oc-orange-3) !important;
 }
 .oc-orange-4,
-.oc-orange-4 > strong {
+.oc-orange-4 h1,
+.oc-orange-4 h2,
+.oc-orange-4 h3,
+.oc-orange-4 h4,
+.oc-orange-4 h5,
+.oc-orange-4 h6,
+.oc-orange-4 p,
+.oc-orange-4 span,
+.oc-orange-4 strong {
   color: var(--oc-orange-4) !important;
 }
 .oc-orange-5,
-.oc-orange-5 > strong {
+.oc-orange-5 h1,
+.oc-orange-5 h2,
+.oc-orange-5 h3,
+.oc-orange-5 h4,
+.oc-orange-5 h5,
+.oc-orange-5 h6,
+.oc-orange-5 p,
+.oc-orange-5 span,
+.oc-orange-5 strong {
   color: var(--oc-orange-5) !important;
 }
 .oc-orange-6,
-.oc-orange-6 > strong {
+.oc-orange-6 h1,
+.oc-orange-6 h2,
+.oc-orange-6 h3,
+.oc-orange-6 h4,
+.oc-orange-6 h5,
+.oc-orange-6 h6,
+.oc-orange-6 p,
+.oc-orange-6 span,
+.oc-orange-6 strong {
   color: var(--oc-orange-6) !important;
 }
 .oc-orange-7,
-.oc-orange-7 > strong {
+.oc-orange-7 h1,
+.oc-orange-7 h2,
+.oc-orange-7 h3,
+.oc-orange-7 h4,
+.oc-orange-7 h5,
+.oc-orange-7 h6,
+.oc-orange-7 p,
+.oc-orange-7 span,
+.oc-orange-7 strong {
   color: var(--oc-orange-7) !important;
 }
 .oc-orange-8,
-.oc-orange-8 > strong {
+.oc-orange-8 h1,
+.oc-orange-8 h2,
+.oc-orange-8 h3,
+.oc-orange-8 h4,
+.oc-orange-8 h5,
+.oc-orange-8 h6,
+.oc-orange-8 p,
+.oc-orange-8 span,
+.oc-orange-8 strong {
   color: var(--oc-orange-8) !important;
 }
 .oc-orange-9,
-.oc-orange-9 > strong {
+.oc-orange-9 h1,
+.oc-orange-9 h2,
+.oc-orange-9 h3,
+.oc-orange-9 h4,
+.oc-orange-9 h5,
+.oc-orange-9 h6,
+.oc-orange-9 p,
+.oc-orange-9 span,
+.oc-orange-9 strong {
   color: var(--oc-orange-9) !important;
 }
