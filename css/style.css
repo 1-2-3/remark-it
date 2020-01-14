@@ -395,3 +395,8 @@ pre {
 .opacity-90 {
   opacity: 0.9;
 }
+
+/* 对角线半透明渐变变暗蒙版 */
+.dark-mask-1 {
+  background-image: linear-gradient(150deg, rgba(0, 0, 0, 100%), rgba(0, 0, 0, 85%), rgba(0, 0, 0, 40%));
+}
