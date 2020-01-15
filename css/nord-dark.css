@@ -15,6 +15,7 @@
 .nord-dark h6,
 .nord-dark p,
 .nord-dark span,
+.nord-dark strong,
 .nord-dark li {
   color: var(--nord6);
 }

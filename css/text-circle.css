@@ -1,10 +1,9 @@
 @import "./open-color.css";
 
 /*
- * 文本框样式
+ * 圆形文本框
 */
-.rect {
-  padding: 0.6em 0.85em;
+.circle {
   line-height: 1em;
   border-width: 1px;
   margin: 0.3em;
@@ -13,35 +12,41 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-radius: 50%;
+  position: relative;
 }
-
-.rect,
-.rect.gray,
-.rect.red,
-.rect.pink,
-.rect.grape,
-.rect.violet,
-.rect.indigo,
-.rect.blue,
-.rect.cyan,
-.rect.teal,
-.rect.green,
-.rect.lime,
-.rect.yellow,
-.rect.orange,
-.rect h1,
-.rect h2,
-.rect h3,
-.rect h4,
-.rect h5,
-.rect h6,
-.rect p,
-.rect span,
-.rect strong {
+.circle,
+.circle.gray,
+.circle.red,
+.circle.pink,
+.circle.grape,
+.circle.violet,
+.circle.indigo,
+.circle.blue,
+.circle.cyan,
+.circle.teal,
+.circle.green,
+.circle.lime,
+.circle.yellow,
+.circle.orange,
+.circle h1,
+.circle h2,
+.circle h3,
+.circle h4,
+.circle h5,
+.circle h6,
+.circle p,
+.circle span,
+.circle strong {
   color: #333;
 }
+/* 实现宽高比 1:1 */
+.circle:before {
+  content: "";
+  padding-top: 100%;
+}
 
-.rect p {
+.circle p {
   padding: 0px;
   margin: 0px;
   display: flex;
@@ -51,191 +56,155 @@
   width: 100%;
 }
 
-.rect.line-1 {
-  line-height: 1em;
-}
-
-.rect.line-2 {
-  line-height: 2em;
-}
-
-.rect.line-3 {
-  line-height: 3em;
-}
-
-.rect.round-xs {
-  border-radius: 0.1em;
-}
-
-.rect.round-sm {
-  border-radius: 0.2em;
-}
-
-.rect.round-md {
-  border-radius: 0.4em;
-}
-
-.rect.round-lg {
-  border-radius: 0.6em;
-}
-
-.rect.round-xl {
-  border-radius: 0.8em;
-}
-
-.rect.round-xxl {
-  border-radius: 1em;
-}
-
-.rect.border {
+.circle.border {
   border-width: 1px;
   border-style: solid;
 }
 
-.rect.dash-border {
+.circle.dash-border {
   border-width: 1px;
   border-style: dashed;
 }
 
-.rect.gray {
+.circle.gray {
   border-color: var(--oc-gray-7);
   background-color: var(--oc-gray-3);
 }
-.rect.red {
+.circle.red {
   border-color: var(--oc-red-7);
   background-color: var(--oc-red-3);
 }
-.rect.pink {
+.circle.pink {
   border-color: var(--oc-pink-7);
   background-color: var(--oc-pink-3);
 }
-.rect.grape {
+.circle.grape {
   border-color: var(--oc-grape-7);
   background-color: var(--oc-grape-3);
 }
-.rect.violet {
+.circle.violet {
   border-color: var(--oc-violet-7);
   background-color: var(--oc-violet-3);
 }
-.rect.indigo {
+.circle.indigo {
   border-color: var(--oc-indigo-7);
   background-color: var(--oc-indigo-3);
 }
-.rect.blue {
+.circle.blue {
   border-color: var(--oc-blue-7);
   background-color: var(--oc-blue-3);
 }
-.rect.cyan {
+.circle.cyan {
   border-color: var(--oc-cyan-7);
   background-color: var(--oc-cyan-3);
 }
-.rect.teal {
+.circle.teal {
   border-color: var(--oc-teal-7);
   background-color: var(--oc-teal-3);
 }
-.rect.green {
+.circle.green {
   border-color: var(--oc-green-7);
   background-color: var(--oc-green-3);
 }
-.rect.lime {
+.circle.lime {
   border-color: var(--oc-lime-7);
   background-color: var(--oc-lime-3);
 }
-.rect.yellow {
+.circle.yellow {
   border-color: var(--oc-yellow-7);
   background-color: var(--oc-yellow-3);
 }
-.rect.orange {
+.circle.orange {
   border-color: var(--oc-orange-7);
   background-color: var(--oc-orange-3);
 }
 
-.rect.dark.gray {
+.circle.dark.gray {
   background-color: var(--oc-gray-6);
   border-color: var(--oc-gray-9);
 }
-.rect.dark.red {
+.circle.dark.red {
   background-color: var(--oc-red-6);
   border-color: var(--oc-red-9);
 }
-.rect.dark.pink {
+.circle.dark.pink {
   background-color: var(--oc-pink-6);
   border-color: var(--oc-pink-9);
 }
-.rect.dark.grape {
+.circle.dark.grape {
   background-color: var(--oc-grape-6);
   border-color: var(--oc-grape-9);
 }
-.rect.dark.violet {
+.circle.dark.violet {
   background-color: var(--oc-violet-6);
   border-color: var(--oc-violet-9);
 }
-.rect.dark.indigo {
+.circle.dark.indigo {
   background-color: var(--oc-indigo-6);
   border-color: var(--oc-indigo-9);
 }
-.rect.dark.blue {
+.circle.dark.blue {
   background-color: var(--oc-blue-6);
   border-color: var(--oc-blue-9);
 }
-.rect.dark.cyan {
+.circle.dark.cyan {
   background-color: var(--oc-cyan-6);
   border-color: var(--oc-cyan-9);
 }
-.rect.dark.teal {
+.circle.dark.teal {
   background-color: var(--oc-teal-6);
   border-color: var(--oc-teal-9);
 }
-.rect.dark.green {
+.circle.dark.green {
   background-color: var(--oc-green-6);
   border-color: var(--oc-green-9);
 }
-.rect.dark.lime {
+.circle.dark.lime {
   background-color: var(--oc-lime-6);
   border-color: var(--oc-lime-9);
 }
-.rect.dark.yellow {
+.circle.dark.yellow {
   background-color: var(--oc-yellow-6);
   border-color: var(--oc-yellow-9);
 }
-.rect.dark.orange {
+.circle.dark.orange {
   background-color: var(--oc-orange-6);
   border-color: var(--oc-orange-9);
 }
 
-.rect.black,
-.rect.black h1,
-.rect.black h2,
-.rect.black h3,
-.rect.black h4,
-.rect.black h5,
-.rect.black h6,
-.rect.black p,
-.rect.black span,
-.rect.black strong,
-.rect.black i {
+.circle.black,
+.circle.black h1,
+.circle.black h2,
+.circle.black h3,
+.circle.black h4,
+.circle.black h5,
+.circle.black h6,
+.circle.black p,
+.circle.black span,
+.circle.black strong,
+.circle.black i {
   color: var(--oc-gray-1);
   background-color: #000;
   border-color: #000;
 }
 
-.rect.white,
-.rect.white h1,
-.rect.white h2,
-.rect.white h3,
-.rect.white h4,
-.rect.white h5,
-.rect.white h6,
-.rect.white p,
-.rect.white span,
-.rect.white strong,
-.rect.white i {
+.circle.white,
+.circle.white h1,
+.circle.white h2,
+.circle.white h3,
+.circle.white h4,
+.circle.white h5,
+.circle.white h6,
+.circle.white p,
+.circle.white span,
+.circle.white strong,
+.circle.white i {
   color: var(--oc-gray-9) !important;
   background-color: #fff;
   border-color: #fff;
 }
 
-.rect.transbg,
-.rect.dark.transbg {
+.circle.transbg,
+.circle.dark.transbg {
   background-color: transparent;
 }

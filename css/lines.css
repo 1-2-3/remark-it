@@ -1,0 +1,120 @@
+.hline {
+  border-top: 1px solid transparent;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  height: 1px;
+}
+
+.vline {
+  border-left: 1px solid transparent;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  width: 1px;
+}
+
+.hline.gray,
+.vline.gray {
+  border-color: var(--oc-gray-7);
+}
+.hline.red,
+.vline.red {
+  border-color: var(--oc-red-7);
+}
+.hline.pink,
+.vline.pink {
+  border-color: var(--oc-pink-7);
+}
+.hline.grape,
+.vline.grape {
+  border-color: var(--oc-grape-7);
+}
+.hline.violet,
+.vline.violet {
+  border-color: var(--oc-violet-7);
+}
+.hline.indigo,
+.vline.indigo {
+  border-color: var(--oc-indigo-7);
+}
+.hline.blue,
+.vline.blue {
+  border-color: var(--oc-blue-7);
+}
+.hline.cyan,
+.vline.cyan {
+  border-color: var(--oc-cyan-7);
+}
+.hline.teal,
+.vline.teal {
+  border-color: var(--oc-teal-7);
+}
+.hline.green,
+.vline.green {
+  border-color: var(--oc-green-7);
+}
+.hline.lime,
+.vline.lime {
+  border-color: var(--oc-lime-7);
+}
+.hline.yellow,
+.vline.yellow {
+  border-color: var(--oc-yellow-7);
+}
+.hline.orange,
+.vline.orange {
+  border-color: var(--oc-orange-7);
+}
+.hline.dark.gray,
+.vline.dark.gray {
+  border-color: var(--oc-gray-9);
+}
+.hline.dark.red,
+.vline.dark.red {
+  border-color: var(--oc-red-9);
+}
+.hline.dark.pink,
+.vline.dark.pink {
+  border-color: var(--oc-pink-9);
+}
+.hline.dark.grape,
+.vline.dark.grape {
+  border-color: var(--oc-grape-9);
+}
+.hline.dark.violet,
+.vline.dark.violet {
+  border-color: var(--oc-violet-9);
+}
+.hline.dark.indigo,
+.vline.dark.indigo {
+  border-color: var(--oc-indigo-9);
+}
+.hline.dark.blue,
+.vline.dark.blue {
+  border-color: var(--oc-blue-9);
+}
+.hline.dark.cyan,
+.vline.dark.cyan {
+  border-color: var(--oc-cyan-9);
+}
+.hline.dark.teal,
+.vline.dark.teal {
+  border-color: var(--oc-teal-9);
+}
+.hline.dark.green,
+.vline.dark.green {
+  border-color: var(--oc-green-9);
+}
+.hline.dark.lime,
+.vline.dark.lime {
+  border-color: var(--oc-lime-9);
+}
+.hline.dark.yellow,
+.vline.dark.yellow {
+  border-color: var(--oc-yellow-9);
+}
+.hline.dark.orange,
+.vline.dark.orange {
+  border-color: var(--oc-orange-9);
+}
