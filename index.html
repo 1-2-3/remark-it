@@ -1204,10 +1204,17 @@ npm install -g decktape
 ```cmd
 C:\> decktape remark https://1-2-3.github.io/remark-it remark-it.pdf 
 ```
-<mark>如果幻灯尚未发布到互联网上，URL为 file: 开头的本地传输协议，需要添加 --chrome-arg=--disable-web-security 参数，否则会报 DOMException 错误，例:</mark>
-```
-C:\> decktape remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/index.html remark-it.pdf --chrome-arg=--disable-web-security
-```
+.font-xs[
+  <mark>如果幻灯尚未发布到互联网上，URL为 file: 开头的本地传输协议，需要添加 --chrome-arg=--disable-web-security 参数，否则会报 DOMException 错误，例:</mark>
+  ```cmd
+  C:\> decktape remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/index.html remark-it.pdf --chrome-arg=--disable-web-security
+  ```
+  追加 `--screenshots` 参数可同时导出图片；追加 `--slides` 参数可指定要导出的页码范围，例：
+  ```cmd
+  C:\> mkdir screenshots
+  C:\> decktape --screenshots --screenshots-size=2000x1500 --slides 36,37,38 remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/index.html demo.pdf --chrome-arg=--disable-web-security
+  ```
+]
 
 ---
 

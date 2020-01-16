@@ -1200,11 +1200,17 @@ npm install -g decktape
 ```cmd
 C:\> decktape remark https://1-2-3.github.io/remark-it remark-it.pdf 
 ```
-If the slide has not yet been published to the Internet, the URL is the local transport protocol beginning with `file:`. You need to add --chrome -- arg=--disable-web-security parameter, otherwise DOMException error will be reported. For example:
-```
-C:\> decktape remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/index.html remark-it.pdf --chrome-arg=--disable-web-security
-```
-
+.font-xs[
+  <mark>If the slide has not yet been published to the Internet, the URL is the local transport protocol beginning with `file:`. You need to add --chrome -- arg=--disable-web-security parameter, otherwise DOMException error will be reported. For example:</mark>
+  ```
+  C:\> decktape remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/index.html remark-it.pdf --chrome-arg=--disable-web-security
+  ```
+  Append `--screenshots` parameters can export pictures at the same time; Appends `--slides` arguments to specify the range of page Numbers to export, for example:
+  ```cmd
+  C:\> mkdir screenshots
+  C:\> decktape --screenshots --screenshots-size=2000x1500 --slides 36,37,38 remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/index.html demo.pdf --chrome-arg=--disable-web-security
+  ```
+]
 ---
 
 ## Thanks
