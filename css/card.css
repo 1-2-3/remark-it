@@ -15,6 +15,17 @@
   overflow: hidden;
 }
 
+.card .section.right,
+.card .section.right > div,
+.card .section.right > div > p,
+.card .section.right > p,
+.card .section.right > p > span,
+.card .section.right > span,
+.card .section.right > strong {
+  justify-content: flex-end;
+  text-align: right;
+}
+
 .card.noborder {
   border: 0px;
   border-radius: 0px;
@@ -46,6 +57,7 @@
 .card .section > div,
 .card .section > span,
 .card .section > p,
+.card .section > p > span,
 .card .section > strong {
   display: flex !important;
   flex-wrap: wrap;

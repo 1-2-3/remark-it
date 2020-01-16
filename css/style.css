@@ -123,11 +123,11 @@ pre {
 }
 
 .line-height-1 {
-  line-height: 1em;
+  line-height: 1em !important;
 }
 
 .line-height-1-2 {
-  line-height: 1.2em;
+  line-height: 1.2em !important;
 }
 
 /* 由于 pure.css 提供的网格布局没有 gutter 功能，这里补充 8px 和 16px gutter 的样式 */
