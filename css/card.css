@@ -1,0 +1,266 @@
+@import "./open-color.css";
+
+/*
+ * 卡片
+*/
+.card {
+  padding: 0px;
+  border: 1px solid var(--oc-gray-4);
+  border-radius: 4px;
+  margin: 0.3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.card.noborder {
+  border: 0px;
+  border-radius: 0px;
+}
+
+.card > p {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.card p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.card .section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px 12px;
+  margin: 0px;
+  width: 100%;
+}
+
+.card .section > div,
+.card .section > span,
+.card .section > p,
+.card .section > strong {
+  display: flex !important;
+  flex-wrap: wrap;
+  padding: 0px;
+  line-height: 1.2em;
+  width: 100%;
+  margin: 0px;
+}
+
+.card .img {
+  display: flex;
+}
+
+.card .hline {
+  border-top: 1px solid var(--oc-gray-4);
+  margin-top: 16px !important;
+  margin-bottom: 12px !important;
+}
+
+/* 所有分两栏 */
+.card.book > .section,
+.card.book > .img,
+.card.book > p {
+  flex-basis: 50%;
+  margin: 0px;
+}
+
+/* 色彩 */
+.card.gray {
+  border-color: var(--oc-gray-7);
+  background-color: var(--oc-gray-3);
+}
+.card.red {
+  border-color: var(--oc-red-7);
+  background-color: var(--oc-red-3);
+}
+.card.pink {
+  border-color: var(--oc-pink-7);
+  background-color: var(--oc-pink-3);
+}
+.card.grape {
+  border-color: var(--oc-grape-7);
+  background-color: var(--oc-grape-3);
+}
+.card.violet {
+  border-color: var(--oc-violet-7);
+  background-color: var(--oc-violet-3);
+}
+.card.indigo {
+  border-color: var(--oc-indigo-7);
+  background-color: var(--oc-indigo-3);
+}
+.card.blue {
+  border-color: var(--oc-blue-7);
+  background-color: var(--oc-blue-3);
+}
+.card.cyan {
+  border-color: var(--oc-cyan-7);
+  background-color: var(--oc-cyan-3);
+}
+.card.teal {
+  border-color: var(--oc-teal-7);
+  background-color: var(--oc-teal-3);
+}
+.card.green {
+  border-color: var(--oc-green-7);
+  background-color: var(--oc-green-3);
+}
+.card.lime {
+  border-color: var(--oc-lime-7);
+  background-color: var(--oc-lime-3);
+}
+.card.yellow {
+  border-color: var(--oc-yellow-7);
+  background-color: var(--oc-yellow-3);
+}
+.card.orange {
+  border-color: var(--oc-orange-7);
+  background-color: var(--oc-orange-3);
+}
+
+.card.dark.gray {
+  background-color: var(--oc-gray-6);
+  border-color: var(--oc-gray-9);
+}
+.card.dark.red {
+  background-color: var(--oc-red-6);
+  border-color: var(--oc-red-9);
+}
+.card.dark.pink {
+  background-color: var(--oc-pink-6);
+  border-color: var(--oc-pink-9);
+}
+.card.dark.grape {
+  background-color: var(--oc-grape-6);
+  border-color: var(--oc-grape-9);
+}
+.card.dark.violet {
+  background-color: var(--oc-violet-6);
+  border-color: var(--oc-violet-9);
+}
+.card.dark.indigo {
+  background-color: var(--oc-indigo-6);
+  border-color: var(--oc-indigo-9);
+}
+.card.dark.blue {
+  background-color: var(--oc-blue-6);
+  border-color: var(--oc-blue-9);
+}
+.card.dark.cyan {
+  background-color: var(--oc-cyan-6);
+  border-color: var(--oc-cyan-9);
+}
+.card.dark.teal {
+  background-color: var(--oc-teal-6);
+  border-color: var(--oc-teal-9);
+}
+.card.dark.green {
+  background-color: var(--oc-green-6);
+  border-color: var(--oc-green-9);
+}
+.card.dark.lime {
+  background-color: var(--oc-lime-6);
+  border-color: var(--oc-lime-9);
+}
+.card.dark.yellow {
+  background-color: var(--oc-yellow-6);
+  border-color: var(--oc-yellow-9);
+}
+.card.dark.orange {
+  background-color: var(--oc-orange-6);
+  border-color: var(--oc-orange-9);
+}
+
+.card.black,
+.card.black h1,
+.card.black h2,
+.card.black h3,
+.card.black h4,
+.card.black h5,
+.card.black h6,
+.card.black p,
+.card.black span,
+.card.black strong,
+.card.black i {
+  color: var(--oc-gray-1);
+  background-color: #000;
+  border-color: #000;
+}
+
+.card.white,
+.card.white h1,
+.card.white h2,
+.card.white h3,
+.card.white h4,
+.card.white h5,
+.card.white h6,
+.card.white p,
+.card.white span,
+.card.white strong,
+.card.white i {
+  color: var(--oc-gray-9) !important;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.card.gradient.gray {
+  background: radial-gradient(circle, var(--oc-gray-3) -9%, var(--oc-gray-9) 90%);
+  border-color: var(--oc-gray-9);
+}
+.card.gradient.red {
+  background: radial-gradient(circle, var(--oc-red-3) -9%, var(--oc-red-9) 90%);
+  border-color: var(--oc-red-9);
+}
+.card.gradient.pink {
+  background: radial-gradient(circle, var(--oc-pink-3) -9%, var(--oc-pink-9) 90%);
+  border-color: var(--oc-pink-9);
+}
+.card.gradient.grape {
+  background: radial-gradient(circle, var(--oc-grape-3) -9%, var(--oc-grape-9) 90%);
+  border-color: var(--oc-grape-9);
+}
+.card.gradient.violet {
+  background: radial-gradient(circle, var(--oc-violet-3) -9%, var(--oc-violet-9) 90%);
+  border-color: var(--oc-violet-9);
+}
+.card.gradient.indigo {
+  background: radial-gradient(circle, var(--oc-indigo-3) -9%, var(--oc-indigo-9) 90%);
+  border-color: var(--oc-indigo-9);
+}
+.card.gradient.blue {
+  background: radial-gradient(circle, var(--oc-blue-3) -9%, var(--oc-blue-9) 90%);
+  border-color: var(--oc-blue-9);
+}
+.card.gradient.cyan {
+  background: radial-gradient(circle, var(--oc-cyan-3) -9%, var(--oc-cyan-9) 90%);
+  border-color: var(--oc-cyan-9);
+}
+.card.gradient.teal {
+  background: radial-gradient(circle, var(--oc-teal-3) -9%, var(--oc-teal-9) 90%);
+  border-color: var(--oc-teal-9);
+}
+.card.gradient.green {
+  background: radial-gradient(circle, var(--oc-green-3) -9%, var(--oc-green-9) 90%);
+  border-color: var(--oc-green-9);
+}
+.card.gradient.lime {
+  background: radial-gradient(circle, var(--oc-lime-3) -9%, var(--oc-lime-9) 90%);
+  border-color: var(--oc-lime-9);
+}
+.card.gradient.yellow {
+  background: radial-gradient(circle, var(--oc-yellow-3) -9%, var(--oc-yellow-9) 90%);
+  border-color: var(--oc-yellow-9);
+}
+.card.gradient.orange {
+  background: radial-gradient(circle, var(--oc-orange-3) -9%, var(--oc-orange-9) 90%);
+  border-color: var(--oc-orange-9);
+}
