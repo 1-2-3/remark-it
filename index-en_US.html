@@ -1211,6 +1211,30 @@ C:\> decktape remark https://1-2-3.github.io/remark-it remark-it.pdf
   C:\> decktape --screenshots --screenshots-size=2000x1500 --slides 36,37,38 remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/index.html demo.pdf --chrome-arg=--disable-web-security
   ```
 ]
+
+---
+
+class: nord-dark
+
+## Export high-resolution images from PPT
+
+.font-sm[
+
+After all, PowerPoint has a lot of ready-made templates and great plugins like [iSlide](https://www.islide.cc/) that sometimes 
+need to be used to generate complex page effects that can be exported as images. However, the default resolution 
+for PowerPoint exporting PNG images is very low, and exporting SVG images is not supported. 
+The solution is to modify the windows registry and add the parameter `ExportBitmapResolution`:
+```html
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\PowerPoint\Options]
+"ExportBitmapResolution"=dword:000000c8
+```
+The above parameters will adjust the default exported image resolution to 200dpi(2667 × 1500), 
+please refer to [official document](https://docs.microsoft.com/en-us/office/troubleshoot/powerpoint/change-export-slide-resolution) for details.
+
+![](static/ppt-option.png)
+
+]
+
 ---
 
 ## Thanks

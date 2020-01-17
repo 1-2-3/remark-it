@@ -1219,6 +1219,26 @@ C:\> decktape remark https://1-2-3.github.io/remark-it remark-it.pdf
 
 ---
 
+class: nord-dark
+
+## 其它 · 从 PPT 导出高分辨率图片
+
+.font-sm[
+
+毕竟 PPT 里有很多现成的模板以及 [iSlide](https://www.islide.cc/) 这样优秀的插件，有时候需要利用它们生成复杂的页面效果，导出为图片再插入 Remarkjs 幻灯片。
+但 PPT 导出 PNG 图片的默认分辨率很低，又不支持导出 SVG 图片。解决方法是修改注册表，新增参数 `ExportBitmapResolution`：
+```html
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\PowerPoint\Options]
+"ExportBitmapResolution"=dword:000000c8
+```
+上述参数将默认导出图片分辨率调整为 200dpi(2667 × 1500)，详情可参考[官方文档](https://docs.microsoft.com/en-us/office/troubleshoot/powerpoint/change-export-slide-resolution)。
+
+![](static/ppt-option.png)
+
+]
+
+---
+
 ## 致谢
 
 模板基于如下开源项目：
