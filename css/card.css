@@ -62,9 +62,14 @@
   display: flex !important;
   flex-wrap: wrap;
   padding: 0px;
-  line-height: 1.2em;
+  line-height: 1.5em;
   width: 100%;
   margin: 0px;
+  align-items: baseline;
+}
+
+.card .section .remark-inline-code {
+  line-height: 1.5em;
 }
 
 .card .img {
@@ -275,4 +280,90 @@
 .card.gradient.orange {
   background: radial-gradient(circle, var(--oc-orange-3) -9%, var(--oc-orange-9) 90%);
   border-color: var(--oc-orange-9);
+}
+
+/*
+ * 矩阵
+ */
+.card.matrix {
+  align-items: stretch;
+}
+
+.card.matrix,
+.card.matrix > .card {
+  border-radius: 0px;
+  border-color: var(--oc-gray-7) !important;
+  margin: 0px;
+  border: 0px;
+}
+
+.nord-dark .card.matrix,
+.nord-dark .card.matrix > .card {
+  border-radius: 0px;
+  border-color: var(--nord4) !important;
+  margin: 0px;
+  border: 0px;
+}
+
+.card.matrix.border-top-solid > .card {
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.card.matrix.border-top-dashed > .card {
+  border-top-width: 1px;
+  border-top-style: dashed;
+}
+
+.card.matrix.border-bottom-solid > .card {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.card.matrix.border-bottom-dashed > .card {
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+}
+
+.card.matrix.border-left-solid > .card:first-child {
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+.card.matrix.border-left-dashed > .card:first-child {
+  border-left-width: 1px;
+  border-left-style: dashed;
+}
+
+.card.matrix.border-middle-solid > .card:not(:last-child) {
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+.card.matrix.border-middle-dashed > .card:not(:last-child) {
+  border-right-width: 1px;
+  border-right-style: dashed;
+}
+
+.card.matrix.border-right-solid > .card:last-child {
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+.card.matrix.border-right-dashed > .card:last-child {
+  border-right-width: 1px;
+  border-right-style: dashed;
+}
+
+.card.matrix .border-top-none {
+  border-top-width: 0px !important;
+}
+.card.matrix .border-bottom-none {
+  border-bottom-width: 0px !important;
+}
+.card.matrix .border-left-none {
+  border-left-width: 0px !important;
+}
+.card.matrix .border-right-none {
+  border-right-width: 0px !important;
 }

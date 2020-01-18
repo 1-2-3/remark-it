@@ -49,6 +49,16 @@
     WenQuanYi Micro Hei, sans;
 }
 
+.remark-slide-content .center {
+  text-align: center;
+  justify-content: center;
+}
+
+.remark-slide-content .middle {
+  vertical-align: middle;
+  align-items: center;
+}
+
 /* 针对 typo.css 做一些修正 */
 a.github-fork-ribbon {
   border-bottom-color: transparent;
