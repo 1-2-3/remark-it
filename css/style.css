@@ -217,6 +217,42 @@ pre {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.nord-dark .st {
+  border: 1px solid var(--nord3);
+}
+
+.nord-dark .st table thead th {
+  color: var(--nord6);
+}
+
+.nord-dark .st table td,
+.nord-dark .st table th,
+.nord-dark .st table thead,
+.nord-dark .st table thead th,
+.nord-dark .st table tr {
+  border-color: var(--nord3);
+}
+
+.nord-dark .st table td,
+.nord-dark .st table tr {
+  color: var(--nord6);
+  opacity: 0.9;
+}
+
+.nord-dark .st table th,
+.nord-dark .st table thead,
+.nord-dark .st table thead th {
+  color: var(--nord6);
+}
+
+.nord-dark .st.noborder {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid var(--nord3);
+  border-radius: 0px;
+}
+
 /*
  * quasar 样式修正
 */
@@ -268,7 +304,8 @@ pre {
   column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
 }
 
-.column-norule {
+.column-norule,
+.nord-dark .column-norule {
   column-gap: 2em;
   column-rule: 0px;
 }
