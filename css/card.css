@@ -28,6 +28,9 @@
 
 .card.noborder {
   border: 0px;
+}
+
+.card.noround {
   border-radius: 0px;
 }
 
@@ -366,4 +369,297 @@
 }
 .card.matrix .border-right-none {
   border-right-width: 0px !important;
+}
+
+/* 
+ * 气泡箭头
+ */
+.card.arrow-bottom {
+  position: relative;
+  overflow: visible;
+  margin: 0.4em;
+}
+.card.arrow-bottom:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-style: solid;
+  border-width: 1px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  bottom: -6px;
+  border-color: transparent var(--oc-gray-4) var(--oc-gray-4) transparent;
+}
+
+.card.arrow-top {
+  position: relative;
+  overflow: visible;
+  margin: 0.4em;
+}
+.card.arrow-top:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-style: solid;
+  border-width: 1px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-135deg);
+  top: -6px;
+  border-color: transparent var(--oc-gray-4) var(--oc-gray-4) transparent;
+}
+
+.card.arrow-left {
+  position: relative;
+  overflow: visible;
+  margin: 0.4em;
+}
+.card.arrow-left:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-style: solid;
+  border-width: 1px;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+  left: -6px;
+  border-color: transparent var(--oc-gray-4) var(--oc-gray-4) transparent;
+}
+
+.card.arrow-right {
+  position: relative;
+  overflow: visible;
+  margin: 0.4em;
+}
+.card.arrow-right:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-style: solid;
+  border-width: 1px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  right: -6px;
+  border-color: transparent var(--oc-gray-4) var(--oc-gray-4) transparent;
+}
+
+.nord-dark .card.arrow-bottom:after,
+.nord-dark .card.arrow-top:after,
+.nord-dark .card.arrow-left:after,
+.nord-dark .card.arrow-right:after {
+  background-color: var(--nord0);
+}
+
+/* .card.red.arrow-bottom:after,
+.card.red.arrow-top:after,
+.card.red.arrow-left:after,
+.card.red.arrow-right:after {
+  border-color: transparent var(--oc-red-7) var(--oc-red-7) transparent;
+  background-color: var(--oc-red-3);
+} */
+
+.card.gray.arrow-bottom:after,
+.card.gray.arrow-top:after,
+.card.gray.arrow-left:after,
+.card.gray.arrow-right:after {
+  border-color: transparent var(--oc-gray-7) var(--oc-gray-7) transparent;
+  background-color: var(--oc-gray-3);
+}
+.card.red.arrow-bottom:after,
+.card.red.arrow-top:after,
+.card.red.arrow-left:after,
+.card.red.arrow-right:after {
+  border-color: transparent var(--oc-red-7) var(--oc-red-7) transparent;
+  background-color: var(--oc-red-3);
+}
+.card.pink.arrow-bottom:after,
+.card.pink.arrow-top:after,
+.card.pink.arrow-left:after,
+.card.pink.arrow-right:after {
+  border-color: transparent var(--oc-pink-7) var(--oc-pink-7) transparent;
+  background-color: var(--oc-pink-3);
+}
+.card.grape.arrow-bottom:after,
+.card.grape.arrow-top:after,
+.card.grape.arrow-left:after,
+.card.grape.arrow-right:after {
+  border-color: transparent var(--oc-grape-7) var(--oc-grape-7) transparent;
+  background-color: var(--oc-grape-3);
+}
+.card.violet.arrow-bottom:after,
+.card.violet.arrow-top:after,
+.card.violet.arrow-left:after,
+.card.violet.arrow-right:after {
+  border-color: transparent var(--oc-violet-7) var(--oc-violet-7) transparent;
+  background-color: var(--oc-violet-3);
+}
+.card.indigo.arrow-bottom:after,
+.card.indigo.arrow-top:after,
+.card.indigo.arrow-left:after,
+.card.indigo.arrow-right:after {
+  border-color: transparent var(--oc-indigo-7) var(--oc-indigo-7) transparent;
+  background-color: var(--oc-indigo-3);
+}
+.card.blue.arrow-bottom:after,
+.card.blue.arrow-top:after,
+.card.blue.arrow-left:after,
+.card.blue.arrow-right:after {
+  border-color: transparent var(--oc-blue-7) var(--oc-blue-7) transparent;
+  background-color: var(--oc-blue-3);
+}
+.card.cyan.arrow-bottom:after,
+.card.cyan.arrow-top:after,
+.card.cyan.arrow-left:after,
+.card.cyan.arrow-right:after {
+  border-color: transparent var(--oc-cyan-7) var(--oc-cyan-7) transparent;
+  background-color: var(--oc-cyan-3);
+}
+.card.teal.arrow-bottom:after,
+.card.teal.arrow-top:after,
+.card.teal.arrow-left:after,
+.card.teal.arrow-right:after {
+  border-color: transparent var(--oc-teal-7) var(--oc-teal-7) transparent;
+  background-color: var(--oc-teal-3);
+}
+.card.green.arrow-bottom:after,
+.card.green.arrow-top:after,
+.card.green.arrow-left:after,
+.card.green.arrow-right:after {
+  border-color: transparent var(--oc-green-7) var(--oc-green-7) transparent;
+  background-color: var(--oc-green-3);
+}
+.card.lime.arrow-bottom:after,
+.card.lime.arrow-top:after,
+.card.lime.arrow-left:after,
+.card.lime.arrow-right:after {
+  border-color: transparent var(--oc-lime-7) var(--oc-lime-7) transparent;
+  background-color: var(--oc-lime-3);
+}
+.card.yellow.arrow-bottom:after,
+.card.yellow.arrow-top:after,
+.card.yellow.arrow-left:after,
+.card.yellow.arrow-right:after {
+  border-color: transparent var(--oc-yellow-7) var(--oc-yellow-7) transparent;
+  background-color: var(--oc-yellow-3);
+}
+.card.orange.arrow-bottom:after,
+.card.orange.arrow-top:after,
+.card.orange.arrow-left:after,
+.card.orange.arrow-right:after {
+  border-color: transparent var(--oc-orange-7) var(--oc-orange-7) transparent;
+  background-color: var(--oc-orange-3);
+}
+
+.card.dark.gray.arrow-bottom:after,
+.card.dark.gray.arrow-top:after,
+.card.dark.gray.arrow-left:after,
+.card.dark.gray.arrow-right:after {
+  background-color: var(--oc-gray-6);
+  border-color: transparent var(--oc-gray-9) var(--oc-gray-9) transparent;
+}
+.card.dark.red.arrow-bottom:after,
+.card.dark.red.arrow-top:after,
+.card.dark.red.arrow-left:after,
+.card.dark.red.arrow-right:after {
+  background-color: var(--oc-red-6);
+  border-color: transparent var(--oc-red-9) var(--oc-red-9) transparent;
+}
+.card.dark.pink.arrow-bottom:after,
+.card.dark.pink.arrow-top:after,
+.card.dark.pink.arrow-left:after,
+.card.dark.pink.arrow-right:after {
+  background-color: var(--oc-pink-6);
+  border-color: transparent var(--oc-pink-9) var(--oc-pink-9) transparent;
+}
+.card.dark.grape.arrow-bottom:after,
+.card.dark.grape.arrow-top:after,
+.card.dark.grape.arrow-left:after,
+.card.dark.grape.arrow-right:after {
+  background-color: var(--oc-grape-6);
+  border-color: transparent var(--oc-grape-9) var(--oc-grape-9) transparent;
+}
+.card.dark.violet.arrow-bottom:after,
+.card.dark.violet.arrow-top:after,
+.card.dark.violet.arrow-left:after,
+.card.dark.violet.arrow-right:after {
+  background-color: var(--oc-violet-6);
+  border-color: transparent var(--oc-violet-9) var(--oc-violet-9) transparent;
+}
+.card.dark.indigo.arrow-bottom:after,
+.card.dark.indigo.arrow-top:after,
+.card.dark.indigo.arrow-left:after,
+.card.dark.indigo.arrow-right:after {
+  background-color: var(--oc-indigo-6);
+  border-color: transparent var(--oc-indigo-9) var(--oc-indigo-9) transparent;
+}
+.card.dark.blue.arrow-bottom:after,
+.card.dark.blue.arrow-top:after,
+.card.dark.blue.arrow-left:after,
+.card.dark.blue.arrow-right:after {
+  background-color: var(--oc-blue-6);
+  border-color: transparent var(--oc-blue-9) var(--oc-blue-9) transparent;
+}
+.card.dark.cyan.arrow-bottom:after,
+.card.dark.cyan.arrow-top:after,
+.card.dark.cyan.arrow-left:after,
+.card.dark.cyan.arrow-right:after {
+  background-color: var(--oc-cyan-6);
+  border-color: transparent var(--oc-cyan-9) var(--oc-cyan-9) transparent;
+}
+.card.dark.teal.arrow-bottom:after,
+.card.dark.teal.arrow-top:after,
+.card.dark.teal.arrow-left:after,
+.card.dark.teal.arrow-right:after {
+  background-color: var(--oc-teal-6);
+  border-color: transparent var(--oc-teal-9) var(--oc-teal-9) transparent;
+}
+.card.dark.green.arrow-bottom:after,
+.card.dark.green.arrow-top:after,
+.card.dark.green.arrow-left:after,
+.card.dark.green.arrow-right:after {
+  background-color: var(--oc-green-6);
+  border-color: transparent var(--oc-green-9) var(--oc-green-9) transparent;
+}
+.card.dark.lime.arrow-bottom:after,
+.card.dark.lime.arrow-top:after,
+.card.dark.lime.arrow-left:after,
+.card.dark.lime.arrow-right:after {
+  background-color: var(--oc-lime-6);
+  border-color: transparent var(--oc-lime-9) var(--oc-lime-9) transparent;
+}
+.card.dark.yellow.arrow-bottom:after,
+.card.dark.yellow.arrow-top:after,
+.card.dark.yellow.arrow-left:after,
+.card.dark.yellow.arrow-right:after {
+  background-color: var(--oc-yellow-6);
+  border-color: transparent var(--oc-yellow-9) var(--oc-yellow-9) transparent;
+}
+.card.dark.orange.arrow-bottom:after,
+.card.dark.orange.arrow-top:after,
+.card.dark.orange.arrow-left:after,
+.card.dark.orange.arrow-right:after {
+  background-color: var(--oc-orange-6);
+  border-color: transparent var(--oc-orange-9) var(--oc-orange-9) transparent;
+}
+
+.card.noborder.arrow-bottom:after,
+.card.noborder.arrow-top:after,
+.card.noborder.arrow-left:after,
+.card.noborder.arrow-right:after,
+.card.dark.noborder.arrow-bottom:after,
+.card.dark.noborder.arrow-top:after,
+.card.dark.noborder.arrow-left:after,
+.card.dark.noborder.arrow-right:after {
+  border-color: transparent;
 }
