@@ -320,6 +320,18 @@ pre {
   column-rule: 0px;
 }
 
+.column-gap-sm,
+.nord-dark .column-gap-sm {
+  column-gap: 1em;
+  column-rule: 0px;
+}
+
+.column-gap-xs,
+.nord-dark .column-gap-xs {
+  column-gap: 0.5em;
+  column-rule: 0px;
+}
+
 /*
  * 浮动布局
 */

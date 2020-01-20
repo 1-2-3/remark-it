@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  break-inside: avoid;
 }
 
 .rect,

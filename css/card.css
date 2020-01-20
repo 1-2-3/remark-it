@@ -13,6 +13,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   overflow: hidden;
+  break-inside: avoid;
 }
 
 .card .section.right,
@@ -77,6 +78,11 @@
 
 .card .img {
   display: flex;
+  width: 100%;
+}
+
+.card .img > img {
+  width: 100%;
 }
 
 .card .hline {
@@ -662,4 +668,13 @@
 .card.dark.noborder.arrow-left:after,
 .card.dark.noborder.arrow-right:after {
   border-color: transparent;
+}
+
+/* 相框效果 */
+.card.frame {
+  border-radius: 0px;
+  border: 7px solid white;
+  box-shadow: 0px 0px 2px 0px #aaa;
+  margin: 0.5em;
+  display: inline-flex;
 }
