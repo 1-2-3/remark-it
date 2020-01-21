@@ -7,6 +7,7 @@ English | [简体中文](README.md)
 ## Demo
 
 [中文 Demo](https://remark-it.now.sh)
+
 [English Demo](https://remark-it.now.sh/index-en_US.html)
 
 ## Features
