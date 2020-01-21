@@ -4,7 +4,10 @@ markdown / html slideshow template, powered by remarkjs.
 
 English | [简体中文](README.md)
 
-[English Demo](https://1-2-3.github.io/remark-it/index-en_US.html)
+## Demo
+
+[中文 Demo](https://remark-it.now.sh)
+[English Demo](https://remark-it.now.sh/index-en_US.html)
 
 ## Features
 
