@@ -153,6 +153,24 @@ pre {
   box-sizing: border-box;
 }
 
+.gutter-24 {
+  padding-left: 12px;
+  padding-right: 12px;
+  box-sizing: border-box;
+}
+
+.gutter-32 {
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.gutter-64 {
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+}
+
 /*
  * 100% 宽度，无背景色的 Table
  * 可选样式：
@@ -194,10 +212,10 @@ pre {
   border-left: 0;
 }
 
-.st-hline table tbody tr:not(:last-child) td,
+.st-hline table thead th,
 .st-hline table thead th,
 .st-hline table tbody tr:not(:last-child) td,
-.st-hline table thead th,
+.st-hline table tbody tr:not(:last-child) td,
 .st-vline table tr:nth-last-child(2) th,
 .st-vline table thead tr:last-child th,
 .st-allline table tbody tr:not(:last-child) td,
@@ -225,6 +243,7 @@ pre {
 .st.noborder table thead th {
   font-weight: bold;
   color: rgba(0, 0, 0, 0.6);
+  border-bottom-width: 2px;
 }
 
 .nord-dark .st {

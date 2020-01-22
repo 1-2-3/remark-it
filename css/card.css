@@ -83,6 +83,7 @@
 
 .card .img > img {
   width: 100%;
+  /* 修正微信浏览器、UC浏览器Flex布局时高度拉伸问题 */
   align-self: center;
 }
 

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="./css/pure-min.css" />
     <link rel="stylesheet" type="text/css" href="./css/spaces.css" />
     <link rel="stylesheet" type="text/css" href="./css/typo.css" />
+    <link rel="stylesheet" type="text/css" href="./css/devices.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/gh-fork-ribbon.css" />
     <link rel="stylesheet" type="text/css" href="./css/nord-dark.css" />
     <link rel="stylesheet" type="text/css" href="./css/nord-light.css" />
@@ -1219,6 +1220,46 @@ class: nord-light
 
 ---
 
+## 设备
+
+.pure-g[
+  .pure-u-16-24.font-sm.pr-m[
+    [Devices.css](https://github.com/picturepan2/devices.css) 提供了一套高质量的纯 CSS 设备外观。支持的设备有：
+  
+    .st.noborder.st-hline.mb-xs.font-xxs.line-height-1-2[
+    | 设备名称 | CSS 类 | 可选颜色 |
+    | ---- | ---- | ---- |
+    | iPhone X | device device-iphone-x  |  |
+    | iPhone 8 | device device-iphone-8 | device-silver (default)<br/>device-spacegray<br/>device-gold  |
+    | Google Pixel 2 XL | device device-google-pixel-2-xl | |
+    | Google Pixel | device device-google-pixel | device-silver (default)<br />device-black<br />device-blue |
+    | Samsung Galaxy S8 | device device-galaxy-s8 | device-black (default)<br />device-blue |
+    | iPad Pro | device device-ipad-pro | device-silver (default)<br />device-gold<br />device-rosegold<br />device-spacegray |
+    | Surface Pro | device device-surface-pro |  |
+    | Surface Book | device device-surface-book |  |
+    | MacBook | device device-macbook | device-silver (default)<br />device-gold<br />device-rosegold<br />device-spacegray |
+    | MacBook Pro | device device-macbook-pro | device-silver (default)<br />device-spacegray |
+    | Surface Studio | device device-surface-studio |  |
+    | iMac Pro | device device-imac-pro |  |
+    | Apple Watch | device device-apple-watch |  |
+    ]
+  ]
+  .pure-u-8-24.gutter-64[
+    <div class="device device-iphone-x" style="transform: scale(0.5);transform-origin:top left;">
+      <div class="device-frame">
+        <img class="device-content" src="static/vimg22.jpg">
+      </div>
+      <div class="device-stripe"></div>
+      <div class="device-header"></div>
+      <div class="device-sensors"></div>
+      <div class="device-btns"></div>
+      <div class="device-power"></div>
+    </div>
+  ]
+]
+
+---
+
 ## 组件 · 卡片
 
 由于静态 HTML 页面也可以使用 [Vue.js](https://cn.vuejs.org/index.html)，所以所有 [Vue.js组件库](https://awesomejs.dev/for/vue/) 都是可用的！
@@ -1504,7 +1545,8 @@ class: nord-dark
 [Fork me on GitHub CSS ribbon](https://github.com/simonwhitaker/github-fork-ribbon-css)   
 [Decktape](https://github.com/astefanutti/decktape)  
 [Vue.js](https://cn.vuejs.org/index.html)  
-[Quasar](https://quasar.dev/)
+[Quasar](https://quasar.dev/)  
+[Devices.css](https://github.com/picturepan2/devices.css)
 
 <a class="github-fork-ribbon right-top" href="https://github.com/1-2-3/remark-it" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 
