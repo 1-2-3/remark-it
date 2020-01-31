@@ -500,12 +500,18 @@ pre {
   overflow-x: scroll;
 }
 
-.h-scroll::-webkit-scrollbar {
+.v-scroll {
+  overflow-y: scroll;
+}
+
+.h-scroll::-webkit-scrollbar,
+.v-scroll::-webkit-scrollbar {
   height: 6px;
   width: 6px;
 }
 
-.h-scroll::-webkit-scrollbar-thumb {
+.h-scroll::-webkit-scrollbar-thumb,
+.v-scroll::-webkit-scrollbar-thumb {
   background-color: #8c8c8c;
   outline: 1px solid #333;
   border-radius: 4px;
