@@ -132,6 +132,22 @@ pre {
   font-size: 49px;
 }
 
+.font-2x {
+  font-size: 2em;
+}
+
+.font-3x {
+  font-size: 3em;
+}
+
+.font-4x {
+  font-size: 4em;
+}
+
+.font-5x {
+  font-size: 5em;
+}
+
 .line-height-1 {
   line-height: 1em !important;
 }
