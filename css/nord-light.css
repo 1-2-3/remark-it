@@ -137,7 +137,7 @@
   position: absolute;
   width: 6px;
   height: 6px;
-  top: 15px;
+  top: 0.7em;
   left: -20px;
   background-color: var(--nord3);
   border-radius: 50%;
