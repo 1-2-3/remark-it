@@ -1558,7 +1558,7 @@ The template is based on the following open source project：
       // 预处理：去掉每行开头的空格，否则超过2层锁紧的类会导致解析出BUG
       var targetTextArea = document.getElementById("source");
       var lines = targetTextArea.innerHTML.split("\n");
-      targetTextArea.innerHTML = lines.map(line => line.replace(/^\s+/, "")).join("\n");
+      targetTextArea.innerHTML = lines.map(line => line.replace(/^(?!\s+[\-|0-9])\s+/, "")).join("\n");
 
       var slideshow = remark.create({
         ratio: "4:3", // window ratio
