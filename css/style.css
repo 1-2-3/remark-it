@@ -495,6 +495,10 @@ pre {
   background-image: linear-gradient(150deg, rgba(0, 0, 0, 100%), rgba(0, 0, 0, 85%), rgba(0, 0, 0, 40%));
 }
 
+.dark-mask-1-nord {
+  background-image: linear-gradient(150deg, rgba(46, 52, 64, 100%), rgba(46, 52, 64, 100%), rgba(46, 52, 64, 82%));
+}
+
 /* 滚动条 */
 .h-scroll {
   overflow-x: scroll;
