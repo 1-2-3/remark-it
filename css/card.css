@@ -308,6 +308,11 @@
   border: 0px;
 }
 
+/* 由于 matrix 会将内部的卡片的圆角去掉，可以用这个再加回来 */
+.border-radius-xxs {
+  border-radius: 4px !important;
+}
+
 .nord-dark .card.matrix,
 .nord-dark .card.matrix > .card {
   border-radius: 0px;
