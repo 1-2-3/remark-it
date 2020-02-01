@@ -521,3 +521,8 @@ pre {
 .nord-dark .v-scroll::-webkit-scrollbar-thumb {
   background-color: var(--nord1);
 }
+
+/* 卡片放到分栏里会被截断，添加这个样式可避免被截断 */
+.inline-flex {
+  display: inline-flex;
+}
