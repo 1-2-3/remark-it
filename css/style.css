@@ -495,7 +495,7 @@ pre {
   background-image: linear-gradient(150deg, rgba(0, 0, 0, 100%), rgba(0, 0, 0, 85%), rgba(0, 0, 0, 40%));
 }
 
-/* 横向滚动条 */
+/* 滚动条 */
 .h-scroll {
   overflow-x: scroll;
 }
@@ -512,7 +512,12 @@ pre {
 
 .h-scroll::-webkit-scrollbar-thumb,
 .v-scroll::-webkit-scrollbar-thumb {
-  background-color: #8c8c8c;
+  background-color: var(--oc-gray-2);
   outline: 1px solid #333;
   border-radius: 4px;
+}
+
+.nord-dark .h-scroll::-webkit-scrollbar-thumb,
+.nord-dark .v-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--nord1);
 }
