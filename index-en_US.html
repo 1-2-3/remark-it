@@ -973,68 +973,71 @@ class: nord-light, pl-s,pr-s
 
 ## Card · Photo Wall
 
+.font-xs[
+Once you have added the `.preview-win` style class to the card, you can click the card to open a new browser window to preview the image in the card. Then press `Ctrl+W` shortcut to close the preview window. Note that use the shortcut `F11` instead of `F` to enter the full screen mode of the slide, otherwise opening a new browser window will automatically exit the full screen state.
+]
+
 .column-5.column-norule.column-gap-xs[
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/parallax2.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/joker.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/himg222.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/himg55.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/avatar2.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/vimg22.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/himg333.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/mountains.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/vimg11.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/11.png)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/bg.png)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/himg77.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/22.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/himg88.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/mar-1.jpg)]
 ]
-
 
 ]
 
@@ -1577,10 +1580,24 @@ The template is based on the following open source project：
         }
       });
 
+      // 初始化 VUE
       for (var el of document.querySelectorAll(".vue")) {
         new Vue({
           el: el
         });
+      }
+
+      // 初始化可点击预览的卡片
+      var preview_win_cards = document.querySelectorAll(".preview-win");
+      for (var card of preview_win_cards) {
+        (clickedCard => {
+          clickedCard.addEventListener("click", e => {
+            var img = clickedCard.querySelector("img");
+            if (img) {
+              window.open(img.src);
+            }
+          });
+        })(card);
       }
     </script>
   </body>

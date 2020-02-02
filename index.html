@@ -977,68 +977,71 @@ class: nord-light
 
 ## 卡片 · 照片墙
 
+.font-xs[
+为卡片添加 `.preview-win` 样式类之后，就可以通过点击卡片的方式打开新的浏览器窗口预览卡片中的图片。之后可按 `Ctrl+W` 快捷键关闭预览窗口。注意要用快捷键 `F11` 而不是 `F` 进入幻灯片的全屏模式，否则打开新的浏览器窗口会自动退出全屏状态。
+]
+
 .column-5.column-norule.column-gap-xs[
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/parallax2.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/joker.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/himg222.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/himg55.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/avatar2.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/vimg22.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/himg333.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/mountains.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/vimg11.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/11.png)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/bg.png)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/himg77.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/22.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/himg88.jpg)]
 ]
 
-.card.frame[
+.card.frame.preview-win[
   .img[![](static/mar-1.jpg)]
 ]
-
 
 ]
 
@@ -1578,10 +1581,24 @@ class: nord-dark
         }
       });
 
+      // 初始化 VUE
       for (var el of document.querySelectorAll(".vue")) {
         new Vue({
           el: el
         });
+      }
+
+      // 初始化可点击预览的卡片
+      var preview_win_cards = document.querySelectorAll(".preview-win");
+      for (var card of preview_win_cards) {
+        (clickedCard => {
+          clickedCard.addEventListener("click", e => {
+            var img = clickedCard.querySelector("img");
+            if (img) {
+              window.open(img.src);
+            }
+          });
+        })(card);
       }
     </script>
   </body>
