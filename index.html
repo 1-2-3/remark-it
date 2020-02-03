@@ -1488,10 +1488,11 @@ var slideshow = remark.create({
 
 ## 导出 PDF
 
-1. 安装 [decktape](https://github.com/astefanutti/decktape)
+1. 安装 [decktape](https://github.com/astefanutti/decktape) .font-xxs[<mark>*注 高版本的 nodejs 无法安装 decktape，推荐使用 [nvm](https://github.com/coreybutler/nvm-windows) 另行安装一个 8.13.1 版的 nodejs 用于安装 decktape</mark>]
 ```cmd
 npm install -g decktape
 ```
+
 1. 使用 decktape 命令行导出 PDF
 ```cmd
 C:\> decktape remark https://1-2-3.github.io/remark-it remark-it.pdf 
