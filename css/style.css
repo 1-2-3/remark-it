@@ -496,7 +496,13 @@ pre {
 }
 
 .dark-mask-1-nord {
-  background-image: linear-gradient(150deg, rgba(46, 52, 64, 100%), rgba(46, 52, 64, 100%), rgba(46, 52, 64, 90%));
+  background-image: linear-gradient(
+    150deg,
+    rgba(46, 52, 64, 100%),
+    rgba(46, 52, 64, 100%),
+    rgba(46, 52, 64, 98%),
+    rgba(46, 52, 64, 80%)
+  );
 }
 
 /* 滚动条 */
