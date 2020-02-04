@@ -1602,6 +1602,19 @@ The template is based on the following open source project：
           });
         })(card);
       }
+
+      // 背景色变化兼容 F11 全屏
+      function isFullScreen() {
+        return window.fullScreen || (window.innerWidth == screen.width && window.innerHeight == screen.height);
+      }
+
+      window.addEventListener("resize", () => {
+        if (isFullScreen()) {
+          document.body.style["background-color"] = "#000";
+        } else {
+          document.body.style["background-color"] = "#d7d8d2";
+        }
+      });
     </script>
   </body>
 </html>
