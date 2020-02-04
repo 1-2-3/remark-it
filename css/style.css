@@ -26,9 +26,9 @@
   color: red;
 }
 
-/* 背景图片平铺 */
+/* 背景图片拉伸平铺 */
 .remark-slide-content {
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 /* 代码字体 */
