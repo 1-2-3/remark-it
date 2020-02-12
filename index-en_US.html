@@ -505,14 +505,9 @@ Similar to the previous one, but with a white translucent background
 ]
 
 ---
-background-image: url(static/himg88.jpg)
+
+background-image: linear-gradient(150deg, rgba(0, 0, 0, 100%), rgba(0, 0, 0, 85%), rgba(0, 0, 0, 40%)),url(static/himg88.jpg)
 class: nord-dark, center,middle
-
-.abs-layout.top-0.left-0.width-100.height-100.dark-mask-1[
-
-]
-
-.relative-layout[
 
 ## Classic Layout 6
 
@@ -520,7 +515,22 @@ Use a darkening mask with a diagonal gradient
 to block the background, highlighting text  
 is also an interesting way to present it.
 
-]
+---
+
+background-image: linear-gradient(150deg,rgba(46, 52, 64, 100%),rgba(46, 52, 64, 100%),rgba(46, 52, 64, 98%),rgba(46, 52, 64, 80%)), url(static/t0.gif)
+class: nord-dark
+
+## Classic Layout 6 · Implementation
+
+Simply add a linear gradient to the top of the slide page and add a background image:
+```html
+background-image: linear-gradient(150deg,rgba(46, 52, 64, 100%),rgba(46, 52, 64, 100%),rgba(46, 52, 64, 98%),rgba(46, 52, 64, 80%)), url(static/t0.gif)
+```
+
+Or:
+```html
+background-image: linear-gradient(150deg,rgba(46, 52, 64, 100%),rgba(46, 52, 64, 100%),rgba(46, 52, 64, 98%),rgba(46, 52, 64, 80%)), url(static/t0.gif)
+```
 
 ---
 

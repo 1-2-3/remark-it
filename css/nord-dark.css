@@ -170,6 +170,22 @@
   pointer-events: none;
 }
 
+/* 代码框滚动条 */
+.nord-dark .remark-code::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.nord-dark .remark-code::-webkit-scrollbar-thumb {
+  background-color: var(--oc-gray-2);
+  outline: 1px solid #333;
+  border-radius: 4px;
+}
+
+.nord-dark .remark-code::-webkit-scrollbar-thumb {
+  background-color: var(--nord3);
+}
+
 /* .nord-dark-steep-img2 {
   position: relative;
   padding: 2px;
