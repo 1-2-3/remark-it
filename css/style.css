@@ -102,6 +102,15 @@ pre {
   font-size: 14px;
 }
 
+/* 比中号字体略小 */
+.font-m {
+  font-size: 16px;
+}
+
+.font-m .remark-code {
+  font-size: 16px;
+}
+
 /* 中号字体 */
 .font-md {
   font-size: 18px;
