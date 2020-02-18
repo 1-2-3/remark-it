@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="./css/bg-open-color.css" />
     <link rel="stylesheet" type="text/css" href="./css/material-icons.css" />
     <link rel="stylesheet" type="text/css" href="./css/abs-layout.css" />
+    <link rel="stylesheet" type="text/css" href="./css/border-layout.css" />
     <link rel="stylesheet" type="text/css" href="./css/text-rect.css" />
     <link rel="stylesheet" type="text/css" href="./css/text-circle.css" />
     <link rel="stylesheet" type="text/css" href="./css/card.css" />
@@ -417,39 +418,99 @@ Instead:
 
 ---
 
-class: p-0,m-0,vcenter,nord-dark
+class: border-layout
 
-.card.book.noborder.noround.m-0.width-101.relative-layout.right-2[
-  .section.right.pl-xl.pr-l.pt-xl[
-    .font-xxxl.nord4[布局<br/>经典布局<br/>(一)]
+.north.height-20.oc-bg-blue-2[
+  .north
+]
+.west.height-60.width-20.oc-bg-cyan-2[
+  .west
+]
+.east.height-60.width-20.oc-bg-green-2[
+  .east
+]
+.b-center.oc-bg-orange-2[
+  .b-center
+
+  .font-xl[Border 布局]
+
+  Border 布局是一种简洁的布局模式。它将页面划分为 5 个区域，分别是：north、west、east、center 和 south。很多常见的布局形式都可以用 border 布局轻松实现。
+]
+.south.height-20.oc-bg-pink-2[
+  .south
+]
+
+---
+
+class: border-layout, nord-light
+
+.north.height-69[
+  .card.noborder.noround.m-0.width-100.height-100[
+    .abs-layout[
+      .north
+    ]
+    .img[![](static/parallax2.jpg)]
+  ]
+]
+.south.height-31.center[
+  .abs-layout[
+    .south
+  ]
+  .font-xxl.pt-xs[
+    Border 布局举例 · 上下结构
+  ]
+]
+
+---
+
+class: border-layout, nord-dark
+
+.east.height-100.width-53.p-xxs.ml-m[
+  .card.noborder.noround.m-0.width-100.height-100[
+    .abs-layout.oc-gray-5[
+      .east
+    ]
+    .img[![](static/vimg11.jpg)]
+  ]
+]
+.b-center[
+  .right.pt-xxl[
+    .font-xxl.nord4[Border 布局举例<br/>左右结构]
 
     .mt-xxxl.nord4.opacity-60[
       XXXXX XXX X  
       XXX XXXX  
       XX x XXXX  
       XX XX X  
-      XXXXXXXXXXXXX
+      XXXXXXXXXXXXX  
+      .b-center
     ]
   ]
-  .img[![](static/vimg11.jpg)]
 ]
 
 ---
 
-class: p-0,m-0,vcenter,nord-light
+class: border-layout, nord-light
 
-.card.book.noborder.noround.m-0.width-96.relative-layout.left-2[
-  .img[![](static/vimg22.jpg)]
+.west.height-100.width-51.p-xxs.mr-m[
+  .card.noborder.noround.m-0.width-99.height-100[
+    .abs-layout.oc-gray-6[
+      .west
+    ]
+    .img[![](static/vimg22.jpg)]
+  ]
+]
+.b-center[
+  .pt-xxl[
+    .font-xxl[Border 布局举例<br/>左右结构]
 
-  .section.pl-l.pr-l.pt-xl[
-    .font-xxxl[布局<br/>经典布局<br/>(二)]
-
-    .mt-xxxl[
+    .mt-xxxl.opacity-60[
       XXXXX XXX X  
       XXX XXXX  
       XX x XXXX  
       XX XX X  
-      XXXXXXXXXXXXX
+      XXXXXXXXXXXXX  
+      .b-center
     ]
   ]
 ]
@@ -458,7 +519,7 @@ class: p-0,m-0,vcenter,nord-light
 
 class: nord-dark
 
-## 布局 · 经典布局(三)
+## 经典布局举例
 
 .column-2.font-sm[
 
@@ -488,7 +549,7 @@ background-image:url(static/bg.png)
 
 .abs-layout.p-m.top-23.left-2.width-47.oc-bg-black.opacity-40.nord-dark[
 
-## 经典布局(四)
+## 经典布局举例
 
 使用绝度布局 `.abs-layout`，半透明的背景 `.oc-bg-black.opacity-40`，就可以得到这样的效果。
 <br />
@@ -502,7 +563,7 @@ background-image:url(static/himg77.jpg)
 
 .abs-layout.p-m.top-31.left-0.width-100.oc-bg-white.opacity-60.center[
 
-## 经典布局(五)
+## 经典布局举例
 
 与前一个类似，只不过改成白色半透明背景
 
@@ -513,7 +574,7 @@ background-image:url(static/himg77.jpg)
 background-image: linear-gradient(150deg, rgba(0, 0, 0, 100%), rgba(0, 0, 0, 85%), rgba(0, 0, 0, 40%)),url(static/himg88.jpg)
 class: nord-dark, center,middle
 
-## 经典布局(六)
+## 经典布局举例
 
 使用对角线渐变的暗化蒙版遮挡背景，  
 突出文字，也是一种有趣的呈现方式。
@@ -523,7 +584,7 @@ class: nord-dark, center,middle
 background-image: linear-gradient(150deg,rgba(46, 52, 64, 100%),rgba(46, 52, 64, 100%),rgba(46, 52, 64, 98%),rgba(46, 52, 64, 80%)), url(static/t0.gif)
 class: nord-dark
 
-## 经典布局(六) · 实现
+## 经典布局 · 实现
 
 只要在幻灯页头部加上线性渐变样式叠加一个背景图片即可：
 ```html

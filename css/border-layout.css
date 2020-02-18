@@ -1,0 +1,27 @@
+.border-layout {
+  padding: 0px;
+}
+
+.border-layout .north > p,
+.border-layout .east > p,
+.border-layout .west > p,
+.border-layout .b-center > p,
+.border-layout .south > p {
+  margin: 0px;
+}
+
+.east {
+  float: right;
+}
+
+.west {
+  float: left;
+}
+
+.b-center:after {
+  content: " ";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+}

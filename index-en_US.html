@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="./css/bg-open-color.css" />
     <link rel="stylesheet" type="text/css" href="./css/material-icons.css" />
     <link rel="stylesheet" type="text/css" href="./css/abs-layout.css" />
+    <link rel="stylesheet" type="text/css" href="./css/border-layout.css" />
     <link rel="stylesheet" type="text/css" href="./css/text-rect.css" />
     <link rel="stylesheet" type="text/css" href="./css/text-circle.css" />
     <link rel="stylesheet" type="text/css" href="./css/card.css" />
@@ -413,39 +414,100 @@ Sometimes grid layout is too rigid for a well-laid, casual layout. As long as yo
 
 ---
 
-class: p-0,m-0,vcenter,nord-dark
+class: border-layout
 
-.card.book.noborder.noround.m-0.width-101.relative-layout.right-2[
-  .section.right.pl-xl.pr-l.pt-xxl[
-    .font-xxxl.line-height-1.nord4[CLASSIC LAYOUT<br/>ONE]
-    
+.north.height-20.oc-bg-blue-2[
+  .north
+]
+.west.height-60.width-20.oc-bg-cyan-2[
+  .west
+]
+.east.height-60.width-20.oc-bg-green-2[
+  .east
+]
+.b-center.oc-bg-orange-2[
+  .b-center
+
+  .font-xl[Border Layout]
+
+  Border layout is a simple layout pattern. It divides the page into five areas: north, west, east, center, and south. Many common layout forms can be easily implemented with border layout.
+]
+.south.height-20.oc-bg-pink-2[
+  .south
+]
+
+---
+
+
+class: border-layout, nord-light
+
+.north.height-69[
+  .card.noborder.noround.m-0.width-100.height-100[
+    .abs-layout[
+      .north
+    ]
+    .img[![](static/parallax2.jpg)]
+  ]
+]
+.south.height-31.center[
+  .abs-layout[
+    .south
+  ]
+  .font-xxl.pt-xs[
+    Border Layout Example · Up-down Structure
+  ]
+]
+
+---
+
+class: border-layout, nord-dark
+
+.east.height-100.width-53.p-xxs.ml-m[
+  .card.noborder.noround.m-0.width-100.height-100[
+    .abs-layout.oc-gray-5[
+      .east
+    ]
+    .img[![](static/vimg11.jpg)]
+  ]
+]
+.b-center[
+  .right.pt-xxl[
+    .font-xxl.nord4[Border Layout<br/>Left-right Structure]
+
     .mt-xxxl.nord4.opacity-60[
       XXXXX XXX X  
       XXX XXXX  
       XX x XXXX  
       XX XX X  
-      XXXXXXXXXXXXX
+      XXXXXXXXXXXXX  
+      .b-center
     ]
   ]
-  .img[![](static/vimg11.jpg)]
 ]
 
 ---
 
-class: p-0,m-0,vcenter,nord-light
+class: border-layout, nord-light
 
-.card.book.noborder.noround.m-0.width-96.relative-layout.left-2[
-  .img[![](static/vimg22.jpg)]
+.west.height-100.width-51.p-xxs.mr-m[
+  .card.noborder.noround.m-0.width-99.height-100[
+    .abs-layout.oc-gray-6[
+      .west
+    ]
+    .img[![](static/vimg22.jpg)]
+  ]
+]
+.b-center[
+  .pt-xxl[
+    .font-xxl[Border Layout<br/>Left-right Structure]
 
-  .section.pl-l.pr-xxl.pt-xxl[
-    .font-xxxl[CLASSIC LAYOUT TWO]
-
-    .mt-xxxl[
+    .mt-xxxl.opacity-60[
       XXXXX XXX X  
       XXX XXXX  
       XX x XXXX  
       XX XX X  
-      XXXXXXXXXXXXX
+      XXXXXXXXXXXXX  
+      .b-center
     ]
   ]
 ]
@@ -454,7 +516,7 @@ class: p-0,m-0,vcenter,nord-light
 
 class: nord-dark
 
-## CLASSIC LAYOUT THREE
+## Classic Layout Example
 
 .column-2.font-sm[
 
@@ -482,9 +544,9 @@ Setting the background color in advance with `PS` works better.
 
 background-image:url(static/bg.png)
 
-.abs-layout.p-m.top-23.left-2.width-47.oc-bg-black.opacity-40.nord-dark[
+.abs-layout.p-m.top-20.left-2.width-47.oc-bg-black.opacity-40.nord-dark[
 
-## Classic Layout 4
+## Classic Layout Example
 
 Using absolute layout `.abs-layout`, translucent background `.oc-bg-black.opacity-40`, you get something like this.
 <br />
@@ -498,7 +560,7 @@ background-image:url(static/himg77.jpg)
 
 .abs-layout.p-m.top-31.left-0.width-100.oc-bg-white.opacity-60.center[
 
-## Classic Layout 5
+## Classic Layout Example
 
 Similar to the previous one, but with a white translucent background
 
@@ -509,7 +571,7 @@ Similar to the previous one, but with a white translucent background
 background-image: linear-gradient(150deg, rgba(0, 0, 0, 100%), rgba(0, 0, 0, 85%), rgba(0, 0, 0, 40%)),url(static/himg88.jpg)
 class: nord-dark, center,middle
 
-## Classic Layout 6
+## Classic Layout Example
 
 Use a darkening mask with a diagonal gradient  
 to block the background, highlighting text  
@@ -520,7 +582,7 @@ is also an interesting way to present it.
 background-image: linear-gradient(150deg,rgba(46, 52, 64, 100%),rgba(46, 52, 64, 100%),rgba(46, 52, 64, 98%),rgba(46, 52, 64, 80%)), url(static/t0.gif)
 class: nord-dark
 
-## Classic Layout 6 · Implementation
+## Classic Layout · Implementation
 
 Simply add a linear gradient to the top of the slide page and add a background image:
 ```html
