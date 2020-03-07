@@ -1293,6 +1293,112 @@ class: nord-light
 
 ---
 
+## 图表 · mermaid
+
+[mermaid](https://mermaid-js.github.io/mermaid/#/) 以类似于markdown的方式从文本生成图表和流程图。
+
+.mermaid[
+<pre>
+  classDiagram
+  Class01 <|-- AveryLongClass : Cool
+  Class03 *-- Class04
+  Class05 o-- Class06
+  Class07 .. Class08
+  Class09 --> C2 : Where am i?
+  Class09 --* C3
+  Class09 --|> Class07
+  Class07 : equals()
+  Class07 : Object[] elementData
+  Class01 : size()
+  Class01 : int chimp
+  Class01 : int gorilla
+  Class08 <--> C2: Cool label
+</pre>
+]
+
+---
+
+## 图表 · mermaid
+
+.border-layout.height-87[
+  .north.height-20.oc-bg-blue-2[
+    .mermaid[
+    <pre>
+      graph LR;
+      　　Portal-->|发布/更新配置|Apollo配置中心;
+      　　Apollo配置中心-->|实时推送|App;
+      　　App-->|实时查询|Apollo配置中心;
+    </pre>
+    ]
+  ]
+  .west.height-70.width-20.oc-bg-cyan-2[
+    .mermaid[
+    <pre>
+      graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+    </pre>
+    ]
+  ]
+  .b-center.oc-bg-orange-2[
+    .mermaid.width-80[
+      <pre>
+        sequenceDiagram
+        participant Alice
+        participant Bob
+        Alice->>John: Hello John, how are you?
+        loop Healthcheck
+            John->>John: Fight "against" &hypochondria
+        end
+        Note right of John: Rational 'thoughts' \n prevail!
+        John-->>Alice: Great!
+        John->>Bob: How about you?
+        Bob-->>John: Jolly good!
+      </pre>
+    ]
+  ]
+]
+
+---
+
+## 图表 · mermaid
+
+.mermaid[
+  <pre>
+    gantt
+         dateFormat  YYYY-MM-DD
+         title Adding GANTT diagram functionality to mermaid
+  
+         section A section
+         Completed task            :done,    des1, 2014-01-06,2014-01-08
+         Active task               :active,  des2, 2014-01-09, 3d
+         Future task               :         des3, after des2, 5d
+         Future task2              :         des4, after des3, 5d
+  
+         section Critical tasks
+         Completed task in the critical line :crit, done, 2014-01-06,24h
+         Implement parser and jison          :crit, done, after des1, 2d
+         Create tests for parser             :crit, active, 3d
+         Future task in critical line        :crit, 5d
+         Create tests for renderer           :2d
+         Add to mermaid                      :1d
+  
+         section Documentation
+         Describe gantt syntax               :active, a1, after des1, 3d
+         Add gantt diagram to demo page      :after a1  , 20h
+         Add another diagram to demo page    :doc1, after a1  , 48h
+  
+         section Last section
+         Describe gantt syntax               :after doc1, 3d
+         Add gantt diagram to demo page      :20h
+         Add another diagram to demo page    :48h
+  </pre>
+]
+
+---
+
 ## 设备
 
 .pure-g[
@@ -1607,8 +1713,7 @@ class: nord-dark
   .img[![](static/qr-code.png)]
 ]
 
-模板基于如下开源项目：
-
+模板基于如下开源项目：  
 [Remarkjs](https://github.com/gnab/remark)  
 [Typo.css](https://github.com/sofish/typo.css)   
 [Pure.css](https://github.com/pure-css/pure)   
@@ -1620,7 +1725,8 @@ class: nord-dark
 [Decktape](https://github.com/astefanutti/decktape)  
 [Vue.js](https://cn.vuejs.org/index.html)  
 [Quasar](https://quasar.dev/)  
-[Devices.css](https://github.com/picturepan2/devices.css)
+[Devices.css](https://github.com/picturepan2/devices.css)  
+[Mermaid](https://github.com/knsv/mermaid)
 
 <a class="github-fork-ribbon right-top" href="https://github.com/1-2-3/remark-it" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 
@@ -1629,8 +1735,9 @@ class: nord-dark
     <script src="js/remark.min.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/quasar.umd.min.js"></script>
+    <script src="js/mermaid.min.js"></script>
     <script>
-      // 预处理：去掉每行开头的空格，否则超过2层锁紧的类会导致解析出BUG
+      // 预处理：去掉每行开头的空格，否则超过2层缩进的类会导致解析出BUG
       var targetTextArea = document.getElementById("source");
       var lines = targetTextArea.innerHTML.split("\n");
       targetTextArea.innerHTML = lines.map(line => line.replace(/^(?!\s+[\-|0-9])\s+/, "")).join("\n");
@@ -1684,6 +1791,35 @@ class: nord-dark
           document.body.style["background-color"] = "#d7d8d2";
         }
       });
+
+      // 初始化 mermaid
+      mermaid.mermaidAPI.initialize({
+        startOnLoad: false,
+        theme: "forest",
+        themeCSS:
+          ".tick>text { font-size:26px; }  .taskTextOutsideRight,.taskTextOutsideLeft { font-size:20px; } .titleText {font-size:30px;} .sectionTitle {font-size:20px;}",
+        gantt: {
+          fontSize: 26,
+          barHeight: 30,
+          useMaxWidth: false
+        }
+      });
+
+      var mermaidCmps = document.querySelectorAll(".mermaid");
+      for (var i = 0; i < mermaidCmps.length; i++) {
+        var mermaidCmp = mermaidCmps[i];
+        var insertSvg = function(svgCode, bindFunctions) {
+          mermaidCmp.innerHTML = svgCode;
+        };
+
+        var graphDefinition = "";
+        let pCmps = mermaidCmp.querySelectorAll("pre");
+        for (var pCmp of pCmps) {
+          graphDefinition += pCmp.textContent.replace(/\\n/g, "<br/>");
+        }
+
+        var graph = mermaid.mermaidAPI.render("graphDiv" + i, graphDefinition, insertSvg);
+      }
     </script>
   </body>
 </html>

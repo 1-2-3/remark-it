@@ -545,3 +545,11 @@ pre {
 .inline-flex {
   display: inline-flex;
 }
+
+.mermaid {
+  display: flex;
+}
+
+.mermaid > p {
+  margin-bottom: 0px;
+}
