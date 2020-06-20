@@ -551,7 +551,7 @@ background-image:url(static/bg.png)
 
 ## 经典布局举例
 
-使用绝度布局 `.abs-layout`，半透明的背景 `.oc-bg-black.opacity-40`，就可以得到这样的效果。
+使用绝对布局 `.abs-layout`，半透明的背景 `.oc-bg-black.opacity-40`，就可以得到这样的效果。
 <br />
 <br />
 
@@ -1664,7 +1664,7 @@ var slideshow = remark.create({
 
 ## 导出 PDF
 
-1. 安装 [decktape](https://github.com/astefanutti/decktape) .font-xxs[<mark>*注 高版本的 nodejs 无法安装 decktape，推荐使用 [nvm](https://github.com/coreybutler/nvm-windows) 另行安装一个 8.13.1 版的 nodejs 用于安装 decktape</mark>]
+1. 安装 [decktape](https://github.com/astefanutti/decktape)
 ```cmd
 npm install -g decktape
 ```
@@ -1676,12 +1676,12 @@ C:\> decktape remark https://1-2-3.github.io/remark-it remark-it.pdf
 .font-xs[
   <mark>如果幻灯尚未发布到互联网上，URL为 file: 开头的本地传输协议，需要添加 --chrome-arg=--disable-web-security 参数，否则会报 DOMException 错误，例:</mark>
   ```cmd
-  C:\> decktape remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/index.html remark-it.pdf --chrome-arg=--disable-web-security
+  C:\> decktape remark file:///C:/projects/share/remark-it/index.html#1 remark-it.pdf --chrome-arg=--disable-web-security
   ```
   追加 `--screenshots` 参数可同时导出图片；追加 `--slides` 参数可指定要导出的页码范围，例：
   ```cmd
   C:\> mkdir screenshots
-  C:\> decktape --screenshots --screenshots-size=2000x1500 --slides 36,37,38 remark file:///C:/projects/%E5%BC%80%E6%BA%90/remark-it/index.html demo.pdf --chrome-arg=--disable-web-security
+  C:\> decktape --screenshots --screenshots-size=2000x1500 --slides 36,37,38 remark file:///C:/projects/share/remark-it/index.html#1 demo.pdf --chrome-arg=--disable-web-security
   ```
 ]
 
@@ -1740,7 +1740,9 @@ class: nord-dark
       // 预处理：去掉每行开头的空格，否则超过2层缩进的类会导致解析出BUG
       var targetTextArea = document.getElementById("source");
       var lines = targetTextArea.innerHTML.split("\n");
-      targetTextArea.innerHTML = lines.map(line => line.replace(/^(?!\s+[\-|0-9])\s+/, "")).join("\n");
+      targetTextArea.innerHTML = lines
+        .map((line) => line.replace(/^(?!\s+[\-|0-9])\s+/, ""))
+        .join("\n");
 
       var slideshow = remark.create({
         ratio: "4:3", // 窗口比例
@@ -1755,22 +1757,22 @@ class: nord-dark
         navigation: {
           scroll: false, // 是否允许使用鼠标滚轮翻页
           touch: true, // （如果是触摸屏）是否允许点击屏幕左边或右边前后翻页
-          click: false // 是否允许鼠标点击屏幕左边或右边前后翻页
-        }
+          click: false, // 是否允许鼠标点击屏幕左边或右边前后翻页
+        },
       });
 
       // 初始化 VUE
       for (var el of document.querySelectorAll(".vue")) {
         new Vue({
-          el: el
+          el: el,
         });
       }
 
       // 初始化可点击预览的卡片
       var preview_win_cards = document.querySelectorAll(".preview-win");
       for (var card of preview_win_cards) {
-        (clickedCard => {
-          clickedCard.addEventListener("click", e => {
+        ((clickedCard) => {
+          clickedCard.addEventListener("click", (e) => {
             var img = clickedCard.querySelector("img");
             if (img) {
               window.open(img.src);
@@ -1781,7 +1783,11 @@ class: nord-dark
 
       // 背景色变化兼容 F11 全屏
       function isFullScreen() {
-        return window.fullScreen || (window.innerWidth == screen.width && window.innerHeight == screen.height);
+        return (
+          window.fullScreen ||
+          (window.innerWidth == screen.width &&
+            window.innerHeight == screen.height)
+        );
       }
 
       window.addEventListener("resize", () => {
@@ -1801,14 +1807,14 @@ class: nord-dark
         gantt: {
           fontSize: 26,
           barHeight: 30,
-          useMaxWidth: false
-        }
+          useMaxWidth: false,
+        },
       });
 
       var mermaidCmps = document.querySelectorAll(".mermaid");
       for (var i = 0; i < mermaidCmps.length; i++) {
         var mermaidCmp = mermaidCmps[i];
-        var insertSvg = function(svgCode, bindFunctions) {
+        var insertSvg = function (svgCode, bindFunctions) {
           mermaidCmp.innerHTML = svgCode;
         };
 
@@ -1818,7 +1824,11 @@ class: nord-dark
           graphDefinition += pCmp.textContent.replace(/\\n/g, "<br/>");
         }
 
-        var graph = mermaid.mermaidAPI.render("graphDiv" + i, graphDefinition, insertSvg);
+        var graph = mermaid.mermaidAPI.render(
+          "graphDiv" + i,
+          graphDefinition,
+          insertSvg
+        );
       }
     </script>
   </body>
