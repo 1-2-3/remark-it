@@ -1802,9 +1802,17 @@ class: nord-dark
     <script>
       // 预处理：去掉每行开头的空格，否则超过2层缩进的类会导致解析出BUG
       var targetTextArea = document.getElementById("source");
-      var lines = targetTextArea.innerHTML.split("\n");
+      var targetText = targetTextArea.innerHTML.replace(
+        /```[^`]+```/gm,
+        (match, index, input) => {
+          return match.replace(/[ ]/gm, "\u3000");
+        }
+      );
+      var lines = targetText.split("\n");
+
       targetTextArea.innerHTML = lines
-        .map((line) => line.replace(/^(?!\s+[\-|0-9])\s+/, ""))
+        .map((line) => line.replace(/^(?![ ]+[\-|0-9])[ ]+/, ""))
+        .map((line) => line.replace(/\u3000/g, " "))
         .join("\n");
 
       var slideshow = remark.create({
