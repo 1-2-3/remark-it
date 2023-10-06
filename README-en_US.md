@@ -42,6 +42,7 @@ English | [简体中文](README.md)
 - 150 text and background colors, powered by [Open color](https://github.com/yeun/open-color)
 - Components powered by [Vue.js](https://cn.vuejs.org/index.html)
 - Markdown Diagrams powered by [Mermaid](https://github.com/knsv/mermaid)
+- Automatic mixing typesetting in both English and Chinese powered by [pangu.js](https://github.com/vinta/pangu.js)
 
 ## Installation
 

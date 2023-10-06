@@ -39,6 +39,7 @@ markdown / html slideshow template, powered by remarkjs.
 - 基于 [Open color](https://github.com/yeun/open-color) 的 150 个文字和背景颜色
 - 基于 [Vue.js](https://cn.vuejs.org/index.html) 的组件库
 - 基于 [Mermaid](https://github.com/knsv/mermaid) 的 Markdown 图表
+- 基于 [pangu.js](https://github.com/vinta/pangu.js) 的自动中英文混排。
 
 ## 安装
 
