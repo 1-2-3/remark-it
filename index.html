@@ -95,6 +95,24 @@ class: typo, typo-selection
 
 ---
 
+class: pangujs
+
+## 自动中英文混排
+
+在页面的`class`配置中增加`pangujs`选项即可启用基于[pangu.js](https://github.com/vinta/pangu.js)的自动中英文混排支持，它可以在英文单词左右自动增加空格。
+
+```markdown
+class: pangujs
+```
+
+下面是效果示例：
+
+如果你跟我一样，每次看到网页上的中文字和英文、数字、符号挤在一块，就会坐立难安，忍不住想在它们之间加个空格。这个外挂（支持Chrome和Firefox）正是你在网路世界走跳所需要的东西，它会自动替你在网页中所有的中文字和半形的英文、数字、符号之间插入空白。
+
+汉学家称这个空白字元为“盘古之白”，因为它劈开了全形字和半形字之间的混沌。另有研究显示，打字的时候不喜欢在中文和英文之间加空格的人，感情路都走得很辛苦，有七成的比例会在34岁的时候跟自己不爱的人结婚，而其馀三成的人最后只能把遗产留给自己的猫。毕竟爱情跟书写都需要适时地留白。
+
+---
+
 class: nord-dark, center, middle
 
 # .letter-spacing-20[深色主题]
@@ -1797,6 +1815,7 @@ class: nord-dark
 ]
 
 模板基于如下开源项目：  
+.column-2.column-norule[
 [Remarkjs](https://github.com/gnab/remark)  
 [Typo.css](https://github.com/sofish/typo.css)   
 [Pure.css](https://github.com/pure-css/pure)   
@@ -1810,7 +1829,9 @@ class: nord-dark
 [Quasar](https://quasar.dev/)  
 [Devices.css](https://github.com/picturepan2/devices.css)  
 [Mermaid](https://github.com/knsv/mermaid)  
-[MathJax](https://github.com/mathjax/MathJax)
+[MathJax](https://github.com/mathjax/MathJax)  
+[pangu.js](https://github.com/vinta/pangu.js)
+]
 
 <a class="github-fork-ribbon right-top" href="https://github.com/1-2-3/remark-it" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 
@@ -1821,6 +1842,7 @@ class: nord-dark
     <script src="js/quasar.umd.min.js"></script>
     <script src="js/mermaid.min.js"></script>
     <script id="MathJax-script" async src="js/tex-mml-chtml.js"></script>
+    <script src="js/pangu.js"></script>
     <script>
       // 预处理：去掉每行开头的空格，否则超过2层缩进的类会导致解析出BUG
       var targetTextArea = document.getElementById("source");
@@ -1949,6 +1971,9 @@ class: nord-dark
           ignoreHtmlClass: "tex2jax_ignore",
         },
       };
+
+      // pangu.js
+      pangu.spacingElementByClassName('pangujs');
     </script>
   </body>
 </html>
